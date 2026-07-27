@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- 讯飞语音识别域名（允许明文流量，因其服务可能使用 HTTP） -->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">iat-api.xfyun.cn</domain>
+        <domain includeSubdomains="true">xfyun.cn</domain>
+        <domain includeSubdomains="true">iflytek.com</domain>
+    </domain-config>
+
+    <!-- 高德地图服务域名（允许明文流量，兼容旧版 SDK） -->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">restapi.amap.com</domain>
+        <domain includeSubdomains="true">amap.com</domain>
+        <domain includeSubdomains="true">ditu.amap.com</domain>
+    </domain-config>
+
+    <!-- 信任系统证书和用户证书（适配荣耀等严格校验设备） -->
+    <base-config>
+        <trust-anchors>
+            <certificates src="system" />
+            <certificates src="user" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>

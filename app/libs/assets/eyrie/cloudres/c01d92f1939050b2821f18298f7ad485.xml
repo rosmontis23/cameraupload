@@ -1,0 +1,50 @@
+<!--骑步行动作提示气泡-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='leftTop' anchorOffset='(0,0)'>
+      <subparam
+        id='backimage'
+        background-image='10059'
+        backgroundstretch='32% 36% 32% 36%'
+        padding='22px 22px 22px 22px'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='rightTop' anchorOffset='(0,0)'>
+      <subparam
+        id='backimage'
+        background-image='10058'
+        backgroundstretch='32% 36% 32% 36%'
+        padding='22px 22px 22px 22px'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='leftBottom' anchorOffset='(0,0)'>
+      <subparam
+        id='backimage'
+        background-image='10057'
+        backgroundstretch='32% 36% 32% 36%'
+        padding='22px 22px 22px 22px'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='rightBottom' anchorOffset='(0,0)'>
+      <subparam
+        id='backimage'
+        background-image='10056'
+        backgroundstretch='32% 36% 32% 36%'
+        padding='22px 22px 22px 22px'
+      ></subparam>
+    </param>
+  </params>
+
+  <div
+    id='backimage'
+    style='display: flex; justify-content: center; align-items: center; flex-direction: row'
+  >
+    <label
+      style='align-self: center; color: @Color_Ink_L6; font-size: 24px'
+      text='{label}'
+    ></label>
+  </div>
+</xml>

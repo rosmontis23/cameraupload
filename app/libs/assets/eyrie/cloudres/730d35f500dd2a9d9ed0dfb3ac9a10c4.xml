@@ -1,0 +1,66 @@
+<!--阴凉路线-树荫-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='rightTop' anchorOffset='(15,19)'>
+      <subparam
+        id='backimage'
+        background-image='205014'
+        backgroundstretch='37% 40% 62% 43%'
+        padding='18px 24px 40px 40px'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='leftTop' anchorOffset='(15,19)'>
+      <subparam
+        id='backimage'
+        background-image='205014'
+        backgroundstretch='37% 40% 62% 43%'
+        padding='18px 37px 40px 27px'
+        backgroundtransform='rotate(0,180,0)'
+      ></subparam>
+    </param>
+
+    <param
+      useCommonParser='true'
+      direction='rightBottom'
+      anchorOffset='(15,19)'
+    >
+      <subparam
+        id='backimage'
+        background-image='205014'
+        backgroundstretch='37% 40% 62% 43%'
+        padding='46px 24px 20px 40px'
+        backgroundtransform='rotate(180,0,0)'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='leftBottom' anchorOffset='(15,19)'>
+      <subparam
+        id='backimage'
+        background-image='205014'
+        backgroundstretch='37% 40% 62% 43%'
+        padding='46px 40px 20px 24px'
+        backgroundtransform='rotate(180,180,0)'
+      ></subparam>
+    </param>
+  </params>
+
+  <div id='backimage' style='width: auto; height: auto'>
+    <div style='display: flex; flex-direction: row; align-items: center; position: relative'>
+      <div style='display: flex; flex-direction: row; align-items: center; position: relative'>
+        <img
+          style='width: 54px; height: 52px; margin-right: 8px; align-self: center; margin-top: -1px'
+          src='{icon}'
+          syncload='true'
+          syncloadCache='false'
+          fastmode='false'
+        ></img>
+
+        <label
+          style='align-self: center; margin-right: 3px; font-weight: bold; font-size: 26px; color: @Color_Black; white-space: nowrap; line-height: 26px; margin-top: -3px'
+          text='{text}'
+        ></label>
+      </div>
+    </div>
+  </div>
+</xml>

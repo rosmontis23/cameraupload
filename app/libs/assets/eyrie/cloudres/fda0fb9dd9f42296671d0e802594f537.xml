@@ -1,0 +1,17 @@
+<!--巡航card限速电子眼资源样式-->
+<xml>
+  <params>
+    <param useCommonParser="true" direction="rightTop" anchorRatio="(0.0212,0.875)">
+      <subparam id="firstdiv" left="46px" right="auto"></subparam>
+    </param>
+    <param useCommonParser="true" direction="leftTop" anchorRatio="(0.9788,0.875)">
+      <subparam id="firstdiv" left="auto" right="46px"></subparam>
+    </param>
+  </params>
+  <div style="display:flex;flex-direction:row;align-items:center;">
+    <image src="{popResId}" style="width:142px;height:136px;"></image>
+    <div id="firstdiv" style="position:absolute;width:68px;height:68px;top:25px;align-items:center;justify-content:center;display:flex;">
+      <label style="color:#222222;font-size:{fontSize};font-weight:bold;" text="{maxspeed}"></label>
+    </div>
+  </div>
+</xml>

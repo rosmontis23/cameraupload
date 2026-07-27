@@ -1,0 +1,13 @@
+<!--骑步行路线内纹理-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='centerCenter' anchorOffset='(0,0)'>
+    </param>
+  </params>
+
+  <div>
+    <div style='display: flex; flex-direction: row'>
+      <img src='{icon}' syncloadCache='false' fastmode='false'></img>
+    </div>
+  </div>
+</xml>

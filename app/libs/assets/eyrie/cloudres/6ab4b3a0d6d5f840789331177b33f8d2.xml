@@ -1,0 +1,57 @@
+<!--公共感知优化专项二期-30001-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='bottomCenter' anchorOffset='(0,0)'>
+      <subparam id='divparam1' padding='15px 25px 10px 25px'></subparam>
+
+      <subparam id='divparam2' align-self='center'></subparam>
+
+      <subparam id='divparam3' align-self='center'></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='rightCenter' anchorOffset='(0,0)'>
+      <subparam id='divparam1' padding='15px 25px 70px 35px'></subparam>
+
+      <subparam
+        id='divparam2'
+        align-self='flex-start'
+        margin-left='4px'
+      ></subparam>
+
+      <subparam id='divparam3' align-self='flex-start'></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='leftCenter' anchorOffset='(0,0)'>
+      <subparam id='divparam1' padding='15px 35px 70px 25px'></subparam>
+
+      <subparam
+        id='divparam2'
+        align-self='flex-end'
+        margin-right='4px'
+      ></subparam>
+
+      <subparam id='divparam3' align-self='flex-end'></subparam>
+    </param>
+  </params>
+
+  <div style='display: flex; flex-direction: row; align-items: flex-end'>
+    <div id='divparam1' style='display: flex; flex-direction: column'>
+      <div id='divparam2'>
+        <label
+          style='font-size: 26px; line-height: 30px; padding-left: 1px; font-weight: bold; color: @Color_Black; text-overflow: ellipsis; overflow: hidden; position: relative; text-stroke: 2px @Color_BG_L2'
+          text='{label}'
+        ></label>
+      </div>
+
+      <div
+        id='divparam3'
+        style='display: flex; padding: 3px 5px 3px 5px; line-height: 20px; background-color: @Color_Hue210_H1; border-radius: 8px; margin-top: 2px; flex-direction: row; align-items: flex-end; position: relative'
+      >
+        <label
+          style='align-self: center; margin: 3px 5px; font-size: 20px; color: @Color_Text_Brand'
+          text='{subLabel}'
+        ></label>
+      </div>
+    </div>
+  </div>
+</xml>

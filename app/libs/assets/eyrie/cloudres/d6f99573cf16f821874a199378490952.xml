@@ -1,0 +1,22 @@
+<!--1112沿途搜扎标选中态-->
+<xml>
+  <params>
+    <param useCommonParser="true" direction="topCenter" anchorOffset="(0,0)">
+      <subparam id="backimage" background-image="{$bgId}"></subparam>
+    </param>
+  </params>
+    <rules>
+      <rule>$bgId = along.bgId</rule>
+      <rule>$brandIconId = along.brandIconId</rule>
+      <rule>$poiIndex = along.iconIndex</rule>
+      <rule>$fontSize = along.iconIndex>=10 ? 36 : 42</rule>
+    </rules>
+  <div id="backimage" style="width: 123px; height: 95px; padding: 6px 6px 31px 6px; left: 0; top: 0px">
+    <div style="display: flex; flex-direction: row; align-items: center; position: relative; justify-content: space-between;">
+      <div style="align-self: center; flex-grow: 1; display: flex; flex-direction: row; align-items: center; justify-content: center;">
+        <label style="align-self: center; font-weight: medium; font-size: {$fontSize}px; color: @Color_Text_Highlight; line-height: 42px;" text="{$poiIndex}"></label>
+      </div>
+      <img style="width: 58px; height: 58px; align-self: center" src="{$brandIconId}"></img>
+    </div>
+  </div>
+</xml>

@@ -1,0 +1,83 @@
+<!--多路线气泡白天蓝色背景（110550）晚上蓝色背景（110551）黑夜(110541)样式-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='leftTop' anchorOffset='(15,25)'>
+      <subparam
+        id='backimage'
+        background-image='110546'
+        backgroundstretch='34% 52% 61% 36%'
+        padding='21px 47px 45px 32px'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='leftBottom' anchorOffset='(15,15)'>
+      <subparam
+        id='backimage'
+        background-image='110547'
+        backgroundstretch='52% 46% 43% 42%'
+        padding='39px 47px 30px 32px'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='rightTop' anchorOffset='(15,25)'>
+      <subparam
+        id='backimage'
+        background-image='110548'
+        backgroundstretch='34% 41% 61% 48%'
+        padding='21px 32px 45px 47px'
+      ></subparam>
+    </param>
+
+    <param
+      useCommonParser='true'
+      direction='rightBottom'
+      anchorOffset='(15,15)'
+    >
+      <subparam
+        id='backimage'
+        background-image='110549'
+        backgroundstretch='52% 41% 43% 48%'
+        padding='39px 32px 30px 47px'
+      ></subparam>
+    </param>
+  </params>
+
+  <div
+    id='backimage'
+    style='justify-content: flex-start; align-items: flex-start; flex-direction: column'
+  >
+    <div style='align-items: center; justify-content: center; flex-direction: row'>
+      <label
+        text='{timeDif}'
+        style='color: {timeColor}; text-align: center; font-weight: bold; font-size: {timeSize}'
+      ></label>
+
+      <img
+        src='{chargeIcon}'
+        style='display: {allNoCost}; width: 34px; height: 34px; margin-right: 2px; margin-left: 6px'
+      ></img>
+
+      <label
+        text='{costText}'
+        style='display: {allNoCostDisplay}; color: {costColor}; text-align: center; font-size: {textSize}'
+      ></label>
+    </div>
+
+    <div style='align-items: center; justify-content: center; flex-direction: row'>
+      <label
+        text='{disDif}'
+        style='color: {distColor}; text-align: center; font-size: {textSize}'
+      ></label>
+
+      <img
+        src='{trafficIcon}'
+        style='width: 32px; height: 32px; margin-right: 1px; margin-left: 8px'
+      ></img>
+
+      <label
+        text='{trafficDif}'
+        style='color: {trafficColor}; text-align: center; font-size: {textSize}'
+      ></label>
+    </div>
+  </div>
+</xml>

@@ -1,0 +1,18 @@
+<!--限速电子眼动态纹理样式-->
+<xml>
+  <params>
+    <param
+      useCommonParser='true'
+      direction='centerCenter'
+      anchorOffset='(0,0)'
+      anchorOffsetHD='(0,0)'
+    ></param>
+  </params>
+
+  <div style='display: flex; width: 60px; height: 60px; background-image: {popResId}; justify-content: space-around; align-items: center; flex-direction: column'>
+    <label
+      style='text-align: center; font-family: AmapNumber-Bold; letter-spacing: -1; background-color: transparent; font-size: {fontSize}; color: #222222'
+      text='{maxspeed}'
+    ></label>
+  </div>
+</xml>

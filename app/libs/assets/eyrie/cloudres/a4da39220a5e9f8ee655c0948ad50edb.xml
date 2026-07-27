@@ -1,0 +1,35 @@
+<!--步导无障碍设施气泡选中态-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='topCenter' anchorOffset='(0,0)'>
+      <subparam
+        id='backimage'
+        backgroundstretch='41% 66% 58% 32% 41% 32% 58% 66%'
+        padding='8px 11px 29px 19px'
+      ></subparam>
+    </param>
+  </params>
+
+  <div
+    id='backimage'
+    style='width: auto; height: auto; background-image: {bgId}'
+    syncload='true'
+  >
+    <div style='display: flex; position: relative; align-items: center; flex-direction: row'>
+      <div style='display: flex; align-items: center; flex-direction: row'>
+        <label
+          style='line-height: 42px; white-space: nowrap; color: #ffffff; font-size: 42px; font-weight: bold; margin-right: 7px; align-self: center'
+          text='{index}'
+        ></label>
+
+        <img
+          style='width: 51px; height: 51px; align-self: center'
+          src='{facilitiesIcon}'
+          syncload='true'
+          syncloadCache='false'
+          fastmode='false'
+        ></img>
+      </div>
+    </div>
+  </div>
+</xml>

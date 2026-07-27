@@ -1,0 +1,55 @@
+<!--骑行规划页逆行路段气泡样式-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='leftTop' anchorOffset='(5,15)'>
+      <subparam
+        id='backimage'
+        background-image='110518'
+        backgroundstretch='34% 41% 61% 48%'
+        padding='21px 47px 45px 32px'
+        backgroundtransform='rotate(0,180,0)'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='leftBottom' anchorOffset='(5,5)'>
+      <subparam
+        id='backimage'
+        background-image='110518'
+        backgroundstretch='34% 41% 61% 48%'
+        padding='45px 47px 25px 32px'
+        backgroundtransform='rotate(180,180,0)'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='rightTop' anchorOffset='(5,15)'>
+      <subparam
+        id='backimage'
+        background-image='110518'
+        backgroundstretch='34% 41% 61% 48%'
+        padding='21px 32px 45px 47px'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='rightBottom' anchorOffset='(5,5)'>
+      <subparam
+        id='backimage'
+        background-image='110518'
+        backgroundstretch='34% 41% 61% 48%'
+        padding='45px 32px 25px 47px'
+        backgroundtransform='rotate(180,0,0)'
+      ></subparam>
+    </param>
+  </params>
+
+  <div
+    id='backimage'
+    style='display: flex; width: auto; height: auto; align-items: center; flex-direction: row; background-color: @Color_BG_L2(00)'
+  >
+    <div style='display: flex; width: auto; height: auto; background-color: @Color_BG_L2(00); align-items: center; flex-direction: row'>
+      <label
+        style='background-color: @Color_BG_L2(00); font-weight: bold; margin-right: 5px; margin-bottom: 5px; margin-top: 5px; font-size: 30px; color: @Color_Black'
+        text='逆行路段'
+      ></label>
+    </div>
+  </div>
+</xml>

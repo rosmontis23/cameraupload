@@ -1,0 +1,21 @@
+<!--导航中途径点可删除(200117)-不可删除(200116)样式-->
+<xml>
+  <params>
+    <param
+      useCommonParser='true'
+      direction='topCenter'
+      anchorOffset='(0,0)'
+    ></param>
+  </params>
+
+  <div style='display: flex; padding: 10px 10px 10px 10px'>
+    <img src='{iconId}' style='width: 80px; height: 80px'></img>
+
+    <div style='width: 44px; height: 38px; position: absolute; left: 28px; top: 36px; align-items: center; justify-content: center'>
+      <label
+        style='color: #FFFFFF; font-size: 28px; font-weight: bold; text-align: center'
+        text='{label}'
+      ></label>
+    </div>
+  </div>
+</xml>

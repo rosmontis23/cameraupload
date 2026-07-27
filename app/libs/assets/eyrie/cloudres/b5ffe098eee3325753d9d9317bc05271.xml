@@ -1,0 +1,32 @@
+<!--公共感知专项二期-200033-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='bottomCenter' anchorOffset='(0,0)'>
+      <subparam
+        id='backimage'
+        background-image='200035'
+        backgroundstretch='47% 64% 35% 25% 47% 25% 35% 64%'
+        padding='46px 34px 37px 34px'
+      ></subparam>
+    </param>
+  </params>
+
+  <div>
+    <div>
+      <div id='backimage' style='top: 0px; left: 0' syncload='true'>
+        <div style='display: flex; position: relative; align-items: center; flex-direction: row'>
+          <label
+            style='margin-right: 10px; line-height: 24px; color: @Color_Black; font-size: 24px; align-self: center'
+            text='{label}'
+          ></label>
+
+          <img
+            style='width: 9px; height: 16px; align-self: center'
+            src='30025'
+            syncload='true'
+          ></img>
+        </div>
+      </div>
+    </div>
+  </div>
+</xml>

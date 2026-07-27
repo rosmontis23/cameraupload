@@ -1,0 +1,34 @@
+<!--公交详情页地铁站牌-->
+<xml>
+  <params>
+    <param
+      useCommonParser='true'
+      direction='leftBottom'
+      anchorOffset='(-25,18)'
+    >
+      <subparam id='firstdiv' align-items='flex-end'></subparam>
+    </param>
+
+    <param
+      useCommonParser='true'
+      direction='rightBottom'
+      anchorOffset='(-25,18)'
+    >
+      <subparam id='firstdiv' align-items='flex-start'></subparam>
+    </param>
+  </params>
+
+  <div id='firstdiv' style='display: flex'>
+    <div style='display: flex; flex-direction: row; line-height: 22px'>
+      <label
+        style='color: @Color_Text_Highlight; background-color: {color2}; font-size: 22px; border-radius: 16px; padding-right: 6px; padding-left: 6px'
+        text='{label}'
+      ></label>
+    </div>
+
+    <label
+      style='margin-top: 6px; margin-right: 5px; font-weight: bold; text-align: left; text-layout-amap: Y; position: relative; font-size: 26px; overflow: hidden; text-overflow: ellipsis; line-height: 30px; color: @Color_Text_L1; text-stroke: 2px @Color_Background; line-clamp: 2'
+      text='{subLabel}'
+    ></label>
+  </div>
+</xml>

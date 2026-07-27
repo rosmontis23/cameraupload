@@ -1,0 +1,104 @@
+<!--多路线气泡白天及夜晚带标签和点赞样式-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='leftTop' anchorOffset='(15,25)'>
+      <subparam
+        id='backimage'
+        background-image='110522'
+        backgroundstretch='34% 41% 61% 48%'
+        padding='21px 47px 45px 32px'
+        backgroundtransform='rotate(0,180,0)'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='leftBottom' anchorOffset='(15,15)'>
+      <subparam
+        id='backimage'
+        background-image='110522'
+        backgroundstretch='34% 41% 61% 48%'
+        padding='45px 47px 25px 32px'
+        backgroundtransform='rotate(180,180,0)'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='rightTop' anchorOffset='(15,25)'>
+      <subparam
+        id='backimage'
+        background-image='110522'
+        backgroundstretch='34% 41% 61% 48%'
+        padding='21px 32px 45px 47px'
+      ></subparam>
+    </param>
+
+    <param
+      useCommonParser='true'
+      direction='rightBottom'
+      anchorOffset='(15,15)'
+    >
+      <subparam
+        id='backimage'
+        background-image='110522'
+        backgroundstretch='34% 41% 61% 48%'
+        padding='45px 32px 25px 47px'
+        backgroundtransform='rotate(180,0,0)'
+      ></subparam>
+    </param>
+  </params>
+
+  <div
+    id='backimage'
+    style='flex-direction: column; align-items: flex-start; justify-content: flex-start'
+  >
+    <div style='display: flex; flex-direction: row; justify-content: center; align-items: center; margin-top: 5px'>
+      <div style='height: 42px; flex-direction: row; justify-content: center; align-items: center; background-image: {labelBg}; margin-right: 4px; backgroundstretch: 39% 26% 43% 23%; padding: 1px 7px 1px 7px'>
+        <img
+          src='{thumbIcon}'
+          style='width: 30px; height: 30px; margin-left: 7px; margin-right: 5px'
+          syncloadCache='false'
+          fastmode='false'
+        ></img>
+
+        <label
+          text='{label}'
+          style='margin-right: 4px; font-size: 30px; font-weight: bold; color: #FFFFFF'
+        ></label>
+      </div>
+
+      <label
+        text='{timeDif}'
+        style='font-size: {timeSize}; font-weight: bold; color: {timeColor}'
+      ></label>
+    </div>
+
+    <div style='flex-direction: row; justify-content: center; align-items: center'>
+      <label
+        text='{disDif}'
+        style='font-size: {textSize}; font-weight: {distWeight}; color: {distColor}'
+      ></label>
+
+      <img
+        src='{trafficIcon}'
+        style='width: 32px; height: 32px; margin-left: 2px; margin-right: 2px'
+        syncloadCache='false'
+        fastmode='false'
+      ></img>
+
+      <label
+        text='{trafficDif}'
+        style='font-size: {textSize}; font-weight: {trafficWeight}; color: {trafficColor}'
+      ></label>
+
+      <img
+        src='{chargeIcon}'
+        style='display: {allNoCost}; width: 34px; height: 34px; margin-left: 6px; margin-right: 2px'
+        syncloadCache='false'
+        fastmode='false'
+      ></img>
+
+      <label
+        text='{costText}'
+        style='display: {allNoCostDisplay}; font-size: {textSize}; font-weight: {costWeight}; color: {costColor}'
+      ></label>
+    </div>
+  </div>
+</xml>

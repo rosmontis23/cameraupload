@@ -1,0 +1,57 @@
+<!--路况趋势气泡（白天）(黑夜）-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='rightTop' anchorOffset='(15,25)'>
+      <subparam
+        id='backimage'
+        background-image='110518'
+        backgroundstretch='34% 41% 61% 48%'
+        padding='21px 32px 45px 47px'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='leftTop' anchorOffset='(15,25)'>
+      <subparam
+        id='backimage'
+        background-image='110518'
+        backgroundstretch='34% 41% 61% 48%'
+        padding='21px 47px 45px 32px'
+        backgroundtransform='rotate(0,180,0)'
+      ></subparam>
+    </param>
+  </params>
+
+  <div
+    id='backimage'
+    style='display: flex; flex-direction: row; align-items: center; justify-content: space-around'
+  >
+    <img
+      src='{iconResIdUrl}'
+      style='display: {iconDisplay}; width: 56px; height: 56px; margin-left: 4px; margin-right: 4px'
+      background-backupimage='{defaultIconResId}'
+      syncloadCache='false'
+      fastmode='false'
+    ></img>
+
+    <img
+      src='{defaultIconResId}'
+      style='display: {defaultDisplay}; width: 28px; height: 28px; margin-left: 4px; margin-right: 4px'
+      syncloadCache='false'
+      fastmode='false'
+    ></img>
+
+    <div style='display: flex; margin-left: 4; flex-direction: column; align-items: flex-start'>
+      <label
+        id='labelcolor'
+        style='color: {trendsColor}; opacity: 1.0; font-size: 32px; font-weight: bold'
+        text='{tips}'
+      ></label>
+
+      <label
+        id='sublabelcolor'
+        style='display: {isDisplay}; opacity: 1.0; font-size: 28px'
+        text='{subLabel}'
+      ></label>
+    </div>
+  </div>
+</xml>

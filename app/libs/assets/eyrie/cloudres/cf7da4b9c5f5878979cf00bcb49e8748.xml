@@ -1,0 +1,26 @@
+<!--光柱图队员动态纹理(箭头向右)样式-->
+<xml>
+  <params>
+    <param
+      useCommonParser='true'
+      direction='centerCenter'
+      anchorRatio='(0.5,0.5)'
+    ></param>
+  </params>
+
+  <div style='display: flex; flex-direction: column; justify-content: center'>
+    <img
+      style='width: {iconWidth}; height: {iconHeight}; border-radius: {radius}; position: absolute; left: {left}'
+      src='{icon}'
+      syncloadCache='false'
+      fastmode='false'
+    ></img>
+
+    <img
+      style='width: {iconBgWidth}; height: {iconBgHeight}'
+      src='{iconBg}'
+      syncloadCache='false'
+      fastmode='false'
+    ></img>
+  </div>
+</xml>

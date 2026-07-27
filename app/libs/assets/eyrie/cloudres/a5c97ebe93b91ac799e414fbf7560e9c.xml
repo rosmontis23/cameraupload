@@ -1,0 +1,57 @@
+<!--驾车混淆场景气泡-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='leftTop' anchorOffset='(7,25)'>
+      <subparam
+        id='backimage'
+        background-image='110518'
+        backgroundstretch='34% 41% 61% 48%'
+        padding='21px 36px 45px 42px'
+        backgroundtransform='rotate(0,180,0)'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='leftBottom' anchorOffset='(15,15)'>
+      <subparam
+        id='backimage'
+        background-image='110518'
+        backgroundstretch='34% 41% 61% 48%'
+        padding='45px 47px 25px 32px'
+        backgroundtransform='rotate(180,180,0)'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='rightTop' anchorOffset='(15,25)'>
+      <subparam
+        id='backimage'
+        background-image='110518'
+        backgroundstretch='34% 41% 61% 48%'
+        padding='21px 32px 45px 47px'
+      ></subparam>
+    </param>
+
+    <param
+      useCommonParser='true'
+      direction='rightBottom'
+      anchorOffset='(15,15)'
+    >
+      <subparam
+        id='backimage'
+        background-image='110518'
+        backgroundstretch='34% 41% 61% 48%'
+        padding='45px 32px 25px 47px'
+        backgroundtransform='rotate(180,0,0)'
+      ></subparam>
+    </param>
+  </params>
+
+  <div
+    id='backimage'
+    style='display: flex; width: auto; height: auto; flex-direction: row; align-items: center; justify-content: center'
+  >
+    <label
+      style='font-size: 34px; justify-content: center; align-self: center; font-weight: bold; color: #1A66FF'
+      text='{confuseText}'
+    ></label>
+  </div>
+</xml>

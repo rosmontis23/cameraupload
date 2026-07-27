@@ -1,0 +1,76 @@
+<!--行中语音Poi气泡(白天样式)-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='leftTop' anchorOffset='(0,10)'>
+      <subparam id='padding' padding='0px 15px 50px 0px'></subparam>
+
+      <subparam
+        id='backimage'
+        background-image='110228'
+        backgroundtransform='rotate(0,180,0)'
+      ></subparam>
+
+      <subparam id='margin' margin='18px 28px 28px 22px'></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='leftBottom' anchorOffset='(10,20)'>
+      <subparam id='padding' padding='0px 15px 0px 0px'></subparam>
+
+      <subparam
+        id='backimage'
+        background-image='110228'
+        backgroundtransform='rotate(180,180,0)'
+      ></subparam>
+
+      <subparam id='margin' margin='28px 28px 18px 22px'></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='rightTop' anchorOffset='(10,0)'>
+      <subparam id='padding' padding='0px 0px 50px 15px'></subparam>
+
+      <subparam id='backimage' background-image='110228'></subparam>
+
+      <subparam id='margin' margin='18px 18px 28px 28px'></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='rightBottom' anchorOffset='(0,40)'>
+      <subparam id='padding' padding='0px 0px 0px 15px'></subparam>
+
+      <subparam
+        id='backimage'
+        background-image='110228'
+        backgroundtransform='rotate(180,0,0)'
+      ></subparam>
+
+      <subparam id='margin' margin='28px 18px 18px 28px'></subparam>
+    </param>
+  </params>
+
+  <div
+    id='padding'
+    style='background-color: transparent; flex-direction: column'
+  >
+    <div id='backimage' style='backgroundstretch: 32 36 32 36'>
+      <div id='margin'>
+        <div style='align-items: center; justify-content: flex-start; flex-direction: row'>
+          <img
+            src='{index}'
+            style='display: flex; width: 38px; height: 38px; align-self: center; margin-right: 8px'
+            syncloadCache='false'
+            fastmode='false'
+          ></img>
+
+          <label
+            text='{name}'
+            style='color: {labelColor}; text-align: center; font-weight: bold; font-size: 32px'
+          ></label>
+        </div>
+
+        <label
+          style='margin-left: 48px; margin-top: 2px; color: {labelColor}; font-weight: bold; font-size: 24px'
+          text='{distance}'
+        ></label>
+      </div>
+    </div>
+  </div>
+</xml>

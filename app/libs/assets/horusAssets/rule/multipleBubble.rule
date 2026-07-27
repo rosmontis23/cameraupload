@@ -1,0 +1,191 @@
+$minuteDiff = diff.timeDiff / 60;
+$meter100Diff = diff.distDiff / 100;
+
+$timeScore = $minuteDiff * -1.0f;
+$distScore = $meter100Diff * -0.2f;
+$trafficScore = diff.trafficDiff * -0.3f;
+$costScore = diff.costDiff * -0.1f;
+
+//////////////// 判断条件 ////////////////////////
+
+//条件应该是P31*P31*P31*P31=81中条件，目前只有76条，还有0好和1坏没有包含
+
+//1好
+$r1_0 = ($minuteDiff < 0 && $meter100Diff == 0 && diff.trafficDiff == 0 && diff.costDiff == 0) || 
+	($minuteDiff == 0 && $meter100Diff < 0 && diff.trafficDiff == 0 && diff.costDiff == 0) ||
+	($minuteDiff == 0 && $meter100Diff == 0 && diff.trafficDiff < 0 && diff.costDiff == 0) ||
+	($minuteDiff == 0 && $meter100Diff == 0 && diff.trafficDiff == 0 && diff.costDiff < 0);
+
+//2好
+$r2_0 = ($minuteDiff < 0 && $meter100Diff < 0 && diff.trafficDiff == 0 && diff.costDiff == 0) ||
+	($minuteDiff < 0 && $meter100Diff == 0 && diff.trafficDiff < 0 && diff.costDiff == 0) ||
+	($minuteDiff < 0 && $meter100Diff == 0 && diff.trafficDiff == 0 && diff.costDiff < 0) ||
+	($minuteDiff == 0 && $meter100Diff < 0 && diff.trafficDiff < 0 && diff.costDiff == 0) ||
+	($minuteDiff == 0 && $meter100Diff < 0 && diff.trafficDiff == 0 && diff.costDiff < 0) ||
+	($minuteDiff == 0 && $meter100Diff == 0 && diff.trafficDiff < 0 && diff.costDiff < 0);
+
+//1好1坏
+$r1_1 = ($minuteDiff < 0 && $meter100Diff > 0 && diff.trafficDiff == 0 && diff.costDiff == 0) ||
+	($minuteDiff < 0 && $meter100Diff == 0 && diff.trafficDiff > 0 && diff.costDiff == 0) ||
+	($minuteDiff < 0 && $meter100Diff == 0 && diff.trafficDiff == 0 && diff.costDiff > 0) ||
+	($minuteDiff > 0 && $meter100Diff < 0 && diff.trafficDiff == 0 && diff.costDiff == 0) ||
+	($minuteDiff > 0 && $meter100Diff == 0 && diff.trafficDiff < 0 && diff.costDiff == 0) ||
+	($minuteDiff > 0 && $meter100Diff == 0 && diff.trafficDiff == 0 && diff.costDiff < 0) ||
+	($minuteDiff == 0 && $meter100Diff < 0 && diff.trafficDiff > 0 && diff.costDiff == 0) ||
+	($minuteDiff == 0 && $meter100Diff < 0 && diff.trafficDiff == 0 && diff.costDiff > 0) ||
+	($minuteDiff == 0 && $meter100Diff == 0 && diff.trafficDiff < 0 && diff.costDiff > 0) ||
+	($minuteDiff == 0 && $meter100Diff > 0 && diff.trafficDiff < 0 && diff.costDiff == 0) ||
+	($minuteDiff == 0 && $meter100Diff > 0 && diff.trafficDiff == 0 && diff.costDiff < 0) ||
+	($minuteDiff == 0 && $meter100Diff == 0 && diff.trafficDiff > 0 && diff.costDiff < 0);
+
+//2坏
+$r0_2 = ($minuteDiff > 0 && $meter100Diff > 0 && diff.trafficDiff == 0 && diff.costDiff == 0) ||
+	($minuteDiff > 0 && $meter100Diff == 0 && diff.trafficDiff > 0 && diff.costDiff == 0) ||
+	($minuteDiff > 0 && $meter100Diff == 0 && diff.trafficDiff == 0 && diff.costDiff > 0) ||
+	($minuteDiff == 0 && $meter100Diff > 0 && diff.trafficDiff > 0 && diff.costDiff == 0) ||
+	($minuteDiff == 0 && $meter100Diff > 0 && diff.trafficDiff == 0 && diff.costDiff > 0) ||
+	($minuteDiff == 0 && $meter100Diff == 0 && diff.trafficDiff > 0 && diff.costDiff > 0);
+
+//3好
+$r3_0 = ($minuteDiff< 0 && $meter100Diff < 0 && diff.trafficDiff < 0 && diff.costDiff == 0) || 
+	($minuteDiff < 0 && $meter100Diff < 0 && diff.trafficDiff == 0 && diff.costDiff < 0) ||
+	($minuteDiff < 0 && $meter100Diff == 0 && diff.trafficDiff < 0 && diff.costDiff < 0) ||
+	($minuteDiff == 0 && $meter100Diff < 0 && diff.trafficDiff < 0 && diff.costDiff < 0);
+
+//2好1坏
+$r2_1 = ($minuteDiff < 0 && $meter100Diff < 0 && diff.trafficDiff > 0 && diff.costDiff == 0) || 
+	($minuteDiff < 0 && $meter100Diff > 0 && diff.trafficDiff < 0 && diff.costDiff == 0) ||
+	($minuteDiff > 0 && $meter100Diff < 0 && diff.trafficDiff < 0 && diff.costDiff == 0) ||
+	($minuteDiff < 0 && $meter100Diff < 0 && diff.trafficDiff == 0 && diff.costDiff > 0) ||
+	($minuteDiff < 0 && $meter100Diff > 0 && diff.trafficDiff == 0 && diff.costDiff < 0) ||
+	($minuteDiff > 0 && $meter100Diff < 0 && diff.trafficDiff == 0 && diff.costDiff < 0) ||
+	($minuteDiff < 0 && $meter100Diff == 0 && diff.trafficDiff < 0 && diff.costDiff > 0) ||
+	($minuteDiff < 0 && $meter100Diff == 0 && diff.trafficDiff > 0 && diff.costDiff < 0) ||
+	($minuteDiff > 0 && $meter100Diff == 0 && diff.trafficDiff < 0 && diff.costDiff < 0) ||
+	($minuteDiff == 0 && $meter100Diff < 0 && diff.trafficDiff < 0 && diff.costDiff > 0) ||
+	($minuteDiff == 0 && $meter100Diff < 0 && diff.trafficDiff > 0 && diff.costDiff < 0) ||
+	($minuteDiff == 0 && $meter100Diff > 0 && diff.trafficDiff < 0 && diff.costDiff < 0);
+
+//1好2坏
+$r1_2 = ($minuteDiff < 0 && $meter100Diff > 0 && diff.trafficDiff > 0 && diff.costDiff == 0) || 
+	($minuteDiff > 0 && $meter100Diff < 0 && diff.trafficDiff > 0 && diff.costDiff == 0) ||
+	($minuteDiff > 0 && $meter100Diff > 0 && diff.trafficDiff < 0 && diff.costDiff == 0) ||
+	($minuteDiff < 0 && $meter100Diff > 0 && diff.trafficDiff == 0 && diff.costDiff > 0) ||
+	($minuteDiff > 0 && $meter100Diff > 0 && diff.trafficDiff == 0 && diff.costDiff < 0) ||
+	($minuteDiff > 0 && $meter100Diff < 0 && diff.trafficDiff == 0 && diff.costDiff > 0) ||
+	($minuteDiff < 0 && $meter100Diff == 0 && diff.trafficDiff > 0 && diff.costDiff > 0) ||
+	($minuteDiff > 0 && $meter100Diff == 0 && diff.trafficDiff > 0 && diff.costDiff < 0) ||
+	($minuteDiff > 0 && $meter100Diff == 0 && diff.trafficDiff < 0 && diff.costDiff > 0) ||
+	($minuteDiff == 0 && $meter100Diff < 0 && diff.trafficDiff > 0 && diff.costDiff > 0) ||
+	($minuteDiff == 0 && $meter100Diff > 0 && diff.trafficDiff > 0 && diff.costDiff < 0) ||
+	($minuteDiff == 0 && $meter100Diff > 0 && diff.trafficDiff < 0 && diff.costDiff > 0);
+
+//3坏
+$r0_3 = ($minuteDiff > 0 && $meter100Diff > 0 && diff.trafficDiff > 0 && diff.costDiff == 0) || 
+	($minuteDiff > 0 && $meter100Diff > 0 && diff.trafficDiff == 0 && diff.costDiff > 0) ||
+	($minuteDiff > 0 && $meter100Diff == 0 && diff.trafficDiff > 0 && diff.costDiff > 0) ||
+	($minuteDiff == 0 && $meter100Diff > 0 && diff.trafficDiff > 0 && diff.costDiff > 0);
+
+//4好
+$r4_0 = ($minuteDiff < 0 && $meter100Diff < 0 && diff.trafficDiff < 0 && diff.costDiff < 0);
+
+//3好1坏
+$r3_1 = ($minuteDiff < 0 && $meter100Diff < 0 && diff.trafficDiff < 0 && diff.costDiff > 0) ||
+	($minuteDiff < 0 && $meter100Diff < 0 && diff.trafficDiff > 0 && diff.costDiff < 0) ||
+	($minuteDiff < 0 && $meter100Diff > 0 && diff.trafficDiff < 0 && diff.costDiff < 0) ||
+	($minuteDiff > 0 && $meter100Diff < 0 && diff.trafficDiff < 0 && diff.costDiff < 0);
+
+//2好2坏
+$r2_2 = ($minuteDiff > 0 && $meter100Diff > 0 && diff.trafficDiff < 0 && diff.costDiff < 0) ||
+	($minuteDiff > 0 && $meter100Diff < 0 && diff.trafficDiff > 0 && diff.costDiff < 0) ||
+	($minuteDiff > 0 && $meter100Diff < 0 && diff.trafficDiff < 0 && diff.costDiff > 0) ||
+	($minuteDiff < 0 && $meter100Diff > 0 && diff.trafficDiff > 0 && diff.costDiff < 0) ||
+	($minuteDiff < 0 && $meter100Diff > 0 && diff.trafficDiff < 0 && diff.costDiff > 0) ||
+	($minuteDiff < 0 && $meter100Diff < 0 && diff.trafficDiff > 0 && diff.costDiff > 0);
+
+//1好3坏
+$r1_3 = ($minuteDiff > 0 && $meter100Diff > 0 && diff.trafficDiff > 0 && diff.costDiff < 0) ||
+	($minuteDiff > 0 && $meter100Diff > 0 && diff.trafficDiff < 0 && diff.costDiff > 0) ||
+	($minuteDiff > 0 && $meter100Diff < 0 && diff.trafficDiff > 0 && diff.costDiff > 0) ||
+	($minuteDiff < 0 && $meter100Diff > 0 && diff.trafficDiff > 0 && diff.costDiff > 0);
+
+//4坏
+$r0_4 = ($minuteDiff > 0 && $meter100Diff > 0 && diff.trafficDiff > 0 && diff.costDiff > 0);
+
+
+//////// 计算分数 /////////
+
+$totalScore = 0.0f;
+
+// 1好
+if($r1_0) {
+	$totalScore = ($timeScore + $distScore + $trafficScore + $costScore) * ($minuteDiff<0 ? 2.0f: 1.5f);
+}
+
+// 2好
+if($r2_0) {
+	$totalScore = ($timeScore + $distScore + $trafficScore + $costScore) * ($minuteDiff<0 ? 2.0f: 1.5f);
+}
+
+// 1好1坏
+if($r1_1) {
+	$totalScore = ($timeScore * ($minuteDiff >= 5 ? 2.0f: 1.0f) + $distScore + $trafficScore * (diff.trafficDiff >= 3 ? 1.5f: 1.0f) + $costScore) * ($minuteDiff < 0 || diff.trafficDiff < 0 ? 1.5f : 1.3f);
+}
+
+// 2坏
+if($r0_2) {
+	$totalScore = ($timeScore + $distScore + $trafficScore + $costScore) * (diff.trafficDiff > 0 ? 0.6: 0.7f);
+}
+
+// 3好
+if($r3_0) {
+	$totalScore = ($timeScore * ($minuteDiff <= -5 ? 3.0f: 1.0f) + $distScore + $trafficScore *(diff.trafficDiff <= -2 ? 2.5f: 1.0f) + $costScore) * 2.0f;
+}
+
+// 2好1坏
+if($r2_1) {
+	$totalScore = ($timeScore * ($minuteDiff >= 5 ? 1.3f: 1.0f) + $distScore + $trafficScore *(diff.trafficDiff >= 3 ? 1.5f: 1.0f) + $costScore) * (diff.costDiff < 0? 1.5f: 1.8f);
+}
+
+// 1好2坏
+if($r1_2) {
+	$totalScore = ($timeScore * ($minuteDiff <= -5 ? 1.5f: 1.0f) + $distScore + $trafficScore *(diff.trafficDiff <= -3 ? 1.1f: 1.0f) + $costScore) * (diff.costDiff < 0? 0.7f: 1.0f);
+}
+
+// 3坏
+if($r0_3) {
+	$totalScore = ($timeScore + $distScore + $trafficScore + $costScore) * ($minuteDiff == 0 ? 0.8f: 0.5f);
+}
+
+// 4好
+if($r4_0) {
+	$totalScore = ($timeScore + $distScore + $trafficScore + $costScore) * 3.0f;
+}
+
+// 3好1坏
+if($r3_1) {
+	$totalScore = ($timeScore + $distScore + $trafficScore *(diff.trafficDiff >= 3 ? 2.0f: 1.0f) + $costScore) * (diff.costDiff > 0? 3.0f: 2.5f);
+}
+
+// 2好2坏
+if($r2_2) {
+	$totalScore = ($timeScore * ($minuteDiff <= -5 ? 2.0f: ($minuteDiff >= 5 ? 0.6 :1.0f)) + $distScore + $trafficScore *(diff.trafficDiff <= -3 ? 1.8f: (diff.trafficDiff >= 3? 0.6: 1.0f)) + $costScore) * 1.2f;
+}
+
+// 1好3坏
+if($r1_3) {
+	$totalScore = ($timeScore * ($minuteDiff <= -5 ? 1.5f: 1.0f) + $distScore + $trafficScore *(diff.trafficDiff <= -3 ? 1.1f: 1.0f) + $costScore) * 0.8f;
+}
+
+// 4坏
+if($r0_4) {
+	$totalScore = ($timeScore  + $distScore + $trafficScore + $costScore) * 0.3f;
+}
+
+//////////// 最后输出 ///////////////
+
+if($totalScore <= 10) {
+	1;
+} else {
+	2;
+}

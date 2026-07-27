@@ -1,0 +1,41 @@
+<!--D2C预览生成-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='topCenter' anchorOffset='(0,-57)'>
+      <subparam
+        id='backimage'
+        background-image='232208'
+        backgroundstretch='53% 38% 46% 42%'
+        padding='15px 16px 18px 16px'
+      ></subparam>
+    </param>
+  </params>
+
+  <div
+    id='backimage'
+    style='display: flex; flex-direction: row; align-items: center; justify-content: space-around'
+  >
+    <div style='display: flex; position: relative; align-items: center; flex-direction: row'>
+      <div style='display: flex; align-items: center; flex-direction: row; margin-right: 4px'>
+        <img
+          style='width: 32px; height: 32px; margin-right: 6px; align-self: center'
+          src='232205'
+          syncloadCache='false'
+          fastmode='false'
+        ></img>
+
+        <label
+          style='line-height: 24px; white-space: nowrap; color: @Color_Text_Brand; font-size: 24px; font-weight: bold; margin-right: 0px; align-self: center'
+          text='推荐停车'
+        ></label>
+      </div>
+
+      <img
+        style='width: 22px; height: 22px; align-self: center'
+        src='232207'
+        syncloadCache='false'
+        fastmode='false'
+      ></img>
+    </div>
+  </div>
+</xml>

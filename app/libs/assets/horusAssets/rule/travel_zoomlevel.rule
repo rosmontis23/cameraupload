@@ -1,0 +1,57 @@
+// 比例尺与数值的定义关系
+$MapZoomLevel_100Meters = 16.0f;
+$MapZoomLevel_50Meters  = 17.0f;
+$MapZoomLevel_25Meters  = 18.0f;
+$MapZoomLevel_10Meters  = 19.0f;
+$MapZoomLevel_5Meters   = 20.0f;
+
+// 场景类型定义
+$NaviSceneTypeRide = 1;  // 骑行场景
+$NaviSceneTypeWalk = 4;  // 步行场景
+
+// 距离导航点剩余距离
+$segRemainDist = ruleParam.segRemainDist;
+// 最大比例尺，通过云控配置
+$maxZoomLevel = ruleParam.maxZoomLevel;
+// 最小比例尺，通过云控配置
+$minZoomLevel = ruleParam.minZoomLevel;
+// 距离下个导航点该距离时，比例尺固定为指定的最大比例尺
+$changeFarfromSeg = ruleParam.changeFarfromSeg;
+// 通过导航点这个距离内时，比例尺固定为指定的最大比例尺
+$fixedFarfromPreSeg = ruleParam.fixedFarfromPreSeg;
+
+// 当前导航段已经行走的距离
+$drivenSegLength = ruleParam.segTotalDist - ruleParam.segRemainDist;
+
+// 计算后的比例尺
+$zoomLevel = 0.0f;
+// 计算后的俯仰角
+$pitchAngle = 0.0f;
+
+if (ruleParam.sceneType == $NaviSceneTypeRide) {
+	if ($segRemainDist <= $changeFarfromSeg || $fixedFarfromPreSeg >= $drivenSegLength) {
+		$zoomLevel = $MapZoomLevel_5Meters;
+		$pitchAngle = 0.0;
+	} else {
+		$zoomLevel = ruleParam.calcZoomLevelFitScreen();
+		$pitchAngle = ruleParam.defaultPitchAngle;
+	}
+} else if (ruleParam.sceneType == $NaviSceneTypeWalk) {
+	if ($segRemainDist <= $changeFarfromSeg || $fixedFarfromPreSeg >= $drivenSegLength) {
+		$zoomLevel = $MapZoomLevel_5Meters;
+		$pitchAngle = 0.0;
+	} else {
+		$zoomLevel = ruleParam.calcZoomLevelFitScreen();
+		$pitchAngle = ruleParam.defaultPitchAngle;
+	}
+}
+
+// 修正比例尺，避免超过上下限
+if ($zoomLevel > $maxZoomLevel) {
+	$zoomLevel = $maxZoomLevel;
+}
+if ($zoomLevel < $minZoomLevel) {
+	$zoomLevel = $minZoomLevel;
+}
+
+true

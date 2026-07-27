@@ -1,0 +1,37 @@
+<!--WIA_非选中态_扎标-->
+<xml>
+  <params>
+    <param
+      useCommonParser='true'
+      direction='topCenter'
+      anchorOffset='(0,0)'
+    ></param>
+  </params>
+
+  <div style='display: flex; justify-content: center; align-items: center; flex-direction: column'>
+    <img
+      style='display: flex; width: 70px; height: 72px'
+      src='{outerFrameUrl}'
+      serviceresize='true'
+      syncloadCache='false'
+      fastmode='false'
+    ></img>
+
+    <div style='display: {imageDisplay}; left: 17px; top: 16px; align-items: center; justify-content: center; position: absolute'>
+      <img
+        style='display: flex; width: 36px; height: 36px; align-items: center'
+        src='{imgUrl}'
+        serviceresize='true'
+        syncloadCache='false'
+        fastmode='false'
+      ></img>
+    </div>
+
+    <div style='display: {labelDisplay}; top: {labelTop}px; align-items: center; justify-content: center; position: absolute; text-align: center'>
+      <label
+        style='font-weight: bold; font-size: {labelFontSize}px; color: #ffffff'
+        text='{label}'
+      ></label>
+    </div>
+  </div>
+</xml>

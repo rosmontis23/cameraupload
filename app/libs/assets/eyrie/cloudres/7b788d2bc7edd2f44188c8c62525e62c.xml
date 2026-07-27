@@ -1,0 +1,41 @@
+<!--D2C预览生成-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='topCenter' anchorOffset='(0,-27)'>
+      <subparam
+        id='backimage'
+        background-image='232210'
+        backgroundstretch='55% 58% 38% 30% 55% 29% 38% 59%'
+        padding='9px 16px 24px 16px'
+      ></subparam>
+    </param>
+  </params>
+
+  <div
+    id='backimage'
+    style='display: flex; flex-direction: row; align-items: center; justify-content: space-around'
+  >
+    <div style='display: flex; position: relative; align-items: center; flex-direction: row'>
+      <div style='display: flex; align-items: center; flex-direction: row; margin-right: 1px'>
+        <img
+          style='width: 32px; height: 32px; margin-right: 4px; align-self: center'
+          src='232204'
+          syncloadCache='false'
+          fastmode='false'
+        ></img>
+
+        <label
+          style='margin-top: -2px; overflow: hidden; text-overflow: ellipsis; max-width: 188px; line-height: 24px; white-space: nowrap; color: @Color_Text_Highlight; font-size: 24px; font-weight: bold; margin-right: 0px; align-self: center; line-clamp: 1'
+          text='{mainText}'
+        ></label>
+      </div>
+
+      <img
+        style='width: 22px; height: 22px; align-self: center'
+        src='232206'
+        syncloadCache='false'
+        fastmode='false'
+      ></img>
+    </div>
+  </div>
+</xml>

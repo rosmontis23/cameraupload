@@ -1,0 +1,69 @@
+<!--公交详情页火车站牌-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='leftBottom' anchorOffset='(37,84)'>
+      <subparam id='maindiv' flex-direction='row'></subparam>
+
+      <subparam id='firstdiv' align-items='flex-end'></subparam>
+
+      <subparam id='firstlab' align-self='flex-end'></subparam>
+
+      <subparam id='secondlab' align-self='flex-end'></subparam>
+
+      <subparam id='img' align-self='flex-end'></subparam>
+
+      <subparam
+        id='seconddiv'
+        justify-content='center'
+        align-items='flex-start'
+        position='relative'
+      ></subparam>
+    </param>
+
+    <param
+      useCommonParser='true'
+      direction='rightBottom'
+      anchorOffset='(37,84)'
+    >
+      <subparam id='maindiv' flex-direction='row-reverse'></subparam>
+
+      <subparam id='firstdiv' align-items='flex-start'></subparam>
+
+      <subparam id='firstlab' align-self='flex-start'></subparam>
+
+      <subparam id='secondlab' align-self='flex-start'></subparam>
+
+      <subparam id='img' align-self='flex-start'></subparam>
+    </param>
+  </params>
+
+  <div id='maindiv' style='display: flex; align-items: flex-start'>
+    <div style='display: flex; flex-direction: column; margin-top: 9px; line-height: 30px'>
+      <div
+        id='firstdiv'
+        style='display: flex; position: relative; flex-direction: row; border-radius: 8px; background-color: @Color_Hue220_L5'
+      >
+        <label
+          id='firstlab'
+          style='color: @Color_Text_Highlight; font-size: 26px; margin: 1px 6px; padding-right: 6px; padding-left: 6px'
+          text='{label}'
+        ></label>
+      </div>
+
+      <label
+        id='secondlab'
+        style='line-clamp: 2; font-weight: bold; text-align: left; text-layout-amap: Y; position: relative; margin-top: 6px; color: @Color_Black; font-size: 26px; margin-right: 0px'
+        text='{subLabel}'
+      ></label>
+    </div>
+
+    <div id='seconddiv' style='display: flex; flex-direction: row'>
+      <img
+        id='img'
+        style='width: 74px; height: 74px'
+        src='{iconId}'
+        syncload='true'
+      ></img>
+    </div>
+  </div>
+</xml>

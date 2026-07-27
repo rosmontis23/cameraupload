@@ -1,0 +1,14 @@
+<!--驾车行中-车道级长实线气泡样式-->
+<xml>
+  <params>
+    <param useCommonParser="true" direction="leftTop" anchorOffset="(15,18)" anchorOffsetHD="(15,18)">
+      <subparam id="backimage" background-image="200146" backgroundstretch="36% 54% 58% 40%" padding="24px 46px 47px 32px"></subparam>
+    </param>
+    <param useCommonParser="true" direction="rightTop" anchorOffset="(15,18)" anchorOffsetHD="(15,18)">
+      <subparam id="backimage" background-image="200148" backgroundstretch="36% 40% 58% 54%" padding="24px 32px 47px 46px"></subparam>
+    </param>
+  </params>
+  <div id="backimage" style="display:flex;flex-direction:row;align-items:center;justify-content:center;">
+    <label style="color:#000000;opacity:1.0;font-size:28px;" text="前方实线"></label>
+  </div>
+</xml>

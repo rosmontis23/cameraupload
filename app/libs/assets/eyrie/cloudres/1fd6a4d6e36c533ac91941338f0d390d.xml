@@ -1,0 +1,38 @@
+<!--途径路-气泡样式-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='leftTop' anchorOffset='(18,24)'>
+      <subparam
+        id='backimage'
+        background-image='205014'
+        backgroundstretch='35% 40% 61% 51%'
+        padding='25px 47px 47px 32px'
+        backgroundtransform='rotate(0,180,0)'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='rightTop' anchorOffset='(18,24)'>
+      <subparam
+        id='backimage'
+        background-image='205014'
+        backgroundstretch='35% 40% 61% 51%'
+        padding='25px 32px 47px 47px'
+      ></subparam>
+    </param>
+  </params>
+
+  <div
+    id='backimage'
+    style='display: flex; justify-content: space-around; align-items: center; flex-direction: row'
+  >
+    <label
+      style='padding: 4px 8px 4px 8px; color: @Color_Text_Highlight; background-color: {roadcolor}; border-radius: 12px; font-weight: bold; font-size: 24'
+      text='{roadno}'
+    ></label>
+
+    <label
+      style='font-weight: bold; font-size: 28px; opacity: 1.0; color: @Color_Black; margin-left: 4'
+      text='{roadname}'
+    ></label>
+  </div>
+</xml>

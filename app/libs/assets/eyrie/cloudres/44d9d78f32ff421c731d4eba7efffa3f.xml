@@ -1,0 +1,239 @@
+<!--110920_附加电子眼动态纹理  双圈+双行字（提示+距离）-->
+<xml>
+  <params>
+    <param
+      useCommonParser='true'
+      direction='leftTop'
+      anchorOffset='(2,18)'
+      anchorOffsetHD='(12,18)'
+    >
+      <subparam
+        id='labBackground'
+        backgroundstretch='39% 50% 58% 46%'
+        padding='15px 45px 33px 45px'
+        margin-start='0px'
+        margin-right='10px'
+        align-items='flex-end'
+      ></subparam>
+
+      <subparam
+        id='labExplain'
+        margin-right='142px'
+        margin-left='0px'
+      ></subparam>
+
+      <subparam
+        id='labDistance'
+        margin-right='142px'
+        margin-left='0px'
+      ></subparam>
+
+      <subparam id='firstdiv' right='104px' top='13px'></subparam>
+
+      <subparam id='addNormalImage' right='12px' top='12px'></subparam>
+
+      <subparam id='seconddiv' right='12px' top='12px'></subparam>
+
+      <subparam id='labNormalImage' right='40px' top='25px'></subparam>
+
+      <subparam id='thirddiv' right='40px' top='25px'></subparam>
+
+      <subparam id='fourthdiv' right='0px'></subparam>
+    </param>
+
+    <param
+      useCommonParser='true'
+      direction='rightTop'
+      anchorOffset='(2,18)'
+      anchorOffsetHD='(12,18)'
+    >
+      <subparam
+        id='labBackground'
+        backgroundstretch='39% 50% 58% 46%'
+        padding='15px 45px 33px 45px'
+        margin-start='10px'
+        margin-right='0px'
+        align-items='start'
+      ></subparam>
+
+      <subparam
+        id='labExplain'
+        margin-right='0px'
+        margin-left='142px'
+      ></subparam>
+
+      <subparam
+        id='labDistance'
+        margin-right='0px'
+        margin-left='142px'
+      ></subparam>
+
+      <subparam id='firstdiv' left='104px' top='13px'></subparam>
+
+      <subparam id='addNormalImage' left='12px' top='12px'></subparam>
+
+      <subparam id='seconddiv' left='12px' top='12px'></subparam>
+
+      <subparam id='labNormalImage' left='40px' top='25px'></subparam>
+
+      <subparam id='thirddiv' left='40px' top='25px'></subparam>
+
+      <subparam id='fourthdiv' left='0px'></subparam>
+    </param>
+
+    <param
+      useCommonParser='true'
+      direction='leftBottom'
+      anchorOffset='(2,18)'
+      anchorOffsetHD='(12,10)'
+    >
+      <subparam
+        id='labBackground'
+        backgroundstretch='52% 45% 46% 45%'
+        padding='28px 45px 18px 45px'
+        margin-start='0px'
+        margin-right='10px'
+        align-items='stretch'
+      ></subparam>
+
+      <subparam
+        id='labExplain'
+        margin-right='142px'
+        margin-left='0px'
+      ></subparam>
+
+      <subparam
+        id='labDistance'
+        margin-right='142px'
+        margin-left='0px'
+      ></subparam>
+
+      <subparam id='firstdiv' right='104px' top='27px'></subparam>
+
+      <subparam id='addNormalImage' right='12px' top='11px'></subparam>
+
+      <subparam id='seconddiv' right='12px' top='11px'></subparam>
+
+      <subparam id='labNormalImage' right='40px' top='40px'></subparam>
+
+      <subparam id='thirddiv' right='40px' top='40px'></subparam>
+
+      <subparam id='fourthdiv' right='0px'></subparam>
+    </param>
+
+    <param
+      useCommonParser='true'
+      direction='rightBottom'
+      anchorOffset='(2,18)'
+      anchorOffsetHD='(12,10)'
+    >
+      <subparam
+        id='labBackground'
+        backgroundstretch='52% 45% 46% 45%'
+        padding='28px 45px 18px 45px'
+        margin-start='10px'
+        margin-right='0px'
+        align-items='stretch'
+      ></subparam>
+
+      <subparam
+        id='labExplain'
+        margin-right='0px'
+        margin-left='142px'
+      ></subparam>
+
+      <subparam
+        id='labDistance'
+        margin-right='0px'
+        margin-left='142px'
+      ></subparam>
+
+      <subparam id='firstdiv' left='104px' top='27px'></subparam>
+
+      <subparam id='addNormalImage' left='12px' top='11px'></subparam>
+
+      <subparam id='seconddiv' left='12px' top='11px'></subparam>
+
+      <subparam id='labNormalImage' left='40px' top='40px'></subparam>
+
+      <subparam id='thirddiv' left='40px' top='40px'></subparam>
+
+      <subparam id='fourthdiv' left='0px'></subparam>
+    </param>
+  </params>
+
+  <div style='display: flex; flex-direction: row'>
+    <div
+      id='labBackground'
+      style='display: flex; flex-direction: column; min-height: 138px; background-image: {bgRes}'
+    >
+      <label
+        id='labExplain'
+        style='height: 32px; margin-top: 10px; font-size: 32px; font-weight: bold; color: {explainColor}'
+        text='{explainDesc}'
+      ></label>
+
+      <label
+        id='labDistance'
+        style='height: 36px; margin-top: 4px; font-size: 36px; font-weight: bold; color: {distanceColor}'
+        text='{distanceDesc}'
+      ></label>
+    </div>
+
+    <div
+      id='firstdiv'
+      style='display: flex; width: 92px; height: 92px; position: absolute; flex-direction: column; align-items: center; justify-content: space-around'
+    >
+      <img
+        id='addPopImage'
+        style='width: 92px; height: 92px'
+        src='{addPopResId}'
+      ></img>
+
+      <img
+        id='addNormalImage'
+        style='display: {addNormalImageDisplay}; width: 68px; height: 68px; position: absolute; align-items: center'
+        src='{addSubResId}'
+      ></img>
+
+      <div
+        id='seconddiv'
+        style='display: flex; width: 68px; height: 68px; position: absolute; align-items: center; justify-content: center'
+      >
+        <label
+          id='addSpeed'
+          style='display: {addSpeedDisplay}; color: #222222; font-size: {addFontSize}; font-weight: bold'
+          text='{addMaxSpeed}'
+        ></label>
+      </div>
+    </div>
+
+    <div
+      id='fourthdiv'
+      style='display: flex; position: absolute; top: 0px; flex-direction: column; align-items: center; justify-content: space-around'
+    >
+      <img
+        id='labPopImage'
+        style='width: 142px; height: 136px'
+        src='{popResId}'
+      ></img>
+
+      <img
+        id='labNormalImage'
+        style='display: {normalImageDisplay}; width: 68px; height: 68px; position: absolute; align-items: center'
+        src='{subResId}'
+      ></img>
+
+      <div
+        id='thirddiv'
+        style='display: flex; width: 68px; height: 68px; position: absolute; align-items: center; justify-content: center'
+      >
+        <label
+          id='labSpeed'
+          style='display: {speedDisplay}; color: #222222; font-size: {fontSize}; font-family: AmapNumber-Bold; letter-spacing: -3'
+          text='{maxspeed}'
+        ></label>
+      </div>
+    </div>
+  </div>
+</xml>

@@ -1,0 +1,102 @@
+<!--行前拥堵气泡-双行跑马灯Icon(感知平台)-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='rightTop' anchorOffset='(12,12)'>
+      <subparam
+        id='backimage'
+        background-image='231319'
+        padding='25px 31px 49px 44px'
+        backgroundstretch='29% 42% 53% 44%'
+      ></subparam>
+    </param>
+
+    <param
+      useCommonParser='true'
+      direction='rightBottom'
+      anchorOffset='(10,10)'
+    >
+      <subparam
+        id='backimage'
+        background-image='231321'
+        padding='40px 27px 32px 44px'
+        backgroundstretch='37% 42% 53% 44%'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='topCenter' anchorOffset='(12,12)'>
+      <subparam
+        id='backimage'
+        background-image='231322'
+        padding='18px 31px 48px 31px'
+        backgroundstretch='40% 60% 50% 25% 50% 25% 40% 60%'
+      ></subparam>
+    </param>
+
+    <param
+      useCommonParser='true'
+      direction='bottomCenter'
+      anchorOffset='(10,10)'
+    >
+      <subparam
+        id='backimage'
+        background-image='231323'
+        padding='38px 31px 28px 33px'
+        backgroundstretch='40% 60% 50% 25% 50% 25% 40% 60%'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='leftTop' anchorOffset='(12,12)'>
+      <subparam
+        id='backimage'
+        background-image='231318'
+        padding='26px 44px 49px 31px'
+        backgroundstretch='29% 42% 53% 44%'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='leftBottom' anchorOffset='(10,10)'>
+      <subparam
+        id='backimage'
+        background-image='231320'
+        padding='42px 44px 32px 31px'
+        backgroundstretch='53% 44% 29% 42%'
+      ></subparam>
+    </param>
+  </params>
+
+  <div id='backimage' style='left: 0; top: 0px'>
+    <div style='display: flex; flex-direction: row; align-items: flex-start; position: relative'>
+      <img
+        style='width: 48px; height: 48px; align-self: center; margin-right: 4px'
+        src='{icon}'
+        syncloadCache='false'
+        fastmode='false'
+      ></img>
+
+      <div style='display: flex; height: 67px; flex-direction: column; align-items: flex-start'>
+        <label
+          style='align-self: flex-start; font-weight: bold; font-size: 26px; color: {firstLineColor}; position: relative'
+          text='{firstLineText}'
+        ></label>
+
+        <div style='display: flex; background-color: @Color_Hue210_H1; border-radius: 16px; margin-top: 2px; flex-direction: row; align-items: flex-start; position: relative'>
+          <img
+            style='width: 16px; height: 16px; align-self: center; margin-left: 6px; margin-right: 2px'
+            src='https://faas-image.amap.com/acornCompressImageProd/%2523merge%2523%25403x-363a9f02-8a5c-48c9-97b1-7529cf34278d.png'
+            syncloadCache='false'
+            fastmode='false'
+          ></img>
+
+          <label
+            id='label1'
+            style='align-self: center; font-weight: {secondLineWeight}; font-size: {secondLineFontSize}px; color: {secondLineColor}; opacity: {secondLineOpacity}; text-overflow: clip; overflow: hidden; margin-right: 8px; position: relative; line-clamp: 1'
+            animation='show: animationkey'
+            animationkey='type: 4; duration: 5000; delay: 500'
+            text='{secondLineText}'
+            marquee='{mainTextNum}'
+          ></label>
+        </div>
+      </div>
+    </div>
+  </div>
+</xml>

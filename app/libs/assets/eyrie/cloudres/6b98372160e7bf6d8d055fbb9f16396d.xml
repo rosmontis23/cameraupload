@@ -1,0 +1,33 @@
+<!--驾车行前-熟路气泡样式-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='leftTop' anchorOffset='(18,24)'>
+      <subparam
+        id='backimage'
+        background-image='205014'
+        backgroundstretch='35% 40% 61% 51%'
+        padding='24px 47px 51px 32px'
+        backgroundtransform='rotate(0,180,0)'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='rightTop' anchorOffset='(18,24)'>
+      <subparam
+        id='backimage'
+        background-image='205014'
+        backgroundstretch='35% 40% 61% 51%'
+        padding='24px 32px 51px 47px'
+      ></subparam>
+    </param>
+  </params>
+
+  <div
+    id='backimage'
+    style='display: flex; justify-content: center; align-items: center; flex-direction: row'
+  >
+    <label
+      style='font-weight: bold; font-size: 28px; opacity: 1.0; color: @Color_Black'
+      text='{title}'
+    ></label>
+  </div>
+</xml>

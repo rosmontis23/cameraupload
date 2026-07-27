@@ -1,0 +1,11 @@
+<!--兴趣点icon纹理普通态-->
+<xml>
+  <params>
+    <param useCommonParser="true" direction="topCenter" anchorOffset="(0,-18)">
+      <subparam id="icon" width="46px;" height="46px;" margin-bottom="5px" margin-top="11px"></subparam>
+    </param>
+  </params>
+  <div style="background-image:{backImg};width:64px;height:64px;display:flex;flex-direction:row;align-items:center;justify-content:center">
+    <img id="icon" style="display:flex" src="{iconId}"></img>
+  </div>
+</xml>

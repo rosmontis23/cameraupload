@@ -1,0 +1,80 @@
+<!--D2C预览生成-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='rightTop' anchorOffset='(0,0)'>
+      <subparam
+        id='backimage'
+        background-image='205014'
+        backgroundstretch='37% 40% 62% 43%'
+        padding='20px 32px 45px 44px'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='leftTop' anchorOffset='(0,0)'>
+      <subparam
+        id='backimage'
+        background-image='205013'
+        backgroundstretch='37% 40% 62% 43%'
+        padding='20px 43px 45px 28px'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='rightBottom' anchorOffset='(0,0)'>
+      <subparam
+        id='backimage'
+        background-image='205016'
+        backgroundstretch='37% 40% 62% 43%'
+        padding='38px 32px 28px 44px'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='leftBottom' anchorOffset='(0,0)'>
+      <subparam
+        id='backimage'
+        background-image='205015'
+        backgroundstretch='37% 40% 62% 43%'
+        padding='38px 43px 28px 28px'
+      ></subparam>
+    </param>
+  </params>
+
+  <div id='backimage' style='top: 0px; left: 0px' syncload='true'>
+    <div style='display: flex; position: relative; align-items: center; flex-direction: row'>
+      <img
+        style='display: {iconShow}; width: 40px; height: 40px; margin-top: 1px; margin-right: 7px; align-self: center'
+        src='{iconId}'
+        syncload='true'
+        syncloadCache='false'
+        fastmode='false'
+      ></img>
+
+      <div style='display: {textIconShow}; position: relative; align-items: center; margin-right: 7px; flex-direction: row; border-radius: 8px; background-color: {iconTextBgColor}'>
+        <label
+          style='color: @Color_Text_Highlight; margin: 2px 4px; font-weight: bold; font-size: 24; align-self: center'
+          text='{iconText}'
+        ></label>
+      </div>
+
+      <div style='display: flex; align-items: flex-start; flex-direction: column; white-space: nowrap'>
+        <div style='display: flex; position: relative; align-items: center; flex-direction: row; font-weight: bold; line-height: 24px'>
+          <label
+            style='margin-left: 2px; margin-right: 5px; color: @Color_Black; font-size: 24px; font-weight: bold; align-self: center'
+            text='{mainText}'
+          ></label>
+
+          <div style='display: {label1Show}; position: relative; margin-right: 0px; flex-direction: row; border-radius: 8px; background-color: {label1BgColor}'>
+            <label
+              style='overflow: hidden; text-overflow: ellipsis; color: {label1Color}; font-size: 24px; margin: 2px 4px; align-self: center'
+              text='{label1Text}'
+            ></label>
+          </div>
+        </div>
+
+        <label
+          style='position: relative; margin-left: 2px; margin-top: 2px; overflow: hidden; text-overflow: ellipsis; line-height: 28px; color: @Color_Text_L2; font-size: 22px; font-weight: normal'
+          text='{subText}'
+        ></label>
+      </div>
+    </div>
+  </div>
+</xml>

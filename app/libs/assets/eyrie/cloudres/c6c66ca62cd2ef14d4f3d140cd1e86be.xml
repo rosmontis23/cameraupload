@@ -1,0 +1,12 @@
+<!--红绿灯倒计时动态纹理样式***-->
+<xml>
+  <params>
+    <param useCommonParser="true" direction="leftTop" anchorOffset="(0,0)"></param>
+    <param useCommonParser="true" direction="rightTop" anchorOffset="(0,0)"></param>
+  </params>
+  <div style="display:flex;flex-direction:column;background-image:{bgRes};padding-top:22px;padding-left:31px">
+    <div id="status" style="display:flex;flex-direction:row;width:82px;height:82px;border-radius:41px;background-color:{statusColor};align-items:center;justify-content:center;">
+      <label id="countDown" style="font-size:42px;font-weight:bold;color:#FFFFFF;" text="{countDown}"></label>
+    </div>
+  </div>
+</xml>

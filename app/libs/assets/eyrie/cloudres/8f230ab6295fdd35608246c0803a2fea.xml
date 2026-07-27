@@ -1,0 +1,64 @@
+<!--动态导航新路线气泡白天231000,黑夜231001-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='leftTop' anchorOffset='(15,20)'>
+      <subparam
+        id='backimage'
+        background-image='110518'
+        backgroundstretch='34% 41% 61% 48%'
+        padding='29px 47px 53px 32px'
+        backgroundtransform='rotate(0,180,0)'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='leftBottom' anchorOffset='(12,15)'>
+      <subparam
+        id='backimage'
+        background-image='110518'
+        backgroundstretch='34% 41% 61% 48%'
+        padding='53px 47px 32px 32px'
+        backgroundtransform='rotate(180,180,0)'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='rightTop' anchorOffset='(15,20)'>
+      <subparam
+        id='backimage'
+        background-image='110518'
+        backgroundstretch='34% 41% 61% 48%'
+        padding='29px 32px 53px 47px'
+      ></subparam>
+    </param>
+
+    <param
+      useCommonParser='true'
+      direction='rightBottom'
+      anchorOffset='(12,15)'
+    >
+      <subparam
+        id='backimage'
+        background-image='110518'
+        backgroundstretch='34% 41% 61% 48%'
+        padding='53px 32px 32px 47px'
+        backgroundtransform='rotate(180,0,0)'
+      ></subparam>
+    </param>
+  </params>
+
+  <div
+    id='backimage'
+    style='display: flex; flex-direction: row; align-items: center; justify-content: space-around'
+  >
+    <div style='display: flex; margin-left: 4px; flex-direction: column; align-items: flex-start'>
+      <label
+        style='color: #1A66FF; opacity: 1.0; font-size: 34px; font-weight: bold'
+        text='{eventTitle}'
+      ></label>
+
+      <label
+        style='color: #000000; opacity: 0.6; font-size: 32px'
+        text='{distanceDif}'
+      ></label>
+    </div>
+  </div>
+</xml>

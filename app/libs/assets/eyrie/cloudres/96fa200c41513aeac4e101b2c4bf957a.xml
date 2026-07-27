@@ -1,0 +1,32 @@
+<!--新能源行前途经点普通扎标样式-->
+<xml>
+  <params>
+    <param
+      useCommonParser='true'
+      direction='rightTop'
+      anchorOffset='(38,0)'
+    ></param>
+  </params>
+
+  <div style='display: flex; flex-direction: row; padding: 10px 10px 10px 10px'>
+    <div style='display: flex; flex-direction: row; margin-start: 0px; align-items: center; justify-content: flex-start; background-image: 205006; backgroundstretch: 51% 27% 45% 71%; padding: 28px 17px 23px 64px'>
+      <label
+        style='margin-top: 2px; margin-left: 5px; font-size: 20px; color: @Color_Hue170_H8'
+        text='{subLabel}'
+      ></label>
+    </div>
+
+    <div style='display: flex; flex-direction: row; position: absolute; top: 10px; left: 10px'>
+      <div style='display: flex; width: 80px; height: 80px; flex-direction: row; align-items: center; justify-content: center'>
+        <img style='width: 80px; height: 80px' src='205004'></img>
+
+        <div style='display: flex; width: 44px; height: 38px; position: absolute; top: 26px; flex-direction: row; align-items: center; justify-content: center'>
+          <label
+            style='color: @Color_Text_Highlight; font-size: 28px; font-weight: bold; text-align: center'
+            text='{label}'
+          ></label>
+        </div>
+      </div>
+    </div>
+  </div>
+</xml>

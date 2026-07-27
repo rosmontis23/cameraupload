@@ -1,0 +1,52 @@
+<!--D2C预览生成-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='rightTop' anchorOffset='(-10,0)'>
+      <subparam id='maindiv' flex-direction='row'></subparam>
+
+      <subparam id='fistimage' align-self='flex-start'></subparam>
+
+      <subparam id='secondimage' align-self='flex-start'></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='leftTop' anchorOffset='(-10,0)'>
+      <subparam id='maindiv' flex-direction='row-reverse'></subparam>
+
+      <subparam id='fistimage' align-self='flex-end'></subparam>
+
+      <subparam id='secondimage' align-self='flex-end'></subparam>
+    </param>
+  </params>
+
+  <div>
+    <div id='maindiv' style='display: flex'>
+      <img
+        style='width: 98px; height: 106px; margin-right: 2px; align-self: center'
+        src='{icon}'
+        syncload='true'
+        syncloadCache='false'
+        fastmode='false'
+      ></img>
+
+      <div style='display: flex; align-self: flex-start; align-items: flex-start; flex-direction: column; margin-top: 1px'>
+        <img
+          id='fistimage'
+          style='width: 56px; height: 46px; position: relative'
+          src='{subicon}'
+          syncload='true'
+          syncloadCache='false'
+          fastmode='false'
+        ></img>
+
+        <img
+          id='secondimage'
+          style='width: 82px; height: 34px; position: relative'
+          src='231425'
+          syncload='true'
+          syncloadCache='false'
+          fastmode='false'
+        ></img>
+      </div>
+    </div>
+  </div>
+</xml>

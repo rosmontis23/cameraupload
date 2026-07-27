@@ -1,0 +1,22 @@
+<!--兴趣点文字纹理普通态-->
+<xml>
+  <params>
+    <param
+      useCommonParser='true'
+      direction='bottomCenter'
+      anchorOffset='(0,18)'
+    ></param>
+  </params>
+
+  <div style='display: flex; width: auto; height: auto; justify-content: center; align-items: center; flex-direction: column'>
+    <label
+      style='line-clamp: 1; max-width: 360px; color: @Color_Text_L1; font-size: 32px; font-weight: bold'
+      text='{maintext}'
+    ></label>
+
+    <label
+      style='color: @Color_Text_L2; font-size: 27px; font-weight: bold'
+      text='{subtext}'
+    ></label>
+  </div>
+</xml>

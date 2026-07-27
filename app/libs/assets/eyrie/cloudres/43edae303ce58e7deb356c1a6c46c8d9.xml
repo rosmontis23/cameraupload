@@ -1,0 +1,80 @@
+<!--D2C预览生成-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='leftTop' anchorOffset='(18,24)'>
+      <subparam
+        id='backimage'
+        background-image='231610'
+        backgroundstretch='35% 40% 61% 51%'
+        padding='13px 47px 37px 32px'
+        backgroundtransform='rotate(0,180,0)'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='leftBottom' anchorOffset='(18,24)'>
+      <subparam
+        id='backimage'
+        background-image='231610'
+        backgroundstretch='35% 40% 61% 51%'
+        padding='37px 47px 13px 32px'
+        backgroundtransform='rotate(180,180,0)'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='rightTop' anchorOffset='(18,24)'>
+      <subparam
+        id='backimage'
+        background-image='231610'
+        backgroundstretch='35% 40% 61% 51%'
+        padding='13px 32px 37px 47px'
+      ></subparam>
+    </param>
+
+    <param
+      useCommonParser='true'
+      direction='rightBottom'
+      anchorOffset='(18,24)'
+    >
+      <subparam
+        id='backimage'
+        background-image='231610'
+        backgroundstretch='35% 40% 61% 51%'
+        padding='37px 32px 13px 47px'
+        backgroundtransform='rotate(180,0,0)'
+      ></subparam>
+    </param>
+  </params>
+
+  <div
+    id='backimage'
+    style='display: flex; flex-direction: row; align-items: center; justify-content: space-around'
+  >
+    <img
+      src='{iconId}'
+      style='width: 60px; height: 60px'
+      syncloadCache='false'
+      fastmode='false'
+    ></img>
+
+    <div style='display: flex; margin-left: 4; flex-direction: column; align-items: flex-start; padding-top: 12; padding-bottom: 10'>
+      <div style='display: flex; flex-direction: row; align-items: center'>
+        <label
+          style='color: @Color_Black; opacity: 1.0; font-size: 26px; font-weight: bold'
+          text='{mainText}'
+        ></label>
+
+        <div style='display: {label1Show}; align-items: flex-start; flex-direction: row; margin-right: 6px; border-radius: 8px; background-color: {label1BgColor}'>
+          <label
+            style='overflow: hidden; text-overflow: ellipsis; color: {label1Color}; font-size: 22px; font-weight: normal; line-height: 28px; margin: 1px 6px; align-self: flex-start'
+            text='{label1Text}'
+          ></label>
+        </div>
+      </div>
+
+      <label
+        style='color: @Color_Black; opacity: 0.6; font-size: 24px'
+        text='{subText}'
+      ></label>
+    </div>
+  </div>
+</xml>

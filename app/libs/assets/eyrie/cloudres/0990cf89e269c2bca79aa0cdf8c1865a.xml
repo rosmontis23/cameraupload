@@ -1,0 +1,46 @@
+<!--公交详情页公交上车站样式-->
+<xml>
+  <params>
+    <param
+      useCommonParser='true'
+      direction='bottomCenter'
+      anchorRatio='(0.5,0.0)'
+    >
+      <subparam id='firstdiv' align-items='center'></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='topCenter' anchorRatio='(0.5,1.0)'>
+      <subparam id='firstdiv' align-items='center'></subparam>
+    </param>
+
+    <param
+      useCommonParser='true'
+      direction='rightCenter'
+      anchorRatio='(0.0,0.5)'
+    >
+      <subparam id='firstdiv' align-items='flex-start'></subparam>
+    </param>
+
+    <param
+      useCommonParser='true'
+      direction='leftCenter'
+      anchorRatio='(1.0,0.5)'
+    >
+      <subparam id='firstdiv' align-items='flex-end'></subparam>
+    </param>
+  </params>
+
+  <div
+    id='firstdiv'
+    style='display: flex; width: auto; height: auto; padding-bottom: 12px; margin-right: 16; margin-left: 16; margin-bottom: 16; margin-top: 16; flex-direction: column; padding-right: 12px; background-color: @Color_BG_L2(00); padding-left: 12px; padding-top: 12px'
+  >
+    <label
+      style='text-stroke: 2px @Color_BG_L2; font-weight: bold; font-size: 28px; color: @Color_Ink_L7'
+      text='{label}'
+    ></label>
+
+    <div style='display: flex; width: auto; height: 34; padding-left: 10px; align-items: center; margin-top: 8px; margin-bottom: 2; flex-direction: row; padding-right: 10px; background-color: {color1}; border-radius: 88px'>
+      <label style='font-size: 22px; color: @Color_Text_Highlight' text='{subLabel}'></label>
+    </div>
+  </div>
+</xml>

@@ -1,0 +1,17 @@
+<!--兴趣点icon纹理聚合态-->
+<xml>
+  <params>
+    <param
+      useCommonParser='true'
+      direction='topCenter'
+      anchorOffset='(0,-18)'
+    ></param>
+  </params>
+
+  <div style='display: flex; width: 64px; height: 64px; justify-content: center; align-items: center; flex-direction: row; background-image: {backImg}'>
+    <label
+      style='margin-top: 5px; color: @Color_Text_Highlight; font-size: {textSize}; font-weight: bold'
+      text='{num}'
+    ></label>
+  </div>
+</xml>

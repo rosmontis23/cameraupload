@@ -1,0 +1,33 @@
+<!--骑步行终点运营时间-动态运营-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='topCenter' anchorOffset='(5,15)'>
+      <subparam id='backimage' background-image='231500'></subparam>
+    </param>
+  </params>
+
+  <div style='display: flex; align-items: center; flex-direction: row; justify-content: center'>
+    <div
+      id='backimage'
+      style='top: 0px; left: 0; backgroundstretch: 38% 61% 42% 15% 38% 10% 42% 66%; padding: 18px 11px 22px 12px'
+      syncload='true'
+    >
+      <div style='display: flex; position: relative; align-items: center; flex-direction: row'>
+        <img
+          style='width: 20px; height: 20px; margin-right: 5px; align-self: center'
+          src='{icon}'
+          syncload='true'
+          syncloadCache='false'
+          fastmode='false'
+        ></img>
+
+        <div style='display: flex; align-items: flex-start; flex-direction: row; font-weight: bold; line-height: 24px; white-space: nowrap'>
+          <label
+            style='color: @Color_Hue200_H7; font-size: 20px; margin-right: 0px; font-weight: bold; align-self: flex-start'
+            text='{text}'
+          ></label>
+        </div>
+      </div>
+    </div>
+  </div>
+</xml>

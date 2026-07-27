@@ -1,0 +1,19 @@
+<!--骑步行终点区域面子点焦点态-->
+<xml>
+  <params>
+    <param
+      useCommonParser='true'
+      direction='rightTop'
+      anchorOffset='(56,0)'
+    ></param>
+  </params>
+
+  <div style='display: flex; flex-direction: row'>
+    <img style='width: 112px; height: 118px' src='{icon}'></img>
+
+    <label
+      style='display: {labelDis}; opacity: 0.87; color: @Color_Black; font-weight: bold; font-size: 22px; bottom: 15px; left: 85px; position: absolute'
+      text='{label}'
+    ></label>
+  </div>
+</xml>

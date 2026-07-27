@@ -1,0 +1,31 @@
+<!--推荐停车场点击态样式-->
+<xml>
+  <params>
+    <param
+      useCommonParser='true'
+      direction='bottomCenter'
+      anchorOffset='(0,0)'
+    ></param>
+  </params>
+
+  <div style='display: flex; flex-direction: column; align-items: center'>
+    <label
+      style='line-clamp: 2; text-stroke: 2px @Color_BG_L2; text-layout-amap: Y; max-width: 196px; text-align: center; font-weight: bold; font-size: 24px; color: {namecolor}; line-height: 28px'
+      text='{name}'
+    ></label>
+
+    <div style='display: {info}; height: 30px; background-color: @Color_BG_L2(99); border-radius: 8px; flex-direction: row; align-items: center'>
+      <div style='width: 26px; height: 26px; line-height: 26px; font-weight: medium; background-color: @Color_Hue220_H6; border-radius: 8px; margin-left: 2px; margin-right: 4px; flex-direction: column; align-items: center'>
+        <label
+          style='font-weight: bold; line-height: 28px; font-size: 20px; color: @Color_Text_Highlight'
+          text='{rank}'
+        ></label>
+      </div>
+
+      <label
+        style='margin-right: 4px; font-weight: normal; font-size: 20px; color: @Color_Hue220_H6; line-height: 20px'
+        text='{percent}'
+      ></label>
+    </div>
+  </div>
+</xml>

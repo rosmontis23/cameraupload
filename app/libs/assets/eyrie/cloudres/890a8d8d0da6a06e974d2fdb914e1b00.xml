@@ -1,0 +1,36 @@
+<!--D2C预览生成-->
+<div>
+  <div>
+    <div style='display: flex; flex-direction: row; align-items: flex-start; left: 0px; top: 0px; position: relative'>
+      <div
+        style='left: 0; top: 0px; background-image: url(https://gw.alicdn.com/imgextra/i1/O1CN01ItgOdx1Lj17o12XTJ_!!6000000001334-2-tps-98-88.png); padding: 26px 67px 18px 25px; backgroundstretch: 52% 35% 35% 40%'
+        syncload='true'
+      >
+        <div style='display: flex; flex-direction: column; align-items: flex-end; position: relative'>
+          <label
+            style='align-self: flex-end; font-weight: normal; font-size: 18px; color: #99000000; line-height: 22px; position: relative'
+            text='${timeText}'
+          ></label>
+
+          <div style='flex-direction: row; align-items: flex-end'>
+            <label
+              style='align-self: flex-end; font-weight: bold; font-size: 20px; color: ${costDesColor}; line-height: 24px; text-overflow: ellipsis; overflow: hidden; margin-top: -2px; position: relative'
+              text='${costDesText}'
+            ></label>
+
+            <label
+              style='margin-top: -2px; text-decoration: ${costStyle}; font-weight: bold; color: ${costColor}; font-size: 20px; line-height: 24px; overflow: hidden; position: relative; text-overflow: ellipsis; align-self: flex-end'
+              text='${costText}'
+            ></label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <img
+    style='width: 70px; height: 93px; right: 0px; align-self: flex-start; position: absolute'
+    src='https://gw.alicdn.com/imgextra/i2/O1CN01mEg7tL1tue7Wc5nrJ_!!6000000005962-2-tps-105-140.png'
+    syncload='true'
+  ></img>
+</div>

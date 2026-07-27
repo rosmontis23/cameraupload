@@ -1,0 +1,89 @@
+<!--行前拥堵气泡-双行带icon(感知平台)-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='rightTop' anchorOffset='(12,12)'>
+      <subparam
+        id='backimage'
+        background-image='231319'
+        padding='25px 31px 49px 44px'
+        backgroundstretch='29% 42% 53% 44%'
+      ></subparam>
+    </param>
+
+    <param
+      useCommonParser='true'
+      direction='rightBottom'
+      anchorOffset='(10,10)'
+    >
+      <subparam
+        id='backimage'
+        background-image='231321'
+        padding='40px 27px 32px 44px'
+        backgroundstretch='37% 42% 53% 44%'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='topCenter' anchorOffset='(12,12)'>
+      <subparam
+        id='backimage'
+        background-image='231322'
+        padding='18px 31px 48px 31px'
+        backgroundstretch='40% 60% 50% 25% 50% 25% 40% 60%'
+      ></subparam>
+    </param>
+
+    <param
+      useCommonParser='true'
+      direction='bottomCenter'
+      anchorOffset='(10,10)'
+    >
+      <subparam
+        id='backimage'
+        background-image='231323'
+        padding='38px 31px 28px 33px'
+        backgroundstretch='40% 60% 50% 25% 50% 25% 40% 60%'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='leftTop' anchorOffset='(12,12)'>
+      <subparam
+        id='backimage'
+        background-image='231318'
+        padding='26px 44px 49px 31px'
+        backgroundstretch='29% 42% 53% 44%'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='leftBottom' anchorOffset='(10,10)'>
+      <subparam
+        id='backimage'
+        background-image='231320'
+        padding='42px 44px 32px 31px'
+        backgroundstretch='53% 44% 29% 42%'
+      ></subparam>
+    </param>
+  </params>
+
+  <div id='backimage' style='left: 0; top: 0px'>
+    <div style='display: flex; flex-direction: row; align-items: flex-start; position: relative'>
+      <img
+        style='width: 48px; height: 48px; align-self: center; margin-right: 4px'
+        src='{icon}'
+        syncloadCache='false'
+        fastmode='false'
+      ></img>
+
+      <div style='display: flex; flex-direction: column; align-items: flex-start'>
+        <label
+          style='align-self: flex-start; font-weight: bold; font-size: 24px; color: {firstLineColor}; line-height: 24px; position: relative'
+          text='{firstLineText}'
+        ></label>
+
+        <label
+          style='align-self: flex-start; font-weight: {secondLineWeight}; font-size: {secondLineFontSize}px; color: {secondLineColor}; opacity: {secondLineOpacity}; text-overflow: ellipsis; overflow: hidden; position: relative'
+          text='{secondLineText}'
+        ></label>
+      </div>
+    </div>
+  </div>
+</xml>

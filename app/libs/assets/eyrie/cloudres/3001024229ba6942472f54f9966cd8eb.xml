@@ -1,0 +1,35 @@
+<!--变道气泡右飘白天-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='rightTop' anchorOffset='(14,14)'>
+      <subparam id='backimage' background-image='200155'></subparam>
+    </param>
+  </params>
+
+  <div>
+    <div>
+      <div
+        id='backimage'
+        style='top: 0px; left: 0; backgroundstretch: 24% 24% 36% 49%; padding: 22px 32px 34px 36px'
+        syncload='true'
+      >
+        <div style='display: flex; position: relative; align-items: center; flex-direction: row'>
+          <img
+            style='width: 84px; height: 84px; margin-right: 4px; align-self: center'
+            src='200157'
+            syncload='true'
+            syncloadCache='false'
+            fastmode='false'
+          ></img>
+
+          <div style='display: flex; align-items: flex-start; flex-direction: row; margin-top: -6px; font-weight: bold; line-height: 32px; white-space: nowrap'>
+            <label
+              style='color: #ffffff; font-size: 32px; margin-right: 0px; font-weight: bold; align-self: flex-start'
+              text='{text}'
+            ></label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</xml>

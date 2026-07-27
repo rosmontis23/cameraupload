@@ -1,0 +1,23 @@
+<!--D2C预览生成-->
+<xml>
+  <params>
+    <param
+      useCommonParser='true'
+      direction='leftTop'
+      anchorOffset='(18,24)'
+    ></param>
+  </params>
+
+  <div style='display: flex; width: auto; height: auto'>
+    <div style='display: flex; background-image: 205013; flex-direction: row; align-items: center; justify-content: space-around; backgroundstretch: 35% 53% 61% 38%; padding: 13px 47px 37px 32px'>
+      <div style='width: 30px; height: 60px; background-color: transparent'></div>
+    </div>
+
+    <img
+      style='width: 60px; height: 60px; position: absolute; left: 17px; top: 12px'
+      src='{iconId}'
+      syncloadCache='false'
+      fastmode='false'
+    ></img>
+  </div>
+</xml>

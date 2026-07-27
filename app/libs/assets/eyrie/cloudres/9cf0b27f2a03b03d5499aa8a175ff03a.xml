@@ -1,0 +1,1 @@
+{"polygon_datas":[{"border_data":[{"line_params":{"line_width":6,"line_type":0,"fill_color":"0xFF33A3FF","texture_len":16,"texture_anchor":{"x2":1,"x1":0,"y2":0,"y1":1},"fill_res_id":10012}}],"polygon_data":{"color":"0x3333A3FF"}}],"polygon_layer_info":{"prio_key":"CollisionPrioPolygonBeforeBuilding"},"border_layer_info":{"prio_key":"CollisionPrioPolylineAfterBuilding"}}

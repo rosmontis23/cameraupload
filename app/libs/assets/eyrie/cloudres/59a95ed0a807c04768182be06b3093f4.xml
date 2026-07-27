@@ -1,0 +1,88 @@
+<!--灵活标注白天变道气泡-->
+<xml>
+  <params>
+    <param
+      useCommonParser='true'
+      direction='leftCenter'
+      anchorOffset='(-15,0)'
+      anchorOffsetHD='(15,18)'
+    >
+      <subparam id='whiteLineStylePath' name='path' path='(45,3)'></subparam>
+
+      <subparam id='lineStylePath' name='path' path='(45,0)'></subparam>
+
+      <subparam
+        id='labBackground'
+        flex-direction='row'
+        backgroundstretch='45% 70% 46% 25%'
+        padding='47px 12px 47px 34px'
+      ></subparam>
+
+      <subparam id='icon'></subparam>
+    </param>
+
+    <param
+      useCommonParser='true'
+      direction='rightCenter'
+      anchorOffset='(-15,0)'
+      anchorOffsetHD='(15,18)'
+    >
+      <subparam id='whiteLineStylePath' name='path' path='(-45,3)'></subparam>
+
+      <subparam id='lineStylePath' name='path' path='(-45,0)'></subparam>
+
+      <subparam
+        id='labBackground'
+        backgroundstretch='45% 70% 46% 25%'
+        padding='47px 12px 47px 34px'
+        flex-direction='row-reverse'
+        backgroundtransform='rotate(0,180,0)'
+      ></subparam>
+
+      <subparam id='icon' transform='rotate(0,180,0)'></subparam>
+    </param>
+  </params>
+
+  <div
+    id='animationId'
+    style='display: flex; flex-direction: row'
+    animation='{collisionshowanimation}: animationkey'
+    animationkey='type: 2; duration: 200; count: 1; from: {collisionFromX} {collisionFromY} 0; to: 0 0 0'
+  >
+    <line
+      id='whiteLineStylePath'
+      style='width: 4px; background-color: #B3FFFFFF'
+      offset-start-pos='(0,3)'
+      path-start-pos='Y'
+    ></line>
+
+    <line
+      id='lineStylePath'
+      style='width: 4px; background-image: linear-gradient(to left,@Color_Hue230_L6,@Color_Hue230_L6)'
+      path-start-pos='Y'
+    ></line>
+
+    <div style='display: flex; align-items: flex-start; flex-direction: row'>
+      <div id='labBackground' style='background-image: 171065' syncload='true'>
+        <label
+          style='margin-right: 2px; line-height: 32px; white-space: nowrap; color: @Color_BG_L1; font-size: 32px; font-weight: bold; align-self: center'
+          text='{text}'
+        ></label>
+
+        <div
+          style='display: flex; background-size: contain; align-items: center; flex-direction: row; justify-content: center; background-image: 171040'
+          syncload='true'
+        >
+          <img
+            id='icon'
+            style='width: 82px; height: 82px; align-self: center'
+            src='171041'
+            syncload='true'
+            syncloadCache='false'
+            fastmode='false'
+          ></img>
+        </div>
+      </div>
+    </div>
+  </div>
+</xml>

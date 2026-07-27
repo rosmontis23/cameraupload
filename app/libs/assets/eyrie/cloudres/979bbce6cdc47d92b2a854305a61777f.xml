@@ -1,0 +1,27 @@
+<!--终点区域面子点数字-->
+<xml>
+  <params>
+    <param
+      useCommonParser='true'
+      direction='rightTop'
+      anchorOffset='(24,0)'
+    ></param>
+  </params>
+
+  <div style='justify-content: center'>
+    <div
+      id='backimage'
+      style='display: flex; width: 48px; height: 52px; flex-direction: column; background-image: {icon}; justify-content: center'
+    >
+      <label
+        text='{index}'
+        style='font-size: 26px; font-weight: bold; color: @Color_Text_Highlight; align-self: center; margin-bottom: 7px'
+      ></label>
+    </div>
+
+    <label
+      style='display: {labelDis}; text-stroke: 2px @Color_BG_L2; position: absolute; left: 49px; bottom: 15px; font-size: 22px; font-weight: bold; color: @Color_Black; opacity: 0.87'
+      text='{label}'
+    ></label>
+  </div>
+</xml>

@@ -1,0 +1,97 @@
+<!--D2C预览生成-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='rightTop' anchorOffset='(10,10)'>
+      <subparam
+        id='backimage'
+        background-image='232102'
+        backgroundstretch='37% 40% 62% 43%'
+        padding='29px 46px 40px 34px'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='leftTop' anchorOffset='(10,10)'>
+      <subparam
+        id='backimage'
+        background-image='232102'
+        backgroundstretch='37% 40% 62% 43%'
+        padding='29px 38px 40px 29px'
+        backgroundtransform='rotate(0,180,0)'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='rightBottom' anchorOffset='(10,0)'>
+      <subparam
+        id='backimage'
+        background-image='232102'
+        backgroundstretch='37% 40% 62% 43%'
+        padding='40px 46px 33px 34px'
+        backgroundtransform='rotate(180,0,0)'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='leftBottom' anchorOffset='(0,0)'>
+      <subparam
+        id='backimage'
+        background-image='232102'
+        backgroundstretch='37% 40% 62% 43%'
+        padding='40px 41px 33px 32px'
+        backgroundtransform='rotate(180,180,0)'
+      ></subparam>
+    </param>
+  </params>
+
+  <div style='display: flex; align-items: flex-start; flex-direction: row; justify-content: center'>
+    <div id='backimage' style='top: 0px; left: 0' syncload='true'>
+      <div style='display: flex; position: relative; align-items: center; flex-direction: row'>
+        <img
+          style='width: 48px; height: 48px; margin-top: 1px; margin-right: 8px; align-self: center'
+          src='https://img.alicdn.com/imgextra/i1/O1CN01YegQ861cpkTrLzgSH_!!6000000003650-2-tps-48-48.png'
+          syncload='true'
+          syncloadCache='false'
+          fastmode='false'
+        ></img>
+
+        <div style='display: flex; align-items: flex-start; flex-direction: column; white-space: nowrap'>
+          <div style='display: flex; position: relative; align-items: center; flex-direction: row; font-weight: bold; line-height: 24px'>
+            <label
+              style='margin-top: 1px; margin-right: 3px; overflow: hidden; text-overflow: ellipsis; color: @Color_Black; font-size: 24px; font-weight: bold; align-self: center'
+              text='{beginRoadName}'
+            ></label>
+
+            <label
+              style='display: {endRoadShow}; margin-top: 1px; overflow: hidden; text-overflow: ellipsis; color: @Color_Black; font-size: 24px; margin-right: 0px; font-weight: bold; align-self: center'
+              text='{endRoadName}'
+            ></label>
+          </div>
+
+          <div style='display: flex; position: relative; align-items: center; flex-direction: row; margin-top: 2px; line-height: 20px'>
+            <div style='display: {eleEyeShow}; position: relative; align-items: center; flex-direction: row; margin-top: 2px; line-height: 20px'>
+              <label
+                style='color: @Color_Text_Red; font-size: 20px; font-weight: bold; align-self: center'
+                text='{eleEyeNum}'
+              ></label>
+
+              <label
+                style='margin-right: 15px; color: @Color_Text_L2; font-size: 20px; font-weight: normal; align-self: center'
+                text='个限速电子眼'
+              ></label>
+            </div>
+
+            <div style='display: {dynamicEyeShow}; position: relative; align-items: center; flex-direction: row; margin-top: 2px; line-height: 20px'>
+              <label
+                style='color: @Color_Text_Red; font-size: 20px; font-weight: bold; align-self: center'
+                text='{dynamicEyeNum}'
+              ></label>
+
+              <label
+                style='color: @Color_Text_L2; font-size: 20px; font-weight: normal; margin-right: 0px; align-self: center'
+                text='个流动测速'
+              ></label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</xml>

@@ -1,0 +1,33 @@
+<!--1112沿途搜白天气泡样式正常态-->
+<xml>
+  <params>
+    <param useCommonParser="true" direction="leftTop" anchorOffset="(0,-30)">
+      <subparam id="backimage" background-image="110516" backgroundstretch="35% 48% 60% 36%" padding="25px 47px 49px 32px"></subparam>
+    </param>
+    <param useCommonParser="true" direction="rightTop" anchorOffset="(0,-30)">
+      <subparam id="backimage" background-image="110518" backgroundstretch="35% 40% 60% 48%" padding="25px 32px 49px 50px"></subparam>
+    </param>
+    <param useCommonParser="true" direction="rightBottom" anchorOffset="(0,40)">
+      <subparam id="backimage" background-image="110519" backgroundstretch="52% 41% 43% 48%" padding="42px 32px 33px 47px"></subparam>
+    </param>
+    <param useCommonParser="true" direction="leftBottom" anchorOffset="(0,40)">
+      <subparam id="backimage" background-image="110517" backgroundstretch="52% 46% 43% 42%" padding="42px 47px 33px 32px"></subparam>
+    </param>
+  </params>
+  <rules>
+      <rule>$labelFontSize = __scene.pageType == 3 || __scene.pageType == 21 ? 28 : 24</rule>
+      <rule>$infoFontSize = __scene.pageType == 3 || __scene.pageType == 21 ? 32 : 28</rule>
+      <rule>$labelVisible = along.gasDiscountFlag > 0 || along.labelType == 2 || along.labelType == 3 ? 'display' : 'none'</rule>
+      <rule>$labelStyle = along.gasDiscountFlag > 0 ? 'background-image: linear-gradient(to left,#FD9800,#FFC000);' : 'background-image: linear-gradient(to left,#3299FF,#5BBEFE);'</rule>
+      <rule>$label = along.gasDiscountFlag > 0 ? '优惠' : (along.labelType == 2 ? '最近' : (along.labelType == 3 ? '顺路' : ''))</rule>
+      <rule>$text = along.bubbleText</rule>
+  </rules>
+  <div id="backimage" style="display:flex;flex-direction:row;align-items:center;">
+    <div style="display:flex;flex-direction:row;align-items:center;">
+      <div style="display:{$labelVisible};padding:5px 8px 5px 8px;{$labelStyle}border-radius: 16px;text-align:center;margin-right:4px;">
+        <label style="font-size:{$labelFontSize}px;color:#FFFFFF;font-weight:bold" text="{$label}"></label>
+      </div>
+      <label style="color:black;font-size:{$infoFontSize}px;color:rgba(0,0,0,0.90);letter-spacing:0;font-weight: medium;" text="{$text}"></label>
+    </div>
+  </div>
+</xml>

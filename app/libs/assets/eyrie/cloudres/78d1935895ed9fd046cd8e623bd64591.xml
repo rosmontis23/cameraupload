@@ -1,0 +1,68 @@
+<!--乘轮渡气泡-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='rightTop' anchorOffset='(0,0)'>
+      <subparam
+        id='backimage'
+        background-image='205014'
+        backgroundstretch='37% 40% 62% 43%'
+        padding='17px 27px 44px 43px'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='leftTop' anchorOffset='(0,0)'>
+      <subparam
+        id='backimage'
+        background-image='205014'
+        backgroundstretch='37% 40% 62% 43%'
+        padding='17px 43px 44px 25px'
+        backgroundtransform='rotate(0,180,0)'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='rightBottom' anchorOffset='(0,0)'>
+      <subparam
+        id='backimage'
+        background-image='205014'
+        backgroundstretch='37% 40% 62% 43%'
+        padding='41px 28px 20px 42px'
+        backgroundtransform='rotate(180,0,0)'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='leftBottom' anchorOffset='(0,0)'>
+      <subparam
+        id='backimage'
+        background-image='205014'
+        backgroundstretch='37% 40% 62% 43%'
+        padding='42px 41px 19px 26px'
+        backgroundtransform='rotate(180,180,0)'
+      ></subparam>
+    </param>
+  </params>
+
+  <div id='backimage' style='width: auto; height: auto'>
+    <div style='display: flex; position: relative; align-items: center; flex-direction: row'>
+      <img
+        style='width: 48px; height: 48px; margin-right: 8px; align-self: center'
+        src='{iconUrl}'
+        serviceresize='true'
+        syncload='true'
+        syncloadCache='false'
+        fastmode='false'
+      ></img>
+
+      <div style='display: flex; align-items: flex-start; flex-direction: column; white-space: nowrap'>
+        <label
+          style='position: relative; overflow: hidden; text-overflow: ellipsis; line-height: 28px; color: @Color_Text_L1; font-size: 24px; font-weight: bold; align-self: flex-start'
+          text='{label}'
+        ></label>
+
+        <label
+          style='display: {subDisplay}; position: relative; margin-top: 2px; line-height: 26px; color: {subLabelColor}; font-size: 22px; font-weight: normal; align-self: flex-start'
+          text='{subLabel}'
+        ></label>
+      </div>
+    </div>
+  </div>
+</xml>

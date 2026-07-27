@@ -1,0 +1,41 @@
+<!--公交详情页地铁出入口Icon（由背景和对一个的地铁出入口组成）样式-->
+<xml>
+  <params>
+    <param
+      useCommonParser='true'
+      direction='centerCenter'
+      anchorOffset='(0,0)'
+    ></param>
+
+    <param
+      useCommonParser='true'
+      direction='bottomCenter'
+      anchorOffset='(0,0)'
+    ></param>
+
+    <param
+      useCommonParser='true'
+      direction='topCenter'
+      anchorOffset='(0,0)'
+    ></param>
+
+    <param
+      useCommonParser='true'
+      direction='rightCenter'
+      anchorOffset='(0,0)'
+    ></param>
+
+    <param
+      useCommonParser='true'
+      direction='leftCenter'
+      anchorOffset='(0,0)'
+    ></param>
+  </params>
+
+  <div style='display: flex; width: auto; height: auto; border-width: 3px; align-items: center; justify-content: space-around; background-color: @Color_BG_L2; margin: 3px; border-radius: 10px; border-color: @Color_BG_Brand;padding: 4px; border-style: solid'>
+    <label
+      style='color: @Color_Text_Brand; font-size: 26px; font-weight: bold'
+      text='{label}'
+    ></label>
+  </div>
+</xml>

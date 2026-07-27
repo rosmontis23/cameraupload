@@ -1,0 +1,28 @@
+<!--小路缩略图纹理-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='topCenter' anchorOffset='(0,9)'>
+      <subparam id='bgDiv' background-image='800004'></subparam>
+    </param>
+  </params>
+
+  <div
+    id='bgDiv'
+    style='display: flex; width: 86px; height: 92px; align-items: center; flex-direction: row; justify-content: center; padding: 10px 11px 20px 11px'
+  >
+    <div style='display: flex; position: relative; align-items: center; flex-direction: row'>
+      <img
+        style='width: 64px; height: 64px; border-radius: 12px'
+        src='{url}'
+        serviceresize='true'
+        syncloadCache='false'
+        fastmode='false'
+      ></img>
+    </div>
+
+    <label
+      style='position: absolute; top: 86px; text-align: center; align-items: center; line-height: 28px; white-space: nowrap; color: @Color_Black; font-size: 24px; text-stroke: 2px @Color_BG_L2'
+      text='{tag}'
+    ></label>
+  </div>
+</xml>

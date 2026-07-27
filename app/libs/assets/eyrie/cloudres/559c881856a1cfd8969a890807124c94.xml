@@ -1,0 +1,62 @@
+<!--公交多路线路线气泡-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='topCenter' anchorOffset='(0,15)'>
+      <subparam
+        id='backimage'
+        background-image='150017'
+        backgroundstretch='24% 58% 36% 21% 26% 17% 44% 60%'
+        padding='18px 27px 48px 30px'
+      ></subparam>
+    </param>
+
+    <param
+      useCommonParser='true'
+      direction='bottomCenter'
+      anchorOffset='(0,15)'
+    >
+      <subparam
+        id='backimage'
+        background-image='150018'
+        backgroundstretch='39% 59% 28% 19% 39% 18% 28% 60%'
+        padding='36px 26px 30px 30px'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='leftBottom' anchorOffset='(18,24)'>
+      <subparam
+        id='backimage'
+        background-image='150015'
+        backgroundstretch='40% 31% 38% 25%'
+        padding='40px 50px 42px 40px'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='rightTop' anchorOffset='(18,24)'>
+      <subparam
+        id='backimage'
+        background-image='150016'
+        backgroundstretch='28% 24% 50% 32%'
+        padding='23px 36px 56px 56px'
+      ></subparam>
+    </param>
+  </params>
+
+  <div id='backimage' style='left: 0; top: 0px'>
+    <div style='display: flex; flex-direction: row; align-items: center; position: relative'>
+      <div style='display: flex; margin-right: 5px; flex-direction: column; align-items: flex-start'>
+        <label
+          style='line-clamp: 1; text-stroke: 1px @Color_BG_L2; align-self: flex-start; font-size: 28px; color: @Color_Text_L1; line-height: 33px; position: relative; text-overflow: ellipsis; max-width: 168px; overflow: hidden'
+          text='{mainLabel}'
+        ></label>
+
+        <div style='display: flex; line-height: 24px; background-color: @Color_Hue210_H1; border-radius: 17.5px; padding-left: 8px; padding-right: 8px; margin-top: 4px; flex-direction: row; align-items: center; position: relative'>
+          <label
+            style='line-clamp: 1; text-stroke: 1px @Color_BG_L2; align-self: center; margin: 3px 8px; font-size: 24px; color: @Color_Text_Brand; text-overflow: ellipsis; max-width: 150px; overflow: hidden'
+            text='{subLabel}'
+          ></label>
+        </div>
+      </div>
+    </div>
+  </div>
+</xml>

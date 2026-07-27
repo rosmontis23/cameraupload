@@ -1,0 +1,65 @@
+<!--车位导航终点引导气泡(夜间样式)-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='leftTop' anchorOffset='(15,20)'>
+      <subparam
+        id='backimage'
+        background-image='112069'
+        backgroundstretch='34% 24% 57% 20%'
+        padding='26px 46px 50px 33px'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='leftBottom' anchorOffset='(15,20)'>
+      <subparam
+        id='backimage'
+        background-image='112070'
+        backgroundstretch='39% 27% 37% 24%'
+        padding='41px 56px 32px 39px'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='rightTop' anchorOffset='(15,20)'>
+      <subparam
+        id='backimage'
+        background-image='112067'
+        backgroundstretch='36% 18% 55% 25%'
+        padding='26px 32px 50px 47px'
+      ></subparam>
+    </param>
+
+    <param
+      useCommonParser='true'
+      direction='rightBottom'
+      anchorOffset='(15,20)'
+    >
+      <subparam
+        id='backimage'
+        background-image='112068'
+        backgroundstretch='51% 18% 40% 25%'
+        padding='42px 32px 34px 47px'
+      ></subparam>
+    </param>
+  </params>
+
+  <div>
+    <div>
+      <div id='backimage' style='top: 0px; left: 0' syncload='true'>
+        <div style='display: flex; position: relative; align-items: center; flex-direction: row'>
+          <img
+            style='width: 34px; height: 34px; margin-top: 2px; margin-right: 8px; align-self: center'
+            src='112066'
+            syncload='true'
+            syncloadCache='false'
+            fastmode='false'
+          ></img>
+
+          <label
+            style='overflow: hidden; text-overflow: ellipsis; line-height: 36px; color: #ffffff; font-size: 32px; font-weight: bold; flex-direction: row; max-width: 224px; flex-wrap: wrap; text-align: left; text-layout-amap: N; margin-right: 0px; align-self: center; justify-content: flex-start; line-clamp: 3'
+            text='去往{label}'
+          ></label>
+        </div>
+      </div>
+    </div>
+  </div>
+</xml>

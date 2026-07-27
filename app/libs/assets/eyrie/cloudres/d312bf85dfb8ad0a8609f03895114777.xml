@@ -1,0 +1,56 @@
+<!--起点平行路气泡-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='leftTop' anchorOffset='(0,0)'>
+      <subparam
+        id='backimage'
+        background-image='231051'
+        backgroundstretch='20% 45% 40% 35%'
+        padding='25px 45px 47px 30px'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='rightTop' anchorOffset='(0,0)'>
+      <subparam
+        id='backimage'
+        background-image='231049'
+        backgroundstretch='20% 35% 40% 45%'
+        padding='25px 30px 47px 45px'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='leftBottom' anchorOffset='(0,0)'>
+      <subparam
+        id='backimage'
+        background-image='231052'
+        backgroundstretch='40% 45% 20% 35%'
+        padding='40px 45px 35px 30px'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='rightBottom' anchorOffset='(0,0)'>
+      <subparam
+        id='backimage'
+        background-image='231050'
+        backgroundstretch='40% 35% 30% 45%'
+        padding='40px 30px 35px 45px'
+      ></subparam>
+    </param>
+  </params>
+
+  <div
+    id='backimage'
+    style='display: flex; width: auto; height: auto; justify-content: center; align-items: center; flex-direction: row'
+  >
+    <label
+      style='line-height: 32px; color: @Color_Black; font-size: 28px; font-weight: bold; align-self: flex-start'
+      text='{text}'
+    ></label>
+
+    <img
+      style='width: 24px; height: 24px; margin-top: 2px; align-self: center'
+      src='30025'
+      syncload='true'
+    ></img>
+  </div>
+</xml>

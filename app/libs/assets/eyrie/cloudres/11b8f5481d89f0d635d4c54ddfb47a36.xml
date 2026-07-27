@@ -1,0 +1,78 @@
+<!--LaneNaviActionSimple-->
+<xml>
+  <params>
+    <param
+      useCommonParser='true'
+      direction='leftCenter'
+      anchorOffset='(-15,0)'
+      anchorOffsetHD='(15,18)'
+    >
+      <subparam id='whiteLineStylePath' name='path' path='(45,3)'></subparam>
+
+      <subparam id='lineStylePath' name='path' path='(45,0)'></subparam>
+
+      <subparam id='labBackground' flex-direction='row'></subparam>
+    </param>
+
+    <param
+      useCommonParser='true'
+      direction='rightCenter'
+      anchorOffset='(-15,0)'
+      anchorOffsetHD='(15,18)'
+    >
+      <subparam id='whiteLineStylePath' name='path' path='(-45,3)'></subparam>
+
+      <subparam id='lineStylePath' name='path' path='(-45,0)'></subparam>
+
+      <subparam
+        id='labBackground'
+        backgroundtransform='rotate(0,180,0)'
+      ></subparam>
+    </param>
+  </params>
+
+  <div
+    id='animationId'
+    style='display: flex; flex-direction: row'
+    animation='{collisionshowanimation}: animationkey'
+    animationkey='type: 2; duration: 200; count: 1; from: {collisionFromX} {collisionFromY} 0; to: 0 0 0'
+  >
+    <line
+      id='whiteLineStylePath'
+      style='width: 4px; background-color: #B3FFFFFF'
+      offset-start-pos='(0,3)'
+      path-start-pos='Y'
+    ></line>
+
+    <line
+      id='lineStylePath'
+      style='width: 4px; background-image: linear-gradient(to left,@Color_Hue230_L6,@Color_Hue230_L6)'
+      path-start-pos='Y'
+    ></line>
+
+    <div>
+      <div>
+        <div>
+          <div
+            id='labBackground'
+            style='width: 78px; height: 134px; top: 0px; left: 0; background-image: 171066'
+            syncload='true'
+          >
+            <div
+              style='display: flex; width: 64px; height: 64px; top: 34px; left: 7px; background-size: contain; position: relative; align-items: center; flex-direction: row; justify-content: center; background-image: 171040'
+              syncload='true'
+            >
+              <img
+                style='width: 52px; height: 52px; align-self: center'
+                src='{actionIcon}'
+                syncload='true'
+                syncloadCache='false'
+                fastmode='false'
+              ></img>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</xml>
