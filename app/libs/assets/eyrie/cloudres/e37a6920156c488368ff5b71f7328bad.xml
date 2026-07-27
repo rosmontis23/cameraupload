@@ -1,0 +1,19 @@
+<!--D2C预览生成-->
+<xml>
+  <params>
+    <param
+      useCommonParser='true'
+      direction='topCenter'
+      anchorOffset='(0,0)'
+    ></param>
+  </params>
+
+  <div style='display: flex; width: auto; height: auto; justify-content: center; align-items: center; flex-direction: column'>
+    <img
+      style='display: flex; width: auto; height: auto'
+      src='232104'
+      syncloadCache='false'
+      fastmode='false'
+    ></img>
+  </div>
+</xml>

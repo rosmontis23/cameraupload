@@ -1,0 +1,112 @@
+{
+    "0": {
+        "speakerId": "123",
+        "lang": "zh-Hans",
+        "subName": "gaolaoshi"
+    },
+    "1": {
+        "speakerId": "392",
+        "lang": "zh-Hant-HK",
+        "subName": "amapcantonese"
+    },
+    "2": {
+        "speakerId": "681",
+        "lang": "en",
+        "subName": "amapenglish"
+    },
+    "3": {
+        "speakerId": "499",
+        "lang": "es",
+        "subName": "amapSpanish"
+    },
+    "4": {
+        "speakerId": "500",
+        "lang": "pt",
+        "subName": "amapPortuguese"
+    },
+    "5": {
+        "speakerId": "501",
+        "lang": "fr",
+        "subName": "amapFrench"
+    },
+    "6": {
+        "speakerId": "502",
+        "lang": "de",
+        "subName": "amapGerman"
+    },
+    "7": {
+        "speakerId": "503",
+        "lang": "th",
+        "subName": "amapThai"
+    },
+    "8": {
+        "speakerId": "496",
+        "lang": "ja",
+        "subName": "amapJapanese"
+    },
+    "9": {
+        "speakerId": "504",
+        "lang": "ko",
+        "subName": "amapKorean"
+    },
+    "10": {
+        "speakerId": "505",
+        "lang": "ar",
+        "subName": "amapArabic"
+    },
+    "11": {
+        "speakerId": "506",
+        "lang": "tr",
+        "subName": "amapTurkish"
+    },
+    "12": {
+        "speakerId": "507",
+        "lang": "he",
+        "subName": "amapHebrew"
+    },
+    "13": {
+        "speakerId": "508",
+        "lang": "it",
+        "subName": "amapItalian"
+    },
+    "14": {
+        "speakerId": "509",
+        "lang": "ru",
+        "subName": "amapRussian"
+    },
+    "15": {
+        "speakerId": "510",
+        "lang": "ms",
+        "subName": "amapMalay"
+    },
+    "16": {
+        "speakerId": "511",
+        "lang": "id",
+        "subName": "amapIndonesian"
+    },
+    "17": {
+        "speakerId": "512",
+        "lang": "vi",
+        "subName": "amapVietnamese"
+    },
+    "18": {
+        "speakerId": "513",
+        "lang": "pl",
+        "subName": "amapPolish"
+    },
+    "19": {
+        "speakerId": "514",
+        "lang": "cs",
+        "subName": "amapCzech"
+    },
+    "20": {
+        "speakerId": "515",
+        "lang": "uk",
+        "subName": "amapUkrainian"
+    },
+    "21": {
+        "speakerId": "516",
+        "lang": "az",
+        "subName": "amapAzerbaijan"
+    }
+}

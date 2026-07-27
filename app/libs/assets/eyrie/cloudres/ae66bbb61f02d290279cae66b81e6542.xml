@@ -1,0 +1,26 @@
+<!--公交详情页跳转步行导航-实时公交tip样式-->
+<xml>
+  <params>
+    <param
+      useCommonParser='true'
+      direction='topCenter'
+      anchorOffset='(0,0)'
+    ></param>
+  </params>
+
+  <div>
+    <div style='display: flex; width: auto; height: auto; padding: 21px 30px 37px 30px; backgroundstretch: 38% 66% 58% 31% 38% 32% 58% 64%; background-image:200021; justify-content: space-around; flex-direction: column'>
+      <label
+        style='font-weight: normal; font-size: 22px; color: @Color_Text_L1'
+        text='{label}'
+      ></label>
+
+      <label
+        style='font-weight: normal; font-size: 22px; color: @Color_Hue170_H8'
+        text='{subLabel}'
+      ></label>
+    </div>
+
+    <div style='height: 50px; visibility: hidden; background-color: @Color_BG_L2(00)'></div>
+  </div>
+</xml>

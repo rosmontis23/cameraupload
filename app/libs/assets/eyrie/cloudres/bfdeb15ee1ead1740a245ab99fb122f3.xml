@@ -1,0 +1,68 @@
+<!--巡航card拥堵气泡资源样式-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='leftTop' anchorOffset='(0,20)'>
+      <subparam
+        id='backimage'
+        background-image='110860'
+        backgroundstretch='43% 34% 56% 42%'
+        padding='22px 35px 45px 42px'
+        backgroundtransform='rotate(0,180,0)'
+      ></subparam>
+    </param>
+
+    <param
+      useCommonParser='true'
+      direction='leftBottom'
+      anchorOffset='(-10,20)'
+    >
+      <subparam
+        id='backimage'
+        background-image='110860'
+        backgroundstretch='43% 34% 56% 42%'
+        padding='41px 30px 24px 47px'
+        backgroundtransform='rotate(180,180,0)'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='rightTop' anchorOffset='(15,20)'>
+      <subparam
+        id='backimage'
+        background-image='110860'
+        backgroundstretch='43% 34% 56% 42%'
+        padding='20px 32px 47px 45px'
+      ></subparam>
+    </param>
+
+    <param
+      useCommonParser='true'
+      direction='rightBottom'
+      anchorOffset='(15,20)'
+    >
+      <subparam
+        id='backimage'
+        background-image='110860'
+        backgroundstretch='43% 34% 56% 42%'
+        padding='41px 32px 24px 45px'
+        backgroundtransform='rotate(180,0,0)'
+      ></subparam>
+    </param>
+  </params>
+
+  <div
+    id='backimage'
+    style='display: flex; width: auto; height: auto; flex-direction: row; align-items: center; justify-content: center'
+  >
+    <label
+      style='color: #ffffff; font-size: 34px; font-weight: bold'
+      text='{label}'
+    ></label>
+
+    <div style='width: 2px; height: 37px; margin-right: 8px; margin-left: 8px; background-color: #FF836C'></div>
+
+    <label
+      style='color: #ffffff; font-size: 34px; font-weight: bold'
+      text='{subLabel}'
+    ></label>
+  </div>
+</xml>

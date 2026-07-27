@@ -1,0 +1,19 @@
+<!--步导用反戳点气泡样式-->
+<xml>
+  <params>
+    <param
+      useCommonParser='true'
+      direction='topCenter'
+      anchorOffset='(0,0)'
+    ></param>
+  </params>
+
+  <div style='display: flex; width: auto; height: auto; padding: 27px 47px 41px 47px; backgroundstretch: 0% 62% 2% 33% 0% 33% 2% 62%; align-items: center; margin-bottom: 80px; flex-direction: row; background-color: @Color_BG_L2(00); background-image: {resid}'>
+    <div style='display: flex; width: auto; height: auto; background-color: @Color_BG_L2(00); align-items: center; flex-direction: row'>
+      <label
+        style='font-weight: bold; background-color: @Color_BG_L2(00); font-size: 30px; color: {labelcolor}'
+        text='{label}'
+      ></label>
+    </div>
+  </div>
+</xml>

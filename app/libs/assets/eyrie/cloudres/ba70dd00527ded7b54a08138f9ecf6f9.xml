@@ -1,0 +1,21 @@
+<!--理由路线动态图片-->
+<xml>
+  <params>
+    <param
+      useCommonParser='true'
+      direction='centerCenter'
+      anchorOffset='(0,0)'
+    ></param>
+  </params>
+
+  <div>
+    <div style='display: flex; flex-direction: row'>
+      <img
+        style='width: 112px; height: 118px'
+        src='{url}'
+        syncloadCache='false'
+        fastmode='false'
+      ></img>
+    </div>
+  </div>
+</xml>

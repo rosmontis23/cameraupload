@@ -1,0 +1,131 @@
+<!--TMC拥堵气泡单层纹理样式-->
+<xml>
+  <params>
+    <param
+      useCommonParser='true'
+      direction='leftTop'
+      anchorOffset='(15,20)'
+      anchorOffsetHD='(20,20)'
+    >
+      <subparam
+        id='backimage'
+        background-image='150419'
+        backgroundstretch='39% 60% 48% 36%'
+        padding='20px 46px 47px 31px'
+      ></subparam>
+
+      <subparam id='imgchat' left='-20px' top='-20px'></subparam>
+    </param>
+
+    <param
+      useCommonParser='true'
+      direction='leftBottom'
+      anchorOffset='(15,20)'
+      anchorOffsetHD='(20,20)'
+    >
+      <subparam
+        id='backimage'
+        background-image='150421'
+        backgroundstretch='23% 18% 42% 30%'
+        padding='47px 46px 23px 31px'
+        backgroundtransform='rotate(180,180,0)'
+      ></subparam>
+
+      <subparam id='imgchat' left='-10px' top='-10px'></subparam>
+    </param>
+
+    <param
+      useCommonParser='true'
+      direction='rightTop'
+      anchorOffset='(15,20)'
+      anchorOffsetHD='(20,20)'
+    >
+      <subparam
+        id='backimage'
+        background-image='150421'
+        backgroundstretch='23% 18% 42% 30%'
+        padding='20px 32px 47px 45px'
+      ></subparam>
+
+      <subparam id='imgchat' right='-20px' top='-20px'></subparam>
+    </param>
+
+    <param
+      useCommonParser='true'
+      direction='rightBottom'
+      anchorOffset='(15,20)'
+      anchorOffsetHD='(20,20)'
+    >
+      <subparam
+        id='backimage'
+        background-image='150421'
+        backgroundstretch='23% 18% 42% 30%'
+        padding='47px 32px 23px 45px'
+        backgroundtransform='rotate(180,0,0)'
+      ></subparam>
+
+      <subparam id='imgchat' right='-10px' top='-10px'></subparam>
+    </param>
+  </params>
+
+  <div style='display: flex; align-items: flex-start; position: relative'>
+    <div
+      id='backimage'
+      style='display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start'
+    >
+      <div style='display: flex; flex-direction: row; align-items: center; justify-content: center'>
+        <img
+          src='{iconRes}'
+          style='display: {iconDisplay}; width: 66px; height: 66px; position: relative; margin-right: 10px'
+          serviceresize='true'
+          syncloadCache='false'
+          fastmode='false'
+        ></img>
+
+        <div style='display: {urlDisplay}; width: 72px; height: 72px; position: relative; border-radius: 16px; background-color: white; align-items: center; justify-content: center; margin-right: 10px'>
+          <img
+            style='width: 66px; height: 66px; border-radius: 14px; overflow: hidden'
+            src='{picUrl}'
+            serviceresize='true'
+            syncloadCache='false'
+            fastmode='false'
+          ></img>
+        </div>
+
+        <div style='display: {singleDisplay}; flex-direction: row; justify-content: flex-start'>
+          <label
+            style='color: white; font-size: 34px; font-weight: bold'
+            text='{label}'
+          ></label>
+
+          <div style='display: flex; width: 1px; margin-right: 10px; margin-left: 10px; background-color: white'></div>
+
+          <label
+            style='color: white; font-size: 34px; font-weight: bold'
+            text='{subLabel}'
+          ></label>
+        </div>
+
+        <div style='display: {multiDisplay}; flex-direction: column; justify-content: flex-start'>
+          <label
+            style='color: white; font-size: 34px; font-weight: bold'
+            text='{label}'
+          ></label>
+
+          <label
+            style='color: white; font-size: 34px; font-weight: bold'
+            text='{subLabel}'
+          ></label>
+        </div>
+      </div>
+    </div>
+
+    <img
+      id='imgchat'
+      style='display: {chatDispaly}; width: 60px; height: 60px; align-self: flex-start; position: absolute'
+      src='110515'
+      syncloadCache='false'
+      fastmode='false'
+    ></img>
+  </div>
+</xml>

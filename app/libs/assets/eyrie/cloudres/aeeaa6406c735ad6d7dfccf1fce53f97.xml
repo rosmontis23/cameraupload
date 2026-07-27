@@ -1,0 +1,55 @@
+<!--风景路线气泡-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='topCenter' anchorOffset='(126,30)'>
+      <subparam
+        id='backimage'
+        background-image='https://faas-image-er.amap.com/acornCompressImageProd/tokenImg/ScenicRoute_top_background-8eb14a48-748a-451e-86ce-b9e2816dc6db.png'
+        backgroundstretch='41% 59% 54% 25% 41% 26% 54% 58%'
+        padding='24px 45px 48px 34px'
+      ></subparam>
+    </param>
+
+    <param
+      useCommonParser='true'
+      direction='bottomCenter'
+      anchorOffset='(126,16)'
+    >
+      <subparam
+        id='backimage'
+        background-image='https://faas-image-er.amap.com/acornCompressImageProd/tokenImg/ScenicRoute_bottom_background-99c86023-f887-41bc-a845-a472deaf21ce.png'
+        backgroundstretch='54% 59% 41% 25% 54% 26% 41% 58%'
+        padding='39px 42px 35px 34px'
+      ></subparam>
+
+      <subparam id='image' margin-top='-1px' align-self='center'></subparam>
+    </param>
+  </params>
+
+  <div id='backimage' syncload='true'>
+    <div style='display: flex; position: relative; align-items: center; flex-direction: row'>
+      <img
+        id='image'
+        style='width: 58px; height: 58px; margin-right: 7px; border-radius: 29px; background-color: @Color_Ink_L4'
+        src='{image}'
+        syncload='true'
+        syncloadCache='false'
+        fastmode='false'
+      ></img>
+
+      <div style='display: flex; align-items: flex-start; flex-direction: column; white-space: nowrap'>
+        <div style='display: flex; position: relative; align-items: flex-start; flex-direction: row; border-radius: 14px; background-color: {nameBgColor}; font-weight: bold; line-height: 30px'>
+          <label
+            style='color: @Color_Text_L1; font-size: 26px; margin: 1px 5px; font-weight: bold; align-self: flex-start; max-width: 200px; text-overflow: ellipsis; overflow: hidden; line-clamp: 1'
+            text='{name}'
+          ></label>
+        </div>
+
+        <label
+          style='position: relative; margin-top: 1px; margin-left: 5px; overflow: hidden; text-overflow: ellipsis; line-height: 28px; color: {descFontColor}; font-size: 24px; font-weight: normal; align-self: flex-start; max-width: 200px; line-clamp: 1'
+          text='{desc}'
+        ></label>
+      </div>
+    </div>
+  </div>
+</xml>

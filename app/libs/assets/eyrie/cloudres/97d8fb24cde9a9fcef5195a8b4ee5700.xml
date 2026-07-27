@@ -1,0 +1,74 @@
+<!--带设施的气泡，用于骑步行导航动作提醒-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='leftCenter' anchorOffset='(0,0.5)'>
+      <subparam
+        id='backimage'
+        background-image='231308'
+        padding='16px 29px 24px 24px'
+        backgroundstretch='61% 34% 32% 31%'
+        backgroundtransform='rotate(0,180,0)'
+      ></subparam>
+    </param>
+
+    <param
+      useCommonParser='true'
+      direction='rightCenter'
+      anchorOffset='(0,0.5)'
+    >
+      <subparam
+        id='backimage'
+        background-image='231308'
+        padding='16px 25px 24px 28px'
+        backgroundstretch='61% 34% 32% 31%'
+      ></subparam>
+    </param>
+  </params>
+
+  <div style='display: flex; align-items: center; flex-direction: row'>
+    <div style='display: flex; position: relative; align-items: flex-start; flex-direction: row; justify-content: center'>
+      <div id='backimage' style='top: 0px; left: 0' syncload='true'>
+        <div style='display: flex; position: relative; align-items: flex-start; flex-direction: column'>
+          <label
+            style='position: relative; margin-left: 2px; overflow: hidden; text-overflow: ellipsis; line-height: 28px; white-space: nowrap; color: @Color_BG_L1; font-size: 24px; font-weight: bold; align-self: flex-start'
+            text='{label}'
+          ></label>
+
+          <div style='display: {showIcon1}; position: relative; align-items: center; flex-direction: row; justify-content: center; margin-top: 10px'>
+            <img
+              style='width: 32px; height: 32px; margin-right: 6px; align-self: center'
+              src='{icon1}'
+              syncload='true'
+              syncloadCache='false'
+              fastmode='false'
+            ></img>
+
+            <img
+              style='display: {showIcon2}; width: 32px; height: 32px; margin-right: 6px; align-self: center'
+              src='{icon2}'
+              syncload='true'
+              syncloadCache='false'
+              fastmode='false'
+            ></img>
+
+            <img
+              style='display: {showIcon3}; width: 32px; height: 32px; margin-right: 6px; align-self: center'
+              src='{icon3}'
+              syncload='true'
+              syncloadCache='false'
+              fastmode='false'
+            ></img>
+
+            <img
+              style='display: {showIcon4}; width: 32px; height: 32px; align-self: center'
+              src='{icon4}'
+              syncload='true'
+              syncloadCache='false'
+              fastmode='false'
+            ></img>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</xml>

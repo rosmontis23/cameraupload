@@ -1,0 +1,189 @@
+<!--TMC拥堵气泡双层纹理样式-->
+<xml>
+  <params>
+    <param
+      useCommonParser='true'
+      direction='leftTop'
+      anchorOffset='(15,20)'
+      anchorOffsetHD='(20,20)'
+    >
+      <subparam
+        id='backimage'
+        background-image='150409'
+        backgroundstretch='53% 26% 40% 31%'
+        padding='23px 46px 45px 31px'
+        backgroundtransform='rotate(0,180,0)'
+      ></subparam>
+
+      <subparam id='imgchat' left='-16px' top='-22px'></subparam>
+
+      <subparam id='reddot' left='20px' top='-8px'></subparam>
+
+      <subparam id='labelcolor' color='#A8090B'></subparam>
+
+      <subparam id='sublabelcolor' color='#A8090B'></subparam>
+    </param>
+
+    <param
+      useCommonParser='true'
+      direction='leftBottom'
+      anchorOffset='(15,20)'
+      anchorOffsetHD='(20,20)'
+    >
+      <subparam
+        id='backimage'
+        background-image='150410'
+        backgroundstretch='58% 26% 29% 31%'
+        padding='40px 46px 30px 31px'
+        backgroundtransform='rotate(0,180,0)'
+      ></subparam>
+
+      <subparam id='imgchat' left='-12px' top='-8px'></subparam>
+
+      <subparam id='reddot' left='24px' top='6px'></subparam>
+
+      <subparam id='labelcolor' color='#A8090B'></subparam>
+
+      <subparam id='sublabelcolor' color='#A8090B'></subparam>
+    </param>
+
+    <param
+      useCommonParser='true'
+      direction='rightTop'
+      anchorOffset='(15,20)'
+      anchorOffsetHD='(20,20)'
+    >
+      <subparam
+        id='backimage'
+        background-image='150409'
+        backgroundstretch='53% 26% 40% 31%'
+        padding='23px 31px 43px 46px'
+      ></subparam>
+
+      <subparam id='imgchat' right='-12px' top='-22px'></subparam>
+
+      <subparam id='reddot' right='0px' top='-8px'></subparam>
+
+      <subparam id='labelcolor' color='#A8090B'></subparam>
+
+      <subparam id='sublabelcolor' color='#A8090B'></subparam>
+    </param>
+
+    <param
+      useCommonParser='true'
+      direction='rightBottom'
+      anchorOffset='(15,20)'
+      anchorOffsetHD='(20,20)'
+    >
+      <subparam
+        id='backimage'
+        background-image='150410'
+        backgroundstretch='58% 26% 29% 31%'
+        padding='40px 31px 30px 46px'
+      ></subparam>
+
+      <subparam id='imgchat' right='-12px' top='-8px'></subparam>
+
+      <subparam id='reddot' right='0px' top='6px'></subparam>
+
+      <subparam id='labelcolor' color='#A8090B'></subparam>
+
+      <subparam id='sublabelcolor' color='#A8090B'></subparam>
+    </param>
+  </params>
+
+  <div style='display: flex; align-items: flex-start; position: relative'>
+    <div
+      id='backimage'
+      style='display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start'
+    >
+      <div style='display: flex; flex-direction: row; align-items: center; justify-content: center'>
+        <div style='display: flex; flex-direction: row; justify-content: flex-start'>
+          <label
+            style='color: #FFFFFF; font-size: {size}; font-weight: bold'
+            text='{label}'
+          ></label>
+
+          <div style='display: flex; width: 1px; margin-right: 10px; margin-left: 10px; background-color: #FFFFFF'></div>
+
+          <label
+            style='color: #FFFFFF; font-size: {size}; font-weight: bold'
+            text='{subLabel}'
+          ></label>
+        </div>
+      </div>
+
+      <div style='display: flex; flex-direction: row; justify-content: center; align-items: center; padding-top: 15px'>
+        <img
+          src='{iconRes}'
+          style='display: {iconDisplay}; width: 56px; height: 56px; margin-right: 10px'
+          serviceresize='true'
+          syncloadCache='false'
+          fastmode='false'
+        ></img>
+
+        <div style='display: {urlDisplay}; width: 72px; height: 72px; flex-direction: row; border-radius: 16px; background-color: #FFFFFF; align-items: center; justify-content: center; margin-right: 10px; position: relative'>
+          <img
+            style='width: 66px; height: 66px; border-radius: {radius}; overflow: hidden'
+            src='{picUrl}'
+            serviceresize='true'
+            syncloadCache='false'
+            fastmode='false'
+          ></img>
+
+          <img
+            style='display: {official}; width: 20px; height: 20px; align-self: flex-start; margin-left: -20px; margin-top: 48px; position: relative'
+            src='https://img.alicdn.com/imgextra/i3/O1CN01fJgcgt28Veh46XhX5_!!6000000007938-2-tps-20-20.png'
+            serviceresize='true'
+            syncloadCache='false'
+            fastmode='false'
+          ></img>
+        </div>
+
+        <div style='display: flex; flex-direction: column; justify-content: center; padding-top: 5px; align-items: flex-start'>
+          <label
+            id='labelcolor'
+            style='font-size: 32px; font-weight: bold'
+            text='{tagsLabel}'
+          ></label>
+
+          <label
+            id='sublabelcolor'
+            style='display: {tagSubDisplay}; font-size: 32px; font-weight: bold'
+            text='{tagsSubLabel}'
+          ></label>
+
+          <div style='display: {resumeDisplay}; position: relative; align-items: center; flex-direction: row; margin-top: 5px; margin-left: 1px; border-radius: 16px; background-color: #E8F3FF'>
+            <img
+              style='width: 18px; height: 18px; margin-right: 2px; margin-left: 6px; align-self: center'
+              src='231240'
+              syncloadCache='false'
+              fastmode='false'
+            ></img>
+
+            <label
+              style='line-height: 26px; white-space: nowrap; color: #1a66ff; font-size: 26px; font-weight: normal; margin-right: 8px; align-self: center'
+              text='{resumeLabel}'
+            ></label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <img
+      id='imgchat'
+      style='display: {chatDispaly}; width: 60px; height: 60px; align-self: flex-start; position: absolute'
+      src='110515'
+      syncloadCache='false'
+      fastmode='false'
+    ></img>
+
+    <img
+      id='reddot'
+      style='display: {reddotDisplay}; width: 12px; height: 12px; align-self: flex-start; position: absolute'
+      src='231241'
+      syncloadCache='false'
+      fastmode='false'
+    ></img>
+  </div>
+</xml>

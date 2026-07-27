@@ -1,0 +1,1 @@
+<xml><params><param useCommonParser="true" direction="rightTop" anchorOffset="(48,-8)"></param></params><div style="display: flex; justify-content: center; flex-direction: row; margin-bottom: ${marginBottom}"><image style="width: ${iconBgWidth}; height: ${iconBgHeight}" src="${iconBg}"></image></div></xml>

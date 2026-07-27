@@ -1,0 +1,32 @@
+<!--交通事件(施工)气泡白天黑夜1108121108113-->
+<xml>
+  <params>
+    <param useCommonParser="true" direction="leftTop" anchorOffset="(15,25)">
+      <subparam id="backimage" background-image="110586" backgroundstretch="34% 52% 61% 36%" padding="21px 47px 45px 32px"></subparam>
+      <subparam id="labelcolor" color="#FF1300"></subparam>
+      <subparam id="sublabelcolor" color="#212121"></subparam>
+    </param>
+    <param useCommonParser="true" direction="leftBottom" anchorOffset="(15,15)">
+      <subparam id="backimage" background-image="110588" backgroundstretch="52% 46% 43% 42%" padding="39px 47px 30px 32px"></subparam>
+      <subparam id="labelcolor" color="#FF1300"></subparam>
+      <subparam id="sublabelcolor" color="#212121"></subparam>
+    </param>
+    <param useCommonParser="true" direction="rightTop" anchorOffset="(15,25)">
+      <subparam id="backimage" background-image="110587" backgroundstretch="34% 52% 61% 36%" padding="21px 32px 45px 47px"></subparam>
+      <subparam id="labelcolor" color="#FF1300"></subparam>
+      <subparam id="sublabelcolor" color="#212121"></subparam>
+    </param>
+    <param useCommonParser="true" direction="rightBottom" anchorOffset="(15,15)">
+      <subparam id="backimage" background-image="110589" backgroundstretch="52% 41% 43% 48%" padding="39px 32px 30px 47px"></subparam>
+      <subparam id="labelcolor" color="#FF1300"></subparam>
+      <subparam id="sublabelcolor" color="#212121"></subparam>
+    </param>
+  </params>
+  <div id="backimage" style="display:flex;flex-direction:row;align-items:center;justify-content:space-around;">
+    <image src="{iconId}" style="margin-left:1px;width:56px;height:56px;"></image>
+    <div style="display:flex;flex-direction:column;align-items:flex-start;">
+      <label id="labelcolor" style="opacity:1.0;font-size:32px;font-weight:bold;" text="{label}"></label>
+      <label id="sublabelcolor" style="opacity:1.0;font-size:28px;display:{isDisplay}" text="{subLabel}"></label>
+    </div>
+  </div>
+</xml>

@@ -1,0 +1,92 @@
+<!--交通事件(非施工，如事故、积水、封路等)气泡白天黑夜110810110811-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='leftTop' anchorOffset='(15,25)'>
+      <subparam
+        id='backimage'
+        background-image='110586'
+        backgroundstretch='34% 52% 61% 36%'
+        padding='21px 47px 45px 32px'
+      ></subparam>
+
+      <subparam id='leftlabelcolor' color='#FF1300'></subparam>
+
+      <subparam id='rightlabelcolor' color='#FF1300'></subparam>
+
+      <subparam id='opacityvalue' opacity='0.2'></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='leftBottom' anchorOffset='(15,15)'>
+      <subparam
+        id='backimage'
+        background-image='110587'
+        backgroundstretch='34% 41% 61% 48%'
+        padding='45px 47px 25px 34px'
+        backgroundtransform='rotate(180,180,0)'
+      ></subparam>
+
+      <subparam id='leftlabelcolor' color='#FF1300'></subparam>
+
+      <subparam id='rightlabelcolor' color='#FF1300'></subparam>
+
+      <subparam id='opacityvalue' opacity='0.2'></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='rightTop' anchorOffset='(15,25)'>
+      <subparam
+        id='backimage'
+        background-image='110587'
+        backgroundstretch='34% 52% 61% 36%'
+        padding='21px 32px 45px 47px'
+      ></subparam>
+
+      <subparam id='leftlabelcolor' color='#FF1300'></subparam>
+
+      <subparam id='rightlabelcolor' color='#FF1300'></subparam>
+
+      <subparam id='opacityvalue' opacity='0.2'></subparam>
+    </param>
+
+    <param
+      useCommonParser='true'
+      direction='rightBottom'
+      anchorOffset='(15,15)'
+    >
+      <subparam
+        id='backimage'
+        background-image='110587'
+        backgroundstretch='34% 41% 61% 48%'
+        padding='45px 32px 25px 47px'
+        backgroundtransform='rotate(180,0,0)'
+      ></subparam>
+
+      <subparam id='leftlabelcolor' color='#FF1300'></subparam>
+
+      <subparam id='rightlabelcolor' color='#FF1300'></subparam>
+
+      <subparam id='opacityvalue' opacity='0.2'></subparam>
+    </param>
+  </params>
+
+  <div
+    id='backimage'
+    style='display: flex; flex-direction: row; align-items: center; justify-content: space-around'
+  >
+    <label
+      id='leftlabelcolor'
+      style='display: {isDisplay}; font-size: 32px; font-weight: bold'
+      text='{leftContent}'
+    ></label>
+
+    <div
+      id='opacityvalue'
+      style='display: {isDisplay}; width: 2px; height: 36px; margin-right: 8px; margin-left: 8px; background-color: #000000'
+    ></div>
+
+    <label
+      id='rightlabelcolor'
+      style='font-size: 32px; font-weight: bold'
+      text='{rightContent}'
+    ></label>
+  </div>
+</xml>

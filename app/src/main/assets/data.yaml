@@ -1,0 +1,7 @@
+path: D:/User/ZhangYongzhong/yolo-main/data/work
+train: images/train
+val: images/val
+
+nc: 20
+
+names: ['tree', 'red_light', 'green_light', 'crosswalk', 'tactile_paving', 'sign', 'pedestrian', 'bicycle', 'bus', 'truck', 'car', 'motorcycle', 'reflective_cone', 'ashcan', 'warning_column', 'roadblock', 'pole', 'dog', 'tricycle', 'fire_hydrant']

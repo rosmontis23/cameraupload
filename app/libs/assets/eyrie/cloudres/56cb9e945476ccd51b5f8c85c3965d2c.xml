@@ -1,0 +1,79 @@
+<!--D2C预览生成-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='rightTop' anchorOffset='(15,25)'>
+      <subparam
+        id='backimage'
+        background-image='231504'
+        backgroundstretch='41% 27% 53% 33%'
+        padding='20px 25px 35px 36px'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='leftTop' anchorOffset='(15,25)'>
+      <subparam
+        id='backimage'
+        background-image='231505'
+        backgroundstretch='41% 33% 53% 27%'
+        padding='20px 36px 35px 25px'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='leftBottom' anchorOffset='(15,25)'>
+      <subparam
+        id='backimage'
+        background-image='231507'
+        backgroundstretch='53% 33% 41% 27%'
+        padding='35px 36px 20px 25px'
+      ></subparam>
+    </param>
+
+    <param
+      useCommonParser='true'
+      direction='rightBottom'
+      anchorOffset='(15,25)'
+    >
+      <subparam
+        id='backimage'
+        background-image='231506'
+        backgroundstretch='53% 27% 41% 33%'
+        padding='35px 25px 20px 36px'
+      ></subparam>
+    </param>
+  </params>
+
+  <div
+    id='backimage'
+    style='display: flex; position: relative; align-items: center; flex-direction: row'
+  >
+    <div style='display: {iconDisplay}; position: relative; align-self: flex-start; align-items: center; flex-direction: column'>
+      <img
+        src='231503'
+        style='width: 20px; height: 20px; margin-left: 2px; margin-right: 2px'
+        syncloadCache='false'
+        fastmode='false'
+      ></img>
+    </div>
+
+    <div style='display: {imageDisplay}; position: relative; align-self: flex-start; align-items: center; flex-direction: column'>
+      <img
+        src='{imageUrl}'
+        style='width: 68px; height: 68px; border-radius: 16px; margin-left: 2px; margin-right: 2px'
+        syncloadCache='false'
+        fastmode='false'
+      ></img>
+    </div>
+
+    <div style='display: flex; position: relative; margin-left: 2px; align-items: flex-start; flex-direction: column'>
+      <label
+        style='position: relative; white-space: nowrap; color: #FFFFFF; font-size: 20px; font-weight: bold; max-width: 240px; line-clamp: 1'
+        text='{markerPointName}'
+      ></label>
+
+      <label
+        style='display: {descDisplay}; position: relative; white-space: nowrap; color: #FFFFFF; font-size: 18px; font-weight: normal; max-width: 240px; line-clamp: 1'
+        text='{markerPointDesc}'
+      ></label>
+    </div>
+  </div>
+</xml>

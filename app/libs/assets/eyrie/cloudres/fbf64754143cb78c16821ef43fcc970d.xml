@@ -1,0 +1,22 @@
+<!--兴趣点icon纹理点击态-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='topCenter' anchorOffset='(0,-18)'>
+      <subparam
+        id='icon'
+        width='50px'
+        height='50px'
+        margin-top='8px'
+      ></subparam>
+
+      <subparam id='background' width='112px' height='124px'></subparam>
+    </param>
+  </params>
+
+  <div
+    id='background'
+    style='display: flex; justify-content: center; align-items: center; flex-direction: row; background-image: {backImg}'
+  >
+    <img id='icon' style='margin-bottom: 12px' src='{iconId}'></img>
+  </div>
+</xml>

@@ -1,0 +1,98 @@
+<!--行前拥堵气泡-双行带自定义图片(感知平台)-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='rightTop' anchorOffset='(12,12)'>
+      <subparam
+        id='backimage'
+        background-image='231319'
+        padding='25px 31px 49px 44px'
+        backgroundstretch='29% 42% 53% 44%'
+      ></subparam>
+    </param>
+
+    <param
+      useCommonParser='true'
+      direction='rightBottom'
+      anchorOffset='(10,10)'
+    >
+      <subparam
+        id='backimage'
+        background-image='231321'
+        padding='40px 27px 32px 44px'
+        backgroundstretch='37% 42% 53% 44%'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='topCenter' anchorOffset='(12,12)'>
+      <subparam
+        id='backimage'
+        background-image='231322'
+        padding='18px 31px 48px 31px'
+        backgroundstretch='40% 60% 50% 25% 50% 25% 40% 60%'
+      ></subparam>
+    </param>
+
+    <param
+      useCommonParser='true'
+      direction='bottomCenter'
+      anchorOffset='(10,10)'
+    >
+      <subparam
+        id='backimage'
+        background-image='231323'
+        padding='38px 31px 28px 33px'
+        backgroundstretch='40% 60% 50% 25% 50% 25% 40% 60%'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='leftTop' anchorOffset='(12,12)'>
+      <subparam
+        id='backimage'
+        background-image='231318'
+        padding='26px 44px 49px 31px'
+        backgroundstretch='29% 42% 53% 44%'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='leftBottom' anchorOffset='(10,10)'>
+      <subparam
+        id='backimage'
+        background-image='231320'
+        padding='42px 44px 32px 31px'
+        backgroundstretch='53% 44% 29% 42%'
+      ></subparam>
+    </param>
+  </params>
+
+  <div id='backimage' style='left: 0; top: 0px'>
+    <div style='display: flex; flex-direction: row; align-items: center; position: relative'>
+      <div style='display: flex; margin-right: 6px'>
+        <img
+          style='width: 64px; height: 64px; align-self: center; border-radius: 17px'
+          src='{pic}'
+          syncloadCache='false'
+          fastmode='false'
+        ></img>
+
+        <img
+          style='display: {official}; width: 20px; height: 20px; position: absolute; margin-start: 40px; margin-top: 40px'
+          src='https://img.alicdn.com/imgextra/i3/O1CN01fJgcgt28Veh46XhX5_!!6000000007938-2-tps-20-20.png'
+          syncloadCache='false'
+          fastmode='false'
+        ></img>
+      </div>
+
+      <div style='display: flex; flex-direction: column; align-items: flex-start'>
+        <label
+          style='align-self: flex-start; font-weight: bold; font-size: 26px; color: {firstLineColor}; line-height: 32px; position: relative'
+          text='{firstLineText}'
+        ></label>
+
+        <label
+          style='align-self: flex-start; font-weight: {secondLineWeight}; font-size: {secondLineFontSize}px; color: {secondLineColor}; opacity: {secondLineOpacity}; line-height: 28px; text-overflow: ellipsis; overflow: hidden; position: relative'
+          text='{secondLineText}'
+        ></label>
+      </div>
+    </div>
+  </div>
+</xml>

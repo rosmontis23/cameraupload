@@ -1,0 +1,26 @@
+<!--行前途经点焦点态样式-->
+<xml>
+  <params>
+    <param
+      useCommonParser='true'
+      direction='topCenter'
+      anchorOffset='(0,0)'
+    ></param>
+  </params>
+
+  <div style='display: flex'>
+    <img
+      src='{iconId}'
+      style='width: 132px; height: 132px'
+      syncloadCache='false'
+      fastmode='false'
+    ></img>
+
+    <div style='width: 80px; height: 68px; position: absolute; left: 26px; top: 35px; align-items: center; justify-content: center'>
+      <label
+        style='color: @Color_Text_Highlight; font-size: 46px; font-weight: bold; text-align: center'
+        text='{label}'
+      ></label>
+    </div>
+  </div>
+</xml>

@@ -1,0 +1,19 @@
+<!--终点区域面子点-->
+<xml>
+  <params>
+    <param
+      useCommonParser='true'
+      direction='rightTop'
+      anchorOffset='(24,0)'
+    ></param>
+  </params>
+
+  <div style='display: flex; flex-direction: row'>
+    <img style='width: 48px; height: 52px' src='{icon}'></img>
+
+    <label
+      style='display: {labelDis}; text-stroke: 2px @Color_BG_L2; position: absolute; left: 49px; bottom: 15px; font-size: 22px; font-weight: bold; color: @Color_Black; opacity: 0.87'
+      text='{label}'
+    ></label>
+  </div>
+</xml>

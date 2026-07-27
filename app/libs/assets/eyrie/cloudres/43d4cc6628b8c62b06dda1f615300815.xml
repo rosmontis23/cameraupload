@@ -1,0 +1,38 @@
+<!--单独eta气泡-->
+<xml>
+  <params>
+    <param
+      useCommonParser='true'
+      direction='bottomCenter'
+      anchorRatio='(0.5,0.0)'
+    >
+      <subparam id='endPointName' padding='15px 0px 0px 0px'></subparam>
+    </param>
+
+    <param
+      useCommonParser='true'
+      direction='leftCenter'
+      anchorRatio='(1.0,0.5)'
+    >
+      <subparam id='endPointName' padding='0px 32px 0px 0px'></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='leftTop' anchorRatio='(1.0,1.0)'>
+      <subparam id='endPointName' padding='0px 32px 15px 0px'></subparam>
+    </param>
+  </params>
+
+  <div
+    id='endPointName'
+    style='display: flex; flex-direction: row; align-items: flex-start'
+  >
+    <div style='display: flex; text-align: right; white-space: nowrap; margin-right: 2px; margin-top: 4px; flex-direction: column; align-items: flex-start'>
+      <div style='display: flex; line-height: 24px; background-color: @Color_Hue210_H1; border-radius: 17.5px; margin-top: 2px; flex-direction: row; align-items: center; position: relative'>
+        <label
+          style='align-self: center; margin: 4px 8px; font-weight: normal; font-size: 24px; color: @Color_Text_Brand'
+          text='{etaTime}'
+        ></label>
+      </div>
+    </div>
+  </div>
+</xml>

@@ -1,0 +1,85 @@
+<!--新能源推荐气泡-新能源下高速推荐气泡样式-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='leftTop' anchorOffset='(0,0)'>
+      <subparam
+        id='backimage'
+        background-image='205017'
+        backgroundstretch='35% 53% 61% 38%'
+        padding='13px 47px 37px 32px'
+      ></subparam>
+
+      <subparam id='labelcolor' color='@Color_Hue20_H6'></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='rightTop' anchorOffset='(0,0)'>
+      <subparam
+        id='backimage'
+        background-image='205018'
+        backgroundstretch='35% 40% 61% 51%'
+        padding='13px 32px 37px 47px'
+      ></subparam>
+
+      <subparam id='labelcolor' color='@Color_Hue20_H6'></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='rightBottom' anchorOffset='(0,40)'>
+      <subparam
+        id='backimage'
+        background-image='205020'
+        backgroundstretch='53% 40% 44% 51%'
+        padding='29px 32px 21px 47px'
+      ></subparam>
+
+      <subparam id='labelcolor' color='@Color_Hue20_H6'></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='leftBottom' anchorOffset='(0,40)'>
+      <subparam
+        id='backimage'
+        background-image='205019'
+        backgroundstretch='53% 52% 44% 39%'
+        padding='29px 46px 21px 33px'
+      ></subparam>
+
+      <subparam id='labelcolor' color='@Color_Hue20_H6'></subparam>
+    </param>
+  </params>
+
+  <div
+    id='backimage'
+    style='display: flex; flex-direction: row; margin-left: 0px; margin-bottom: 0px'
+  >
+    <div style='display: flex; flex-direction: column; align-items: flex-start; justify-content: center'>
+      <label
+        id='labelcolor'
+        style='font-size: 28px; font-weight: bold; margin-top: 9px; margin-bottom: 6px'
+        text='{name}'
+      ></label>
+
+      <div style='display: flex; flex-direction: row; align-items: center; justify-content: center'>
+        <label
+          style='display: flex; color: @Color_Text_L2; font-size: 24px; font-weight: bold; margin-bottom: 9px'
+          text='距起点'
+        ></label>
+
+        <label
+          style='display: flex; color: @Color_Text_Brand; font-size: 24px; margin-left: 4px; margin-bottom: 9px'
+          text='{distance}'
+        ></label>
+      </div>
+    </div>
+
+    <div
+      id='30700'
+      style='display: flex; flex-direction: column; align-items: center; justify-content: center; margin-left: 10px'
+    >
+      <img style='width: 42px; height: 42px' src='205012'></img>
+
+      <label
+        style='display: flex; color: @Color_Text_L2; font-size: 20px'
+        text='添加'
+      ></label>
+    </div>
+  </div>
+</xml>

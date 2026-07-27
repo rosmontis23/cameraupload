@@ -1,0 +1,56 @@
+<!--推荐停车场信息bubble普通态-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='leftCenter' anchorOffset='(-30,0)'>
+      <subparam id='fdivStyle' align-items='stretch'></subparam>
+
+      <subparam id='divStyle' align-items='flex-end'></subparam>
+
+      <subparam
+        id='labelStyle'
+        text-align='right'
+        align-self='flex-end'
+      ></subparam>
+    </param>
+
+    <param
+      useCommonParser='true'
+      direction='rightCenter'
+      anchorOffset='(-30,0)'
+    >
+      <subparam id='fdivStyle' align-items='center'></subparam>
+
+      <subparam id='divStyle' align-items='flex-start'></subparam>
+
+      <subparam
+        id='labelStyle'
+        text-align='left'
+        align-self='flex-start'
+      ></subparam>
+    </param>
+  </params>
+
+  <div id='fdivStyle' style='display: flex; flex-direction: row'>
+    <div id='divStyle' style='display: flex; flex-direction: column'>
+      <label
+        id='labelStyle'
+        style='line-clamp: 2; text-stroke: 2px @Color_BG_L2; line-height: 28px; color: {namecolor}; font-size: 24px; font-weight: bold; max-width: 196px; text-layout-amap: Y'
+        text='{name}'
+      ></label>
+
+      <div style='display: {info}; height: 30px; align-items: center; flex-direction: row; border-radius: 8px; background-color: @Color_BG_L2(99)'>
+        <div style='width: 26px; height: 26px; align-items: center; flex-direction: column; margin-right: 4px; margin-left: 2px; border-radius: 8px; background-color: @Color_Hue220_H6; font-weight: medium; line-height: 28px'>
+          <label
+            style='color: @Color_Text_Highlight; font-size: 20px; line-height: 28px; font-weight: bold'
+            text='{rank}'
+          ></label>
+        </div>
+
+        <label
+          style='line-height: 20px; color: @Color_Hue220_H6; font-size: 20px; font-weight: normal; margin-right: 4px'
+          text='{percent}'
+        ></label>
+      </div>
+    </div>
+  </div>
+</xml>

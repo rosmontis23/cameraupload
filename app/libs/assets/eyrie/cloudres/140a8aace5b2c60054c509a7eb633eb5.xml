@@ -1,0 +1,10 @@
+<!--导航事件样式-->
+<xml>
+  <params>
+    <param useCommonParser="true" direction="rightCenter" anchorOffset="(32,0)"></param>
+  </params>
+  <div style="display:flex;flex-direction:row;align-items:center;justify-content:center;">
+    <img src="{icon}" style="width:64px;height:64px;"></img>
+    <img src="110728" style="display:{detailDis};position:absolute; width:64px; height:64px; left:0px; right:0px;"></img>
+  </div>
+</xml>

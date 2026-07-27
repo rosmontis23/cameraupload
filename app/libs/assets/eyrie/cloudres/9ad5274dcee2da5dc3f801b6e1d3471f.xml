@@ -1,0 +1,16 @@
+<!--行前拥堵气泡-堵字(感知平台)-->
+<xml>
+  <params>
+    <param
+      useCommonParser='true'
+      direction='centerCenter'
+      anchorOffset='(0.5,0.5)'
+    >
+      <subparam></subparam>
+    </param>
+  </params>
+
+  <div style='display: flex; width: 36px; height: 36px; align-items: center; border-radius: 18px; justify-content: center; background-color: white; border-width: 2px; border-color: red; border-style: solid'>
+    <label style='font-size: 24px; color: #ec0e3e' text='堵'></label>
+  </div>
+</xml>

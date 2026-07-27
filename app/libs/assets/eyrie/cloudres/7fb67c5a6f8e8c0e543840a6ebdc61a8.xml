@@ -1,0 +1,40 @@
+<!--途径地市-气泡样式-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='leftTop' anchorOffset='(18,24)'>
+      <subparam
+        id='backimage'
+        background-image='205014'
+        backgroundstretch='35% 40% 61% 51%'
+        padding='25px 47px 47px 32px'
+        backgroundtransform='rotate(0,180,0)'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='rightTop' anchorOffset='(18,24)'>
+      <subparam
+        id='backimage'
+        background-image='205014'
+        backgroundstretch='35% 40% 61% 51%'
+        padding='25px 32px 47px 47px'
+      ></subparam>
+    </param>
+  </params>
+
+  <div
+    id='backimage'
+    style='display: flex; flex-direction: row; align-items: center; justify-content: center'
+  >
+    <img
+      src='200122'
+      style='width: 32px; height: 36px'
+      syncloadCache='false'
+      fastmode='false'
+    ></img>
+
+    <label
+      style='margin-left: 4; color: @Color_Black; opacity: 1.0; font-size: 28px; font-weight: bold'
+      text='{label}'
+    ></label>
+  </div>
+</xml>

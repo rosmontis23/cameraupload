@@ -1,0 +1,24 @@
+<!--新能源途经点光柱图扎标样式-->
+<xml>
+  <params>
+    <param
+      useCommonParser='true'
+      direction='leftCenter'
+      anchorOffset='(0,0)'
+    ></param>
+  </params>
+
+  <div style='display: flex; width: auto; flex-direction: row; align-items: center; background-image: {bgId}; padding: 1px 19px 15px 1px; backgroundstretch: 48% 50% 51% 49%'>
+    <img
+      style='width: 48px; height: 48px; margin-left: 14px; margin-right: 4px; margin-top: 16px; margin-bottom: 2px'
+      src='205022'
+      syncloadCache='false'
+      fastmode='false'
+    ></img>
+
+    <label
+      style='display: {isDisplay}; font-size: 24px; padding-left: 5px; padding-right: 16px; padding-top: 15px'
+      text='{label}'
+    ></label>
+  </div>
+</xml>

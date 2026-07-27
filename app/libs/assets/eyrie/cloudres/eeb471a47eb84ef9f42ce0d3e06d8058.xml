@@ -1,0 +1,18 @@
+<!--顺路搜ETA信息-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='bottomCenter' anchorOffset='(0,0)'>
+      <subparam id='endPointName' padding='0px 0px 0px 0px'></subparam>
+    </param>
+  </params>
+
+  <div
+    id='endPointName'
+    style='display: {etaDisplay}; width: auto; height: auto; justify-content: center; align-items: center; margin: {etaMarginTop} 4px 4px 4px; flex-direction: column; border-radius: 9px; background-color: {etaInfoBgColor}; line-height: 20px'
+  >
+    <label
+      style='position: relative; text-overflow: ellipsis; font-weight: bold; color: {etaInfoColor}; font-size: 24px; margin: 3px 6px; align-self: center'
+      text='{etaInfo}'
+    ></label>
+  </div>
+</xml>

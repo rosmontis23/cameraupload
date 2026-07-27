@@ -1,0 +1,23 @@
+<!--动态导航新路线气泡白天231000,黑夜231001-->
+<xml>
+  <params>
+    <param useCommonParser="true" direction="leftTop" anchorOffset="(15,20)">
+      <subparam id="backimage" background-image="110586" backgroundstretch="34% 52% 61% 36%" padding="29px 47px 53px 32px"></subparam>
+    </param>
+    <param useCommonParser="true" direction="leftBottom" anchorOffset="(12,15)">
+      <subparam id="backimage" background-image="110588" backgroundstretch="52% 46% 43% 42%" padding="47px 47px 38px 32px"></subparam>
+    </param>
+    <param useCommonParser="true" direction="rightTop" anchorOffset="(15,20)">
+      <subparam id="backimage" background-image="110587" backgroundstretch="34% 52% 61% 36%" padding="29px 32px 53px 47px"></subparam>
+    </param>
+    <param useCommonParser="true" direction="rightBottom" anchorOffset="(12,15)">
+      <subparam id="backimage" background-image="110589" backgroundstretch="52% 41% 43% 48%" padding="47px 32px 38px 47px"></subparam>
+    </param>
+  </params>
+  <div id="backimage" style="display:flex;flex-direction:row;align-items:center;justify-content:space-around;">
+    <div style="margin-left:4px;display:flex;flex-direction:column;align-items:flex-start;">
+      <label style="color:#1A66FF;opacity:1.0;font-size:34px;font-weight:bold;" text="{eventTitle}"></label>
+      <label style="color:#000000;opacity:0.6;font-size:32px;" text="{distanceDif}"></label>
+    </div>
+  </div>
+</xml>

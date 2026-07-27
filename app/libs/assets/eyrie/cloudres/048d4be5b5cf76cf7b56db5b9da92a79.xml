@@ -1,0 +1,19 @@
+<!--路况趋势气泡（白天）(黑夜）-->
+<xml>
+  <params>
+    <param useCommonParser="true" direction="rightTop" anchorOffset="(15,25)">
+      <subparam id="backimage" background-image="110587" backgroundstretch="34% 41% 61% 48%" padding="21px 32px 45px 47px"></subparam>
+    </param>
+    <param useCommonParser="true" direction="leftTop" anchorOffset="(15,25)">
+      <subparam id="backimage" background-image="110586" backgroundstretch="34% 52% 61% 36%" padding="21px 47px 45px 32px"></subparam>
+    </param>
+  </params>
+  <div id="backimage" style="display:flex;flex-direction:row;align-items:center;justify-content:space-around;">
+    <image src="{iconResIdUrl}" background-backupimage="{defaultIconResId}" style="display:{iconDisplay};margin-left:4px;margin-right:4px;width:56px;height:56px;"></image>
+    <image src="{defaultIconResId}" style="display:{defaultDisplay}; margin-left:4px;margin-right:4px;width:28px;height:28px;"></image>
+    <div style="margin-left:4;display:flex;flex-direction:column;align-items:flex-start;">
+      <label id="labelcolor" style="color:{trendsColor};opacity:1.0;font-size:32px;font-weight:bold;" text="{tips}"></label>
+      <label id="sublabelcolor" style="opacity:1.0;font-size:28px;display:{isDisplay}" text="{subLabel}"></label>
+    </div>
+  </div>
+</xml>

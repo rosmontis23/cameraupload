@@ -1,0 +1,25 @@
+<!--骑步行转向指引气泡-->
+<xml>
+  <params>
+    <param
+      useCommonParser='true'
+      direction='topCenter'
+      anchorOffset='(0,0)'
+    ></param>
+  </params>
+
+  <div
+    id='backimage'
+    style='display: flex; flex-direction: row; align-items: center; justify-content: center; background-image:200021; backgroundstretch: 38% 66% 58% 31% 38% 32% 58% 64%; padding: 21px 30px 37px 30px'
+  >
+    <label
+      style='font-size: 26px; color: @Color_Text_L1; align-self: center'
+      text='{label}'
+    ></label>
+
+    <label
+      style='display: {subDisplay}; font-size: 26px; color: @Color_Text_L1; align-self: center'
+      text='{sublabel}'
+    ></label>
+  </div>
+</xml>

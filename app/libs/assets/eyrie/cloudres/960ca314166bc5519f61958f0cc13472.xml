@@ -1,0 +1,17 @@
+<!--骑步行终点POI名称样式-->
+<xml>
+  <params>
+    <param
+      useCommonParser='true'
+      direction='bottomCenter'
+      anchorOffset='(0,0)'
+    ></param>
+  </params>
+
+  <div style='display: flex; width: auto; height: auto; align-items: center; margin: 10px; flex-direction: column; padding: 10px; opacity: 0.87; background-color: @Color_BG_L2(00)'>
+    <label
+      style='text-stroke: 2px @Color_BG_L2; font-weight: bold; font-size: 26px; color: @Color_Ink_L7'
+      text='{label}'
+    ></label>
+  </div>
+</xml>

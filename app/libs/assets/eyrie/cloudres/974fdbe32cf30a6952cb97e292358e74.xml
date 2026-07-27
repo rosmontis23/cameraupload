@@ -1,0 +1,15 @@
+<!--TMC拥堵定点红绿灯气泡-->
+<xml>
+  <params>
+    <param useCommonParser="true" direction="rightTop" anchorOffset="(15,25)" anchorOffsetHD="(20,20)">
+      <subparam id="backimage" background-image="110518" backgroundstretch="35% 40% 60% 48%" padding="23px 32px 47px 50px"></subparam>
+    </param>
+    <param useCommonParser="true" direction="leftTop" anchorOffset="(15,25)" anchorOffsetHD="(20,20)">
+      <subparam id="backimage" background-image="110516" backgroundstretch="35% 48% 60% 36%" padding="23px 47px 45px 32px"></subparam>
+    </param>
+  </params>
+  <div id="backimage" style="display:flex;flex-direction:column;align-items:center;justify-content:center;">
+    <label style="align-self: flex-start; font-weight: bold; font-size: 32px; color: #000000; line-height: 36px; text-overflow: ellipsis; overflow: hidden; position: relative" text="{tagsLabel_1}"></label>
+    <label style="display:{tagsDisplay_2}; align-self: flex-start; font-weight: normal; font-size: 28px; color: {color_2}; line-height: 32px; margin-top: 3px; position: relative" text="{tagsLabel_2}"></label>
+  </div>
+</xml>

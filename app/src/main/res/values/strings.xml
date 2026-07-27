@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">启明瞳</string>
+    <string name="initializing">初始化中...</string>
+    <string name="fps_zero">FPS: 0</string>
+    <string name="appid">83b64f9d</string>
+    <string name="apikey">639568a64edd997e5910d4358c2a5193</string>
+    <string name="apiSecret">NmE2YzFhOGJiZmQ5NzMwY2QyMmMwMjVh</string>
+    <string name="amap_key">326726c8e1d8a8d6ea9e556fdab54e92</string>
+</resources>

@@ -1,0 +1,55 @@
+<!--起点气泡-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='leftTop' anchorOffset='(0,0)'>
+      <subparam
+        id='backimage'
+        background-image='231051'
+        backgroundstretch='20% 45% 40% 35%'
+        padding='25px 45px 47px 30px'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='rightTop' anchorOffset='(0,0)'>
+      <subparam
+        id='backimage'
+        background-image='231049'
+        backgroundstretch='20% 35% 40% 45%'
+        padding='25px 30px 47px 45px'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='leftBottom' anchorOffset='(0,0)'>
+      <subparam
+        id='backimage'
+        background-image='231052'
+        backgroundstretch='40% 45% 20% 35%'
+        padding='40px 45px 35px 30px'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='rightBottom' anchorOffset='(0,0)'>
+      <subparam
+        id='backimage'
+        background-image='231050'
+        backgroundstretch='40% 35% 30% 45%'
+        padding='40px 30px 35px 45px'
+      ></subparam>
+    </param>
+  </params>
+
+  <div
+    id='backimage'
+    style='display: flex; width: auto; height: auto; flex-direction: row; align-items: center; justify-content: center'
+  >
+    <img
+      style='width: 32px; height: 32px; margin-right: 5px'
+      src='{iconId}'
+    ></img>
+
+    <label
+      style='align-self: flex-start; font-weight: bold; font-size: 28px; color: @Color_Text_Brand; line-height: 32px'
+      text='{text}'
+    ></label>
+  </div>
+</xml>

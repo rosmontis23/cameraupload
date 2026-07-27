@@ -1,0 +1,86 @@
+<!--D2C预览生成-->
+<xml>
+  <params>
+    <param direction='rightTop' anchorOffset='(56,35)'>
+      <subparam
+        id='background'
+        background-image='https://faas-image-er.amap.com/acornCompressImageProd/tokenImg/500017_6000000003075-2-tps-265-102-7902efc3-95be-4c2b-bcd2-ad582a24eaf3.png'
+        backgroundstretch='52% 25% 42% 30%'
+        padding='28px 48px 22px 78px'
+      ></subparam>
+
+      <subparam id='image' left='0px'></subparam>
+
+      <subparam id='nameLable' align-self='flex-start'></subparam>
+
+      <subparam id='chargeLable' align-self='flex-start'></subparam>
+    </param>
+
+    <param direction='leftTop' anchorOffset='(40,35)'>
+      <subparam
+        id='background'
+        background-image='https://faas-image-er.amap.com/acornCompressImageProd/tokenImg/500017_6000000004126-2-tps-265-98-48ad4eab-0e61-4326-a391-73ce39523124.png'
+        backgroundstretch='54% 25% 40% 30%'
+        padding='28px 77px 18px 49px'
+      ></subparam>
+
+      <subparam id='image' right='0px'></subparam>
+
+      <subparam id='nameLable' align-self='flex-end'></subparam>
+
+      <subparam id='chargeLable' align-self='flex-end'></subparam>
+    </param>
+  </params>
+
+  <div>
+    <div style='display: flex; position: relative; flex-direction: column'>
+      <div style='display: flex; position: relative; top: 0px; left: 0px; align-items: flex-start; flex-direction: row; margin-left: 20px'>
+        <div id='background' style='top: 0px; left: 0' syncload='true'>
+          <div style='display: flex; position: relative; align-items: flex-start; flex-direction: column'>
+            <label
+              style='position: relative; line-height: 28px; color: @Color_Text_L2; font-size: 24px; font-weight: normal; align-self: flex-start'
+              text='{arriveTime}'
+            ></label>
+
+            <div
+              id='chargeLable'
+              style='align-items: flex-start; flex-direction: row'
+            >
+              <label
+                style='position: relative; margin-top: -2px; overflow: hidden; text-overflow: ellipsis; line-height: 24px; color: {chargeLabelColor}; font-size: 22px; font-weight: bold; align-self: flex-start'
+                text='{chargeLabel}'
+              ></label>
+
+              <label
+                style='font-weight: bold; text-overflow: ellipsis; margin-top: -2px; position: relative; align-self: flex-start; color: {amountColor}; overflow: hidden; line-height: 24px; font-size: 22px; text-decoration: {lineThrough}'
+                text='{amountLabel}'
+              ></label>
+
+              <div style='display: {tollLabelShow}; background-color: @Color_Text_Brand; line-height: 24px; margin-top: -2px; margin-left: 6px; border-radius: 10px; flex-direction: row; align-items: center; position: relative'>
+                <label
+                  style='align-self: center; font-weight: normal; margin-left: 4px; margin-right: 4px; line-height: 24px; font-size: 22px; color: @Color_Hue210_H1'
+                  text='{tollLabelText}'
+                ></label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <img
+          id='image'
+          style='width: 78px; height: 98px; position: absolute; align-self: flex-start'
+          src='110702'
+          syncload='true'
+          syncloadCache='false'
+          fastmode='false'
+        ></img>
+      </div>
+
+      <label
+        id='nameLable'
+        style='position: relative; margin-top: -2px; overflow: hidden; text-overflow: ellipsis; line-height: 28px; white-space: nowrap; color: @Color_Black; font-size: 20px; font-weight: bold; text-stroke: 2px @Color_BG_L2'
+        text='{tollGateName}'
+      ></label>
+    </div>
+  </div>
+</xml>

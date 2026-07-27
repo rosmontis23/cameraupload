@@ -1,0 +1,22 @@
+<!--新版红绿灯lottie的避让框-->
+<xml>
+  <params>
+    <param
+      useCommonParser='true'
+      direction='leftTop'
+      anchorOffset='(2,18)'
+      anchorOffsetHD='(12,18)'
+    ></param>
+
+    <param
+      useCommonParser='true'
+      direction='rightTop'
+      anchorOffset='(2,18)'
+      anchorOffsetHD='(12,18)'
+    ></param>
+  </params>
+
+  <div style='display: flex; flex-direction: row'>
+    <div style='display: flex; width: {lottieWidth}; height: {lottieHeight}'></div>
+  </div>
+</xml>

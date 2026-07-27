@@ -1,0 +1,12 @@
+<!--公交详情页途径站圆圈，动态纹理样式-->
+<xml>
+  <params>
+    <param
+      useCommonParser='true'
+      direction='centerCenter'
+      anchorOffset='(0,0)'
+    ></param>
+  </params>
+
+  <div style='display: flex; width: 26px; height: 26px; border-color: {color1}; background-color: white; margin: 4px; border-radius: 26px; border-width: 3px; justify-content: space-around; border-style: solid'></div>
+</xml>

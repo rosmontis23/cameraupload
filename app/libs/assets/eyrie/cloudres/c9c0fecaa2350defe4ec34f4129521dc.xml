@@ -1,0 +1,27 @@
+<!--骑步行终点区域面子点数字-->
+<xml>
+  <params>
+    <param
+      useCommonParser='true'
+      direction='rightTop'
+      anchorOffset='(24,0)'
+    ></param>
+  </params>
+
+  <div style='justify-content: center'>
+    <div
+      id='backimage'
+      style='display: flex; width: 48px; height: 52px; justify-content: center; background-image: {icon}; flex-direction: column; position: absolute'
+    >
+      <label
+        text='{index}'
+        style='margin-bottom: 7px; align-self: center; color: @Color_Text_Highlight; font-weight: bold; font-size: 26px'
+      ></label>
+    </div>
+
+    <label
+      style='display: {labelDis}; text-stroke: 1px white; opacity: 0.87; color: @Color_Black; font-weight: bold; font-size: 22px; bottom: -7px; left: 49px; position: absolute'
+      text='{label}'
+    ></label>
+  </div>
+</xml>

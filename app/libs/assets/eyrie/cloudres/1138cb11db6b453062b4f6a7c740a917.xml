@@ -1,0 +1,40 @@
+<!--导航中动态运营下发的路线扩展信息（白天黑夜）-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='leftTop' anchorOffset='(10,25)'>
+      <subparam
+        id='backimage'
+        background-image='110518'
+        backgroundstretch='35% 40% 60% 48%'
+        padding='23px 37px 47px 42px'
+        backgroundtransform='rotate(0,180,0)'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='rightTop' anchorOffset='(15,25)'>
+      <subparam
+        id='backimage'
+        background-image='110518'
+        backgroundstretch='35% 40% 60% 48%'
+        padding='23px 32px 47px 50px'
+      ></subparam>
+    </param>
+  </params>
+
+  <div
+    id='backimage'
+    style='display: flex; flex-direction: row; align-items: center; justify-content: space-around'
+  >
+    <label
+      style='color: #212121; font-size: 32px; font-weight: bold'
+      text='{label}'
+    ></label>
+
+    <div style='display: {isDisplay}; width: 1.5px; height: 36px; margin-right: 8px; margin-left: 8px; background-color: #DCDCDC'></div>
+
+    <label
+      style='display: {isDisplay}; color: #212121; font-size: 32px; font-weight: bold'
+      text='{subLabel}'
+    ></label>
+  </div>
+</xml>

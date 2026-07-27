@@ -1,0 +1,58 @@
+<!--新手气泡(感知平台)-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='rightTop' anchorOffset='(10,15)'>
+      <subparam
+        id='backimage'
+        background-image='110518'
+        backgroundstretch='36% 25% 55% 26%'
+        padding='23px 32px 48px 47px'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='rightBottom' anchorOffset='(8,10)'>
+      <subparam
+        id='backimage'
+        background-image='110519'
+        backgroundstretch='51% 35% 40% 26%'
+        padding='40px 32px 31px 47px'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='leftBottom' anchorOffset='(8,10)'>
+      <subparam
+        id='backimage'
+        background-image='110517'
+        backgroundstretch='51% 29% 37% 24%'
+        padding='40px 47px 31px 32px'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='leftTop' anchorOffset='(10,15)'>
+      <subparam
+        id='backimage'
+        background-image='110516'
+        backgroundstretch='34% 37% 57% 21%'
+        padding='23px 47px 48px 35px'
+      ></subparam>
+    </param>
+  </params>
+
+  <div id='backimage' style='left: 0; top: 0px'>
+    <div>
+      <div style='display: flex; flex-direction: row; align-items: center; position: relative'>
+        <img
+          style='width: 66px; height: 41px; align-self: center; margin-right: 9px'
+          src='202500'
+          syncloadCache='false'
+          fastmode='false'
+        ></img>
+
+        <label
+          style='align-self: center; margin-right: 0px; font-weight: bold; font-size: 28px; color: @Color_Text_L1; line-height: 28px; margin-top: 1px'
+          text='{text}'
+        ></label>
+      </div>
+    </div>
+  </div>
+</xml>

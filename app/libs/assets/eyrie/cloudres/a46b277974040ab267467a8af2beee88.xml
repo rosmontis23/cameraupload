@@ -1,0 +1,19 @@
+<!--室内所在楼层气泡样式-->
+<xml>
+  <params>
+    <param
+      useCommonParser='true'
+      direction='bottomCenter'
+      anchorOffset='(0,0)'
+    ></param>
+  </params>
+
+  <div style='height: 125px; padding: 75px 7px 15px 10px; border-width: 8px; left: 0; top: 0px'>
+    <div style='height: 44px; padding: 4px 4px 10px 5px; border-radius: 8px; border-width: 5px; background-color: #6C6C6C; left: 0; top: 0px'>
+      <label
+        style='align-self: center; font-size: 21px; color: @Color_Text_Highlight; line-height: 22px; text-overflow: ellipsis; overflow: hidden; position: relative'
+        text='{label}'
+      ></label>
+    </div>
+  </div>
+</xml>

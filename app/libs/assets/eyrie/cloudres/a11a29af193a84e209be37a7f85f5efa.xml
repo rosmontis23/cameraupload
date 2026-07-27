@@ -1,0 +1,48 @@
+<!--D2C预览生成-->
+<xml>
+  <params>
+    <param direction='rightTop' anchorOffset='(36,2)'>
+      <subparam
+        id='background'
+        background-image='https://gw.alicdn.com/imgextra/i3/O1CN01ahjpcI1YkTOH1PEAV_!!6000000003097-2-tps-98-88.png'
+        backgroundstretch='52% 40% 35% 35%'
+        padding='26px 25px 18px 67px'
+      ></subparam>
+
+      <subparam id='image' left='0px'></subparam>
+    </param>
+
+    <param direction='leftTop' anchorOffset='(36,2)'>
+      <subparam
+        id='background'
+        background-image='https://gw.alicdn.com/imgextra/i1/O1CN01ItgOdx1Lj17o12XTJ_!!6000000001334-2-tps-98-88.png'
+        backgroundstretch='52% 35% 35% 40%'
+        padding='26px 67px 18px 25px'
+      ></subparam>
+
+      <subparam id='image' right='0px'></subparam>
+    </param>
+  </params>
+
+  <div>
+    <div style='display: flex; position: relative; align-items: flex-start; flex-direction: column'>
+      <div style='display: flex; position: relative; top: 0px; left: 0px; align-items: flex-start; flex-direction: row'>
+        <div id='background' style='top: 0px; left: 0' syncload='true'>
+          <label
+            style='position: relative; color: {chargeLabelColor}; line-height: 30px; font-size: 26px; font-weight: bold; align-self: flex-start'
+            text='{chargeLabel}'
+          ></label>
+        </div>
+
+        <img
+          id='image'
+          style='width: 78px; height: 98px; margin-top: -10px; position: absolute; align-self: flex-start'
+          src='110702'
+          syncload='true'
+          syncloadCache='false'
+          fastmode='false'
+        ></img>
+      </div>
+    </div>
+  </div>
+</xml>

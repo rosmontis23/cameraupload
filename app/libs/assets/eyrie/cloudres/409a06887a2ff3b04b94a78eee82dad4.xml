@@ -1,0 +1,52 @@
+<!--长途天气气泡多行样式-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='leftTop' anchorOffset='(18,24)'>
+      <subparam
+        id='backimage'
+        background-image='205014'
+        backgroundstretch='35% 40% 61% 51%'
+        padding='13px 47px 37px 32px'
+        backgroundtransform='rotate(0,180,0)'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='rightTop' anchorOffset='(18,24)'>
+      <subparam
+        id='backimage'
+        background-image='205014'
+        backgroundstretch='35% 40% 61% 51%'
+        padding='13px 32px 37px 47px'
+      ></subparam>
+    </param>
+  </params>
+
+  <div
+    id='backimage'
+    style='display: flex; justify-content: space-around; align-items: center; flex-direction: row'
+  >
+    <img
+      src='{iconId}'
+      style='width: 60px; height: 60px'
+      syncloadCache='false'
+      fastmode='false'
+    ></img>
+
+    <div style='display: flex; padding-bottom: 10; padding-top: 12; align-items: flex-start; flex-direction: column; margin-left: 4'>
+      <label
+        style='font-weight: bold; font-size: 28px; opacity: 1.0; color: @Color_Black'
+        text='{label}段'
+      ></label>
+
+      <label
+        style='font-size: 24px; opacity: 0.6; color: @Color_Black'
+        text='途经时{subLabel}'
+      ></label>
+
+      <label
+        style='font-size: 24px; opacity: 0.6; color: @Color_Black'
+        text='{label3}'
+      ></label>
+    </div>
+  </div>
+</xml>

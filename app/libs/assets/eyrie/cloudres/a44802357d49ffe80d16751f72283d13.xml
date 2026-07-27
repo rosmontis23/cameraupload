@@ -1,0 +1,159 @@
+<!--110924_附加电子眼动态纹理  单圈+单行字（距离）-->
+<xml>
+  <params>
+    <param
+      useCommonParser='true'
+      direction='leftTop'
+      anchorOffset='(2,18)'
+      anchorOffsetHD='(12,18)'
+    >
+      <subparam
+        id='labBackground'
+        backgroundstretch='39% 50% 58% 46%'
+        padding='14px 45px 32px 45px'
+        margin-start='0px'
+        margin-right='10px'
+      ></subparam>
+
+      <subparam
+        id='labDistance'
+        margin-right='66px'
+        margin-left='0px'
+      ></subparam>
+
+      <subparam id='labNormalImage' right='40px' top='25px'></subparam>
+
+      <subparam id='divpadding' right='40px' top='25px'></subparam>
+
+      <subparam id='fourthdiv' right='0px'></subparam>
+    </param>
+
+    <param
+      useCommonParser='true'
+      direction='rightTop'
+      anchorOffset='(2,18)'
+      anchorOffsetHD='(12,18)'
+    >
+      <subparam
+        id='labBackground'
+        backgroundstretch='39% 50% 58% 46%'
+        padding='14px 45px 32px 45px'
+        margin-start='10px'
+        margin-right='0px'
+      ></subparam>
+
+      <subparam
+        id='labDistance'
+        margin-right='0px'
+        margin-left='66px'
+      ></subparam>
+
+      <subparam id='labNormalImage' left='40px' top='25px'></subparam>
+
+      <subparam id='divpadding' left='40px' top='25px'></subparam>
+
+      <subparam id='fourthdiv' left='0px'></subparam>
+    </param>
+
+    <param
+      useCommonParser='true'
+      direction='leftBottom'
+      anchorOffset='(2,18)'
+      anchorOffsetHD='(12,10)'
+    >
+      <subparam
+        id='labBackground'
+        backgroundstretch='52% 45% 46% 45%'
+        padding='28px 45px 18px 45px'
+        margin-start='0px'
+        margin-right='10px'
+      ></subparam>
+
+      <subparam
+        id='labDistance'
+        margin-right='66px'
+        margin-left='0px'
+      ></subparam>
+
+      <subparam id='labNormalImage' right='40px' top='40px'></subparam>
+
+      <subparam id='divpadding' right='40px' top='40px'></subparam>
+
+      <subparam id='fourthdiv' right='0px'></subparam>
+    </param>
+        <param
+      useCommonParser='true'
+      direction='rightBottom'
+      anchorOffset='(2,18)'
+      anchorOffsetHD='(12,10)'
+    >
+      <subparam
+        id='labBackground'
+        backgroundstretch='52% 45% 46% 45%'
+        padding='28px 45px 18px 45px'
+        margin-start='10px'
+        margin-right='0px'
+        align-items='stretch'
+      ></subparam>
+
+      <subparam
+        id='labExplain'
+        margin-right='0px'
+        margin-left='66px'
+      ></subparam>
+
+      <subparam
+        id='labDistance'
+        margin-right='0px'
+        margin-left='66px'
+      ></subparam>
+
+      <subparam id='labNormalImage' left='40px' top='40px'></subparam>
+
+      <subparam id='divpadding' left='40px' top='40px'></subparam>
+
+      <subparam id='fourthdiv' left='0px'></subparam>
+    </param>
+  </params>
+
+  <div style='display: flex; flex-direction: row'>
+    <div
+      id='labBackground'
+      style='display: flex; flex-direction: row; min-height: 138px; background-image: {bgRes}; align-items: center; justify-content: center'
+    >
+      <label
+        id='labDistance'
+        style='font-size: 38px; font-weight: bold; color: {distanceColor}'
+        text='{distanceDesc}'
+      ></label>
+    </div>
+
+    <div
+      id='fourthdiv'
+      style='display: flex; position: absolute; top: 0px; flex-direction: column; align-items: center; justify-content: space-around'
+    >
+      <img
+        id='labPopImage'
+        style='width: 142px; height: 136px'
+        src='{popResId}'
+      ></img>
+
+      <img
+        id='labNormalImage'
+        style='display: {normalImageDisplay}; width: 68px; height: 68px; position: absolute; align-items: center'
+        src='{subResId}'
+      ></img>
+
+      <div
+        id='divpadding'
+        style='display: flex; width: 68px; height: 68px; position: absolute; align-items: center; justify-content: center'
+      >
+        <label
+          id='labSpeed'
+          style='display: {speedDisplay}; color: #222222; font-size: {fontSize}; letter-spacing: -3; font-family: AmapNumber-Bold'
+          text='{maxspeed}'
+        ></label>
+      </div>
+    </div>
+  </div>
+</xml>

@@ -1,0 +1,43 @@
+<!--步导结束页终点POI信息扎点，隐私图层带向右箭头或不带向右箭头-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='topCenter' anchorOffset='(0,-20)'>
+      <subparam
+        id='backimage'
+        background-image='140550'
+        backgroundstretch='0% 63% 1% 32% 0% 33% 1% 62%'
+        padding='20px 20px 40px 20px'
+      ></subparam>
+    </param>
+  </params>
+
+  <div
+    id='backimage'
+    style='display: flex; flex-direction: row; align-items: center; justify-content: center'
+  >
+    <label
+      style='display: {isNameDisplay}; color: @Color_Text_L3; font-size: 28px; margin-left: 36px; margin-right: 10px'
+      text='{name}'
+    ></label>
+
+    <label
+      style='display: {isFloorDisplay}; color: @Color_Text_L1; font-size: 28px; margin-right: {marginRight}'
+      text='{floor}'
+    ></label>
+
+    <label
+      style='display: {isOnlyFloorDisplay}; color: @Color_Text_L1; font-size: 28px; margin-left: 36px; margin-right: {marginRight}'
+      text='{floor}'
+    ></label>
+
+    <div style='display: {isArrowDisplay}; flex-direction: row'>
+      <img
+        id='rightArrowImage'
+        style='width: 40px; height: 40px'
+        src='140551'
+        syncloadCache='false'
+        fastmode='false'
+      ></img>
+    </div>
+  </div>
+</xml>

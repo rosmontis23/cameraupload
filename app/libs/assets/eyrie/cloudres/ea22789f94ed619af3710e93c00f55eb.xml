@@ -1,0 +1,99 @@
+<!--灵活标注车道级动作距离双行气泡白天 LaneNaviActionDistanceDoubleLineDay-->
+<xml>
+  <params>
+    <param
+      useCommonParser='true'
+      direction='leftCenter'
+      anchorOffset='(-15,0)'
+      anchorOffsetHD='(15,18)'
+    >
+      <subparam id='lineStylePath' name='path' path='(45,0)'></subparam>
+
+      <subparam id='whiteLineStylePath' name='path' path='(45,3)'></subparam>
+
+      <subparam
+        id='labBackground'
+        flex-direction='row'
+        backgroundstretch='45% 68% 46% 30%'
+        padding='47px 10px 41px 34px'
+      ></subparam>
+    </param>
+
+    <param
+      useCommonParser='true'
+      direction='rightCenter'
+      anchorOffset='(-15,0)'
+      anchorOffsetHD='(15,18)'
+    >
+      <subparam id='lineStylePath' name='path' path='(-45,0)'></subparam>
+
+      <subparam id='whiteLineStylePath' name='path' path='(-45,3)'></subparam>
+
+      <subparam
+        id='labBackground'
+        backgroundstretch='45% 68% 46% 30%'
+        padding='47px 10px 41px 34px'
+        flex-direction='row-reverse'
+        backgroundtransform='rotate(0,180,0)'
+      ></subparam>
+    </param>
+  </params>
+
+  <div
+    id='animationId'
+    style='display: flex; flex-direction: row'
+    animation='{collisionshowanimation}: animationkey'
+    animationkey='type: 2; duration: 200; count: 1; from: {collisionFromX} {collisionFromY} 0; to: 0 0 0'
+  >
+    <line
+      id='whiteLineStylePath'
+      style='width: 4px; background-color: #B3FFFFFF'
+      offset-start-pos='(0,3)'
+      path-start-pos='Y'
+    ></line>
+
+    <line
+      id='lineStylePath'
+      style='width: 4px; background-image: linear-gradient(to left,@Color_Hue230_L6,@Color_Hue230_L6)'
+      path-start-pos='Y'
+    ></line>
+
+    <div
+      id='labBackground'
+      style='top: 0px; left: 0; background-image: 171065'
+      syncload='true'
+    >
+      <div style='display: flex; align-items: center; flex-direction: column; margin-right: 2px; white-space: nowrap'>
+        <div style='display: flex; position: relative; align-items: center; flex-direction: row'>
+          <label
+            style='margin-right: 6px; font-weight: bold; color: @Color_BG_L1; font-family: AmapNumber-Bold; font-size: 44px; align-self: center'
+            text='{distance}'
+          ></label>
+
+          <label
+            style='margin-top: 4px; color: @Color_BG_L1; font-weight: bold; font-size: 30px; margin-right: 0px; align-self: center'
+            text='米'
+          ></label>
+        </div>
+
+        <label
+          style='position: relative; margin-right: 0px; left: 2px; color: @Color_BG_L1; font-size: 28px; font-weight: bold; align-self: center; top: -5px'
+          text='{text}'
+        ></label>
+      </div>
+
+      <div
+        style='display: flex; width: 82px; height: 82px; align-items: center; flex-direction: row; justify-content: center; background-image: 171040'
+        syncload='true'
+      >
+        <img
+          style='width: 70px; height: 70px; align-self: center'
+          src='{actionIcon}'
+          syncload='true'
+          syncloadCache='false'
+          fastmode='false'
+        ></img>
+      </div>
+    </div>
+  </div>
+</xml>

@@ -1,0 +1,10 @@
+<!--巡航中交通事件纹理-->
+<xml>
+  <params>
+    <param useCommonParser="true" direction="rightTop" anchorOffset="(48,0)"></param>
+  </params>
+  <div style="display:flex;flex-direction:row;">
+    <img style="width:96px;height:132px;" src="{icon}"></img>
+    <label style="margin-left:-20px;margin-bottom:10px;font-size:34px;color:#212121;align-self:flex-end;" text="{label}"></label>
+  </div>
+</xml>

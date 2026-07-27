@@ -1,0 +1,90 @@
+<!--多路线气泡样式-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='leftTop' anchorOffset='(15,25)'>
+      <subparam
+        id='backimage'
+        background-image='110518'
+        backgroundstretch='34% 41% 61% 48%'
+        padding='21px 47px 45px 32px'
+        backgroundtransform='rotate(0,180,0)'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='leftBottom' anchorOffset='(15,15)'>
+      <subparam
+        id='backimage'
+        background-image='110518'
+        backgroundstretch='34% 41% 61% 48%'
+        padding='44px 47px 25px 32px'
+        backgroundtransform='rotate(180,180,0)'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='rightTop' anchorOffset='(15,25)'>
+      <subparam
+        id='backimage'
+        background-image='110518'
+        backgroundstretch='34% 41% 61% 48%'
+        padding='21px 32px 45px 47px'
+      ></subparam>
+    </param>
+
+    <param
+      useCommonParser='true'
+      direction='rightBottom'
+      anchorOffset='(15,15)'
+    >
+      <subparam
+        id='backimage'
+        background-image='110518'
+        backgroundstretch='34% 41% 61% 48%'
+        padding='44px 32px 25px 47px'
+        backgroundtransform='rotate(180,0,0)'
+      ></subparam>
+    </param>
+  </params>
+
+  <div
+    id='backimage'
+    style='justify-content: flex-start; align-items: flex-start; flex-direction: column'
+  >
+    <div style='align-items: center; justify-content: center; flex-direction: row'>
+      <label
+        text='{timeDif}'
+        style='color: {timeColor}; text-align: center; font-weight: bold; font-size: {timeSize}'
+      ></label>
+
+      <img
+        src='{chargeIcon}'
+        style='display: {allNoCost}; width: 34px; height: 34px; margin-right: 2px; margin-left: 6px'
+        syncloadCache='false'
+        fastmode='false'
+      ></img>
+
+      <label
+        text='{costText}'
+        style='display: {allNoCostDisplay}; color: {costColor}; text-align: center; font-size: {textSize}'
+      ></label>
+    </div>
+
+    <div style='align-items: center; justify-content: center; flex-direction: row'>
+      <label
+        text='{disDif}'
+        style='color: {distColor}; text-align: center; font-size: {textSize}'
+      ></label>
+
+      <img
+        src='{trafficIcon}'
+        style='width: 32px; height: 32px; margin-right: 1px; margin-left: 8px'
+        syncloadCache='false'
+        fastmode='false'
+      ></img>
+
+      <label
+        text='{trafficDif}'
+        style='color: {trafficColor}; text-align: center; font-size: {textSize}'
+      ></label>
+    </div>
+  </div>
+</xml>

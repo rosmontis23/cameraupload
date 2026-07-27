@@ -1,0 +1,19 @@
+<!--长途麻点纹理-->
+<xml>
+  <params>
+    <param
+      useCommonParser='true'
+      direction='topCenter'
+      anchorOffset='(0,50)'
+    ></param>
+  </params>
+
+  <div style='display: flex; width: auto; height: auto; justify-content: center; align-items: center; flex-direction: column'>
+    <img
+      style='display: flex; width: 42px; height: 42px; margin: 50px 50px'
+      src='{pittingPointId}'
+      syncloadCache='false'
+      fastmode='false'
+    ></img>
+  </div>
+</xml>

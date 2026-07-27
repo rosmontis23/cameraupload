@@ -1,0 +1,95 @@
+<!--区间测速起终点-->
+<xml>
+  <params>
+    <param
+      useCommonParser='true'
+      direction='rightTop'
+      anchorOffset='(2,18)'
+      anchorOffsetHD='(12,18)'
+    >
+      <subparam
+        id='backimage'
+        backgroundstretch='41% 41% 40% 49%'
+        padding='13px 32px 46px 47px'
+      ></subparam>
+    </param>
+
+    <param
+      useCommonParser='true'
+      direction='leftTop'
+      anchorOffset='(2,18)'
+      anchorOffsetHD='(12,18)'
+    >
+      <subparam
+        id='backimage'
+        backgroundstretch='41% 50% 40% 40%'
+        padding='13px 47px 46px 32px'
+      ></subparam>
+    </param>
+
+    <param
+      useCommonParser='true'
+      direction='leftBottom'
+      anchorOffset='(2,18)'
+      anchorOffsetHD='(12,10)'
+    >
+      <subparam
+        id='backimage'
+        backgroundstretch='41% 50% 40% 40%'
+        padding='29px 47px 30px 32px'
+      ></subparam>
+    </param>
+
+    <param
+      useCommonParser='true'
+      direction='rightBottom'
+      anchorOffset='(2,18)'
+      anchorOffsetHD='(12,10)'
+    >
+      <subparam
+        id='backimage'
+        backgroundstretch='41% 40% 40% 50%'
+        padding='29px 32px 30px 47px'
+      ></subparam>
+    </param>
+  </params>
+
+  <div
+    id='backimage'
+    style='display: flex; flex-direction: column; align-items: center; justify-content: center; background-image: {popResId}'
+  >
+    <label
+      text='连续区间测速'
+      style='margin-top: 6px; font-weight: bold; text-align: center; font-size: 32px; color: #FFFFFF; align-content: stretch'
+    ></label>
+
+    <div style='display: flex; flex-direction: row; align-items: center'>
+      <div style='display: flex; margin-left: 0px; margin-top: 10px; flex-direction: row; align-items: center'>
+        <img src='{subResId}' style='width: 84px; height: 84px'></img>
+
+        <div style='width: 68px; height: 68px; position: absolute; align-items: center; justify-content: center; left: 8px; top: 8px'>
+          <label
+            text='{maxspeed}'
+            style='align-self: center; font-family: AmapNumber-Bold; font-size: {fontSize}; color: #222222'
+          ></label>
+        </div>
+      </div>
+
+      <img
+        src='110942'
+        style='width: 26px; height: 24px; margin-top: 5px'
+      ></img>
+
+      <div style='display: flex; margin-left: 0px; margin-top: 10px; flex-direction: row; align-items: center'>
+        <img src='{addSubResId}' style='width: 84px; height: 84px'></img>
+
+        <div style='width: 68px; height: 68px; position: absolute; align-items: center; justify-content: center; left: 8px; top: 8px'>
+          <label
+            text='{addMaxspeed}'
+            style='align-self: center; font-weight: bold; font-size: {addFontSize}; color: #222222'
+          ></label>
+        </div>
+      </div>
+    </div>
+  </div>
+</xml>

@@ -1,0 +1,54 @@
+<!--途经点气泡-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='rightTop' anchorOffset='(-10,-24)'>
+      <subparam
+        id='backimage'
+        background-image='url(https://img.alicdn.com/imgextra/i4/O1CN01laIQwi1CJWTNjsRbe_!!6000000000060-2-tps-166-170.png)'
+        backgroundstretch='38% 40% 54% 50%'
+        padding='24px 30px 48px 46px'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='leftTop' anchorOffset='(-10,-24)'>
+      <subparam
+        id='backimage'
+        background-image='url(https://img.alicdn.com/imgextra/i4/O1CN01FrpH8a1eFgOVZIi6z_!!6000000003842-2-tps-166-170.png)'
+        backgroundstretch='38% 50% 54% 40%'
+        padding='24px 46px 48px 30px'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='topCenter' anchorOffset='(0,-48)'>
+      <subparam
+        id='backimage'
+        background-image='url(https://img.alicdn.com/imgextra/i4/O1CN01aTPJDm1J7LFUK4lP2_!!6000000000981-2-tps-202-168.png)'
+        backgroundstretch='33% 65% 66% 30% 34% 30% 63% 65%'
+        padding='20px 30px 46px 30px'
+      ></subparam>
+    </param>
+  </params>
+
+  <div id='backimage' style='width: auto; height: auto'>
+    <div style='display: flex; flex-direction: row; align-items: center; position: relative'>
+      <img
+        style='width: 42px; height: 42px; align-self: center; margin-right: 8px'
+        src='https://faas-image.amap.com/shaolin/images/starbucks/eyrie/IconResIdEndPointStarBucks.png'
+        syncloadCache='false'
+        fastmode='false'
+      ></img>
+
+      <label
+        style='align-self: center; font-weight: bold; font-size: 28px; color: @Color_Hue160_H8; line-height: 28px; margin-right: 8px; text-stroke: 1px @Color_BG_L2'
+        text='{mainLabel}'
+      ></label>
+
+      <img
+        style='width: 24px; height: 24px; align-self: center; margin-top: 2px'
+        src='https://faas-image.amap.com/shaolin/images/starbucks/eyrie/IconResIdEndPointJumpArrow.png'
+        syncloadCache='false'
+        fastmode='false'
+      ></img>
+    </div>
+  </div>
+</xml>

@@ -1,0 +1,16 @@
+<!--已避开黑夜纹理样式-->
+<xml>
+  <params>
+    <param useCommonParser="true" direction="leftTop" anchorOffset="(0,0)">
+      <subparam id="backimage" background-image="150250"></subparam>
+      <subparam id="labelstyle" margin-left="24px" margin-right="34px"></subparam>
+    </param>
+    <param useCommonParser="true" direction="rightTop" anchorOffset="(0,0)">
+      <subparam id="backimage" background-image="150251"></subparam>
+      <subparam id="labelstyle" margin-left="34px" margin-right="24px"></subparam>
+    </param>
+  </params>
+  <div id="backimage" style="width:140px;height:92px;display:flex;flex-direction:row;align-items:center;justify-content:center">
+    <label id="labelstyle" style="font-size:30px;justify-content:center;align-self:center;margin-top:22px;margin-bottom:26px;font-weight:bold;color:#EAF3FF" text="已避开"></label>
+  </div>
+</xml>

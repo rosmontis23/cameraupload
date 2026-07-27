@@ -1,0 +1,37 @@
+<!--地铁起点引导出口气泡样式(动态运营使用)-->
+<xml>
+  <params>
+    <param
+      useCommonParser='true'
+      direction='leftTop'
+      anchorOffset='(0,0)'
+    ></param>
+
+    <param
+      useCommonParser='true'
+      direction='leftBottom'
+      anchorOffset='(0,0)'
+    ></param>
+
+    <param
+      useCommonParser='true'
+      direction='rightTop'
+      anchorOffset='(0,0)'
+    ></param>
+
+    <param
+      useCommonParser='true'
+      direction='rightBottom'
+      anchorOffset='(0,0)'
+    ></param>
+  </params>
+
+  <div style='height: 68px; padding: 15px 7px 15px 10px; left: 0; top: 0px'>
+    <div style='height: 40px; padding: 2px 5px 5px 5px; background: #5A78F4; border-radius: 15px; border-width: 5px; border-color: @Color_Hue230_H5; background-color: @Color_BG_L2; left: 0; top: 0px'>
+      <label
+        style='align-self: center; font-weight: bold; font-size: 22px; color: @Color_Hue230_H5; line-height: 22px; text-overflow: ellipsis; overflow: hidden; position: relative'
+        text='{text}'
+      ></label>
+    </div>
+  </div>
+</xml>

@@ -1,0 +1,81 @@
+<!--终点不可达气泡-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='rightTop' anchorOffset='(0,0)'>
+      <subparam
+        id='backimage'
+        background-image='30034'
+        backgroundstretch='37% 40% 62% 43%'
+        padding='21px 24px 48px 46px'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='leftTop' anchorOffset='(0,0)'>
+      <subparam
+        id='backimage'
+        background-image='30034'
+        backgroundstretch='37% 40% 62% 43%'
+        padding='21px 43px 48px 27px'
+        backgroundtransform='rotate(0,180,0)'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='rightBottom' anchorOffset='(0,0)'>
+      <subparam
+        id='backimage'
+        background-image='30034'
+        backgroundstretch='37% 40% 62% 43%'
+        padding='44px 27px 25px 43px'
+        backgroundtransform='rotate(180,0,0)'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='leftBottom' anchorOffset='(0,0)'>
+      <subparam
+        id='backimage'
+        background-image='30034'
+        backgroundstretch='37% 40% 62% 43%'
+        padding='44px 38px 25px 31px'
+        backgroundtransform='rotate(180,180,0)'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='bottomCenter' anchorOffset='(0,0)'>
+      <subparam
+        id='backimage'
+        background-image='30037'
+        backgroundstretch='47% 60% 52% 35% 46% 35% 53% 60%'
+        padding='40px 26px 23px 30px'
+        backgroundtransform='rotate(180,0,0)'
+      ></subparam>
+    </param>
+  </params>
+
+  <div id='backimage' style='width: auto; height: auto'>
+    <div style='display: flex; flex-direction: row; align-items: center; position: relative'>
+      <div style='display: flex; position: relative; align-self: center; align-items: center; flex-direction: row'>
+        <img
+          style='width: 48px; height: 48px; margin-right: 4px; align-self: center'
+          src='https://faas-image.amap.com/shaolin/images/eyrie_res/enddetail/endpoi_warning_3x.png?d'
+          syncload='true'
+          syncloadCache='false'
+          fastmode='false'
+        ></img>
+      </div>
+
+      <div style='display: flex; margin-right: 5px; flex-direction: column; align-items: flex-start'>
+        <label
+          style='align-self: flex-start; font-weight: bold; font-size: 26px; color: @Color_Text_Highlight; line-height: 33px; position: relative'
+          text='{mainLabel}'
+        ></label>
+
+        <div style='display: flex; background-color: @Color_Text_Highlight(CC); padding-left: 8px; padding-right: 8px; border-radius: 17.5px; line-height: 24px; flex-direction: row; align-items: center; position: relative; margin-top: 4px'>
+          <label
+            style='align-self: center; margin: 3px 8px; font-weight: normal; font-size: 24px; color: @Color_Hue10_H7'
+            text='{etaTime}'
+          ></label>
+        </div>
+      </div>
+    </div>
+  </div>
+</xml>

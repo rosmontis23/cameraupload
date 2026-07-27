@@ -1,0 +1,33 @@
+<!--骑步行导航页蓝色路牌-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='leftTop' anchorOffset='(0,0)'>
+      <subparam
+        id='backimage'
+        background-image='231232'
+        backgroundstretch='32% 36% 32% 36%'
+        padding='40px 40px 40px 50px'
+        backgroundtransform='rotate(0,180,0)'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='rightTop' anchorOffset='(0,0)'>
+      <subparam
+        id='backimage'
+        background-image='231232'
+        backgroundstretch='32% 36% 32% 36%'
+        padding='40px 40px 40px 50px'
+      ></subparam>
+    </param>
+  </params>
+
+  <div
+    id='backimage'
+    style='display: flex; justify-content: center; align-items: center; flex-direction: row'
+  >
+    <label
+      style='font-size: 34px; color: @Color_Text_Highlight'
+      text='{label}'
+    ></label>
+  </div>
+</xml>

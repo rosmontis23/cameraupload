@@ -1,0 +1,10 @@
+<!--偏航抑制区域面门子点样式-->
+<xml>
+  <params>
+    <param useCommonParser="true" direction="rightTop" anchorOffset="(0,0)"></param>
+  </params>
+  <div style="display:flex;flex-direction:row;align-items:center">
+    <image style="width:{door_width};height:{door_height};" src="{door_res}"></image>
+    <label style="padding-left:4px;color:{door_name_color};font-size:22px;font-weight:bold;" text="{door_name}"></label>
+  </div>
+</xml>

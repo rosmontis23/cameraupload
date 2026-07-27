@@ -1,0 +1,84 @@
+<!--行前拥堵气泡-单行(感知平台)-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='topCenter' anchorOffset='(0,18)'>
+      <subparam
+        id='backimage'
+        background-image='231322'
+        padding='20px 27px 42px 27px'
+        backgroundstretch='40% 60% 50% 25% 50% 25% 40% 60%'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='rightTop' anchorOffset='(17,22)'>
+      <subparam
+        id='backimage'
+        background-image='231319'
+        padding='25px 27px 49px 42px'
+        backgroundstretch='29% 42% 53% 44%'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='leftTop' anchorOffset='(17,22)'>
+      <subparam
+        id='backimage'
+        background-image='231318'
+        padding='26px 42px 49px 29px'
+        backgroundstretch='29% 42% 53% 44%'
+      ></subparam>
+    </param>
+
+    <param
+      useCommonParser='true'
+      direction='bottomCenter'
+      anchorOffset='(0,18)'
+    >
+      <subparam
+        id='backimage'
+        background-image='231323'
+        padding='35px 27px 28px 29px'
+        backgroundstretch='40% 60% 50% 25% 50% 25% 40% 60%'
+      ></subparam>
+    </param>
+
+    <param
+      useCommonParser='true'
+      direction='rightBottom'
+      anchorOffset='(17,22)'
+    >
+      <subparam
+        id='backimage'
+        background-image='231321'
+        padding='40px 24px 32px 42px'
+        backgroundstretch='37% 42% 53% 44%'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='leftBottom' anchorOffset='(17,22)'>
+      <subparam
+        id='backimage'
+        background-image='231320'
+        padding='42px 42px 32px 29px'
+        backgroundstretch='53% 44% 29% 42%'
+      ></subparam>
+    </param>
+  </params>
+
+  <div id='backimage' style='width: auto; height: auto'>
+    <div style='display: flex; flex-direction: row; align-items: center; justify-content: center'>
+      <div style='display: flex; flex-direction: row; align-items: flex-start; position: relative'>
+        <img
+          style='width: 36px; height: 36px; align-self: center; margin-right: 4px'
+          src='{icon}'
+          syncloadCache='false'
+          fastmode='false'
+        ></img>
+
+        <label
+          style='align-self: center; font-weight: bold; font-size: 26px; color: {firstLineColor}; line-height: 28px'
+          text='{firstLineText}'
+        ></label>
+      </div>
+    </div>
+  </div>
+</xml>

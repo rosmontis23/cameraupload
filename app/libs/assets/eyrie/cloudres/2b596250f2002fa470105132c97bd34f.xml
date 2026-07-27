@@ -1,0 +1,10 @@
+<!--货车导航未避开设施和限行业务-->
+<xml>
+  <params>
+    <param useCommonParser="true" direction="rightCenter" anchorOffset="(32,0)"></param>
+  </params>
+  <div style="flex-direction:row;justify-content:flex-start;align-items:center">
+    <img src="{iconID}" style="width:64px; height:64px;" syncload="true"></img>
+    <label text="{label}" style="text-align:center; font-size:{fontSize};font-weight: bold;color:{textColor};text-stroke:0.5px {strokeColor};"></label>
+  </div>
+</xml>

@@ -1,0 +1,20 @@
+<!--通用居中扎标纹理-->
+<xml>
+  <params>
+    <param
+      useCommonParser='true'
+      direction='centerCenter'
+      anchorOffset='(0,0)'
+    ></param>
+  </params>
+
+  <div>
+    <div style='display: flex; flex-direction: row'>
+      <img
+        src='10580'
+        syncloadCache='false'
+        fastmode='false'
+      ></img>
+    </div>
+  </div>
+</xml>

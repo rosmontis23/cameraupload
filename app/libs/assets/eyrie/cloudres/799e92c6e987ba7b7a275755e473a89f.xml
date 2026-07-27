@@ -1,0 +1,71 @@
+<!--动态导航路线事件扎标气泡黑夜231014-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='leftTop' anchorOffset='(15,20)'>
+      <subparam
+        id='backimage'
+        background-image='231018'
+        backgroundstretch='34% 41% 61% 48%'
+        padding='29px 47px 53px 32px'
+        backgroundtransform='rotate(0,180,0)'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='leftBottom' anchorOffset='(12,15)'>
+      <subparam
+        id='backimage'
+        background-image='231018'
+        backgroundstretch='34% 41% 61% 48%'
+        padding='55px 47px 30px 32px'
+        backgroundtransform='rotate(180,180,0)'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='rightTop' anchorOffset='(15,20)'>
+      <subparam
+        id='backimage'
+        background-image='231018'
+        backgroundstretch='34% 41% 61% 48%'
+        padding='29px 32px 53px 47px'
+      ></subparam>
+    </param>
+
+    <param
+      useCommonParser='true'
+      direction='rightBottom'
+      anchorOffset='(12,15)'
+    >
+      <subparam
+        id='backimage'
+        background-image='231018'
+        backgroundstretch='34% 41% 61% 48%'
+        padding='55px 32px 30px 47px'
+        backgroundtransform='rotate(180,0,0)'
+      ></subparam>
+    </param>
+  </params>
+
+  <div
+    id='backimage'
+    style='display: flex; flex-direction: row; align-items: center; justify-content: space-around'
+  >
+    <img
+      src='{iconResId}'
+      style='width: 68px; height: 68px; margin-left: 4px; margin-right: 4px'
+      syncloadCache='false'
+      fastmode='false'
+    ></img>
+
+    <div style='display: flex; margin-left: 4; flex-direction: column; align-items: flex-start'>
+      <label
+        style='color: #E81D05; opacity: 1.0; font-size: 34px; font-weight: bold'
+        text='{eventTitle}'
+      ></label>
+
+      <label
+        style='color: #000000; opacity: 0.9; font-size: 32px'
+        text='{eventDesc}'
+      ></label>
+    </div>
+  </div>
+</xml>

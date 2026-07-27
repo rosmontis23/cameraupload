@@ -1,0 +1,21 @@
+<!--骑步行里程碑-->
+<xml>
+  <params>
+    <param
+      useCommonParser='true'
+      direction='topCenter'
+      anchorOffset='(0,0)'
+    ></param>
+  </params>
+
+  <div
+    id='backimage'
+    style='display: flex; padding: 10px 8px 10px 8px; backgroundstretch: 50% 65% 49% 32% 50% 32% 49% 65%; background-image: url(https://faas-image-er.amap.com/acornCompressImageProd/tokenImg/30302_ed091f1e5aef933522d5c3417a140f3a-a0da24ac-1c0f-4d59-8383-801dedf216d5.webp); justify-content: center; align-items: center; flex-direction: row'
+    serviceresize='true'
+  >
+    <label
+      style='font-weight: bold; color: @Color_Hue210_H8; font-size: 18px; align-self: center'
+      text='{label}'
+    ></label>
+  </div>
+</xml>

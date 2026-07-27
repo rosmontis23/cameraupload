@@ -1,0 +1,89 @@
+<!--交通事件(施工)气泡白天黑夜1108121108113-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='leftTop' anchorOffset='(15,25)'>
+      <subparam
+        id='backimage'
+        background-image='110518'
+        backgroundstretch='34% 41% 61% 48%'
+        padding='21px 47px 45px 32px'
+        backgroundtransform='rotate(0,180,0)'
+      ></subparam>
+
+      <subparam id='labelcolor' color='#FF2E0C'></subparam>
+
+      <subparam id='sublabelcolor' color='#1A1A1A'></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='leftBottom' anchorOffset='(15,15)'>
+      <subparam
+        id='backimage'
+        background-image='110518'
+        backgroundstretch='34% 41% 61% 48%'
+        padding='45px 47px 25px 32px'
+        backgroundtransform='rotate(180,180,0)'
+      ></subparam>
+
+      <subparam id='labelcolor' color='#FF2E0C'></subparam>
+
+      <subparam id='sublabelcolor' color='#1A1A1A'></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='rightTop' anchorOffset='(15,25)'>
+      <subparam
+        id='backimage'
+        background-image='110518'
+        backgroundstretch='34% 41% 61% 48%'
+        padding='21px 32px 45px 47px'
+      ></subparam>
+
+      <subparam id='labelcolor' color='#FF2E0C'></subparam>
+
+      <subparam id='sublabelcolor' color='#1A1A1A'></subparam>
+    </param>
+
+    <param
+      useCommonParser='true'
+      direction='rightBottom'
+      anchorOffset='(15,15)'
+    >
+      <subparam
+        id='backimage'
+        background-image='110518'
+        backgroundstretch='34% 41% 61% 48%'
+        padding='45px 32px 25px 47px'
+        backgroundtransform='rotate(180,0,0)'
+      ></subparam>
+
+      <subparam id='labelcolor' color='#FF2E0C'></subparam>
+
+      <subparam id='sublabelcolor' color='#1A1A1A'></subparam>
+    </param>
+  </params>
+
+  <div
+    id='backimage'
+    style='display: flex; flex-direction: row; align-items: center; justify-content: space-around'
+  >
+    <img
+      src='{iconId}'
+      style='width: 56px; height: 56px; margin-left: 1px'
+      syncloadCache='false'
+      fastmode='false'
+    ></img>
+
+    <div style='display: flex; flex-direction: column; align-items: flex-start'>
+      <label
+        id='labelcolor'
+        style='opacity: 1.0; font-size: 32px; font-weight: bold'
+        text='{label}'
+      ></label>
+
+      <label
+        id='sublabelcolor'
+        style='display: {isDisplay}; opacity: 1.0; font-size: 28px'
+        text='{subLabel}'
+      ></label>
+    </div>
+  </div>
+</xml>

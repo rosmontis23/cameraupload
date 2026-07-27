@@ -1,0 +1,80 @@
+<!--路线外事件：封路理由气泡样式-->
+<xml>
+  <params>
+    <param useCommonParser='true' direction='leftTop' anchorOffset='(0,0)'>
+      <subparam
+        id='backimage'
+        background-image='115030'
+        backgroundstretch='37% 36% 56% 51%'
+        padding='20px 26px 30px 25px'
+        backgroundtransform='rotate(0,180,0)'
+      ></subparam>
+
+      <subparam
+        id='firstlabel'
+        margin-right='15px'
+        margin-left='0px'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='leftBottom' anchorOffset='(0,-5)'>
+      <subparam
+        id='backimage'
+        background-image='115030'
+        backgroundstretch='37% 36% 56% 51%'
+        padding='30px 26px 20px 25px'
+        backgroundtransform='rotate(180,180,0)'
+      ></subparam>
+
+      <subparam
+        id='firstlabel'
+        margin-right='15px'
+        margin-left='0px'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='rightTop' anchorOffset='(0,0)'>
+      <subparam
+        id='backimage'
+        background-image='115030'
+        backgroundstretch='37% 36% 56% 51%'
+        padding='20px 25px 30px 26px'
+      ></subparam>
+
+      <subparam
+        id='firstlabel'
+        margin-right='0px'
+        margin-left='15px'
+      ></subparam>
+    </param>
+
+    <param useCommonParser='true' direction='rightBottom' anchorOffset='(0,-5)'>
+      <subparam
+        id='backimage'
+        background-image='115030'
+        backgroundstretch='37% 36% 56% 51%'
+        padding='30px 25px 20px 26px'
+        backgroundtransform='rotate(180,0,0)'
+      ></subparam>
+
+      <subparam
+        id='firstlabel'
+        margin-right='0px'
+        margin-left='15px'
+      ></subparam>
+    </param>
+  </params>
+
+  <div
+    id='backimage'
+    style='display: flex; width: auto; height: auto; align-items: center; flex-direction: row; background-color: @Color_BG_L2(00)'
+  >
+    <div style='display: flex; width: auto; height: auto; background-color: @Color_BG_L2(00); align-items: center; flex-direction: row'>
+      <label
+        id='firstlabel'
+        style='background-color: @Color_BG_L2(00); font-weight: bold; margin-bottom: 5px; margin-top: 5px; font-size: 30px; color: @Color_Ink_L7'
+        text='{label}'
+      ></label>
+    </div>
+  </div>
+</xml>

@@ -1,0 +1,22 @@
+<!--通用扎标纹理-->
+<xml>
+  <params>
+    <param
+      useCommonParser='true'
+      direction='topCenter'
+      anchorOffset='(0,7)'
+    ></param>
+  </params>
+
+  <div>
+    <div style='display: flex; flex-direction: row'>
+      <img
+        style='width: 64px; height: 68px'
+        src='{url}'
+        serviceresize='true'
+        syncloadCache='false'
+        fastmode='false'
+      ></img>
+    </div>
+  </div>
+</xml>

@@ -1,0 +1,19 @@
+<!--终点Poi样式-->
+<xml>
+  <params>
+    <param
+      useCommonParser='true'
+      direction='topCenter'
+      anchorOffset='(0,0)'
+    ></param>
+  </params>
+
+  <div style='display: flex; align-items: center; flex-direction: column'>
+    <img style='width: 70px; height: 70px' src='{icon}'></img>
+
+    <label
+      style='width: auto; text-stroke: 3px @Color_BG_L2; align-items: center; font-weight: bold; font-size: 26px; color: #212121'
+      text='{label}'
+    ></label>
+  </div>
+</xml>
