@@ -6,10 +6,6 @@
 
 **启明瞳** 是一款面向视障人士的 Android 视觉辅助导航应用，通过手机摄像头和 AI 技术实现实时障碍物检测、语音唤醒导航和紧急求助功能。
 
-## 📹 截图展示
-
-<!-- 在此处放置应用截图 -->
-
 <p align="center">
   <img src="screenshots/detection.png" alt="目标检测" width="300"/>
   <img src="screenshots/navigation.png" alt="语音导航" width="300"/>
