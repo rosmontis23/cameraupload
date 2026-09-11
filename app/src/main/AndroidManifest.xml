@@ -55,7 +55,7 @@
         <!-- ========== 高德SDK核心配置 ========== -->
         <meta-data
             android:name="com.amap.api.v2.apikey"
-            android:value="326726c8e1d8a8d6ea9e556fdab54e92" />
+            android:value="请替换成您的密钥" />
 
         <!-- 高德定位服务 -->
         <service android:name="com.amap.api.location.APSService" />

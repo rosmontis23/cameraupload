@@ -28,12 +28,12 @@ public class NetworkUtils {
     private static final MediaType JSON = MediaType.get("application/json; charset=utf-8");
     private static final MediaType AUDIO_WAV = MediaType.get("audio/wav");
 
-    private static final String SERVER_BASE_URL = "https://173fc581.r30.cpolar.top/";
+    private static final String SERVER_BASE_URL = "请替换成您的服务器地址";
     private static final String DETECTION_UPLOAD_URL = SERVER_BASE_URL + "/upload-results";
     private static final String HELP_LOCATION_URL = SERVER_BASE_URL + "/help-request";
     private static final String HELP_VOICE_UPLOAD_URL = SERVER_BASE_URL + "/help-voice";
 
-    private static final String SAFE_TOKEN = "qimingtong_2026";
+    private static final String SAFE_TOKEN = "请替换成您的密钥";
 
     private static final int CONNECT_TIMEOUT_SECONDS = 15;
     private static final int WRITE_TIMEOUT_SECONDS = 15;
